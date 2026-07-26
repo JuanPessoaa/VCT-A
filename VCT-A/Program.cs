@@ -14,9 +14,10 @@ namespace VCT_A
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SS());
+            Application.Run(new VCT());
         }
     }
 }
