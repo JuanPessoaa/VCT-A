@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace VCT_A
         {
             InitializeComponent();
             this.Size = new System.Drawing.Size(1920, 1080);
+    
         }
 
         private void VCT_Load(object sender, EventArgs e)
@@ -39,6 +41,18 @@ namespace VCT_A
                 comboBox1.Items.Add("2024 - Seoul");
                 comboBox1.Items.Add("2025 - Paris");
                 comboBox1.BackColor = Color.FromArgb(197, 177, 116);
+                comboBox2.BackColor = Color.FromArgb(197, 177, 116);
+                comboBox3.BackColor = Color.FromArgb(197, 177, 116);
+                pictureBox2.BackColor = Color.FromArgb(197, 177, 116);
+                pictureBox3.BackColor = Color.FromArgb(197, 177, 116);
+                pictureBox4.BackColor = Color.FromArgb(197, 177, 116);
+                pictureBox5.BackColor = Color.FromArgb(197, 177, 116);
+                pictureBox11.BackColor = Color.FromArgb(197, 177, 116);
+                pictureBox12.BackColor = Color.FromArgb(197, 177, 116);
+                checkBox1.BackColor = Color.FromArgb(197, 177, 116);
+                checkBox2.BackColor = Color.FromArgb(197, 177, 116);
+                checkBox3.BackColor = Color.FromArgb(197, 177, 116);
+                checkBox4.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 ExibirTodosComponentes(false);
@@ -58,6 +72,18 @@ namespace VCT_A
                 comboBox1.Items.Add("2026.1 - Santiago");
                 comboBox1.Items.Add("2026.2 - London");
                 comboBox1.BackColor = Color.FromArgb(111, 74, 204);
+                comboBox2.BackColor = Color.FromArgb(111, 74, 204);
+                comboBox3.BackColor = Color.FromArgb(111, 74, 204);
+                pictureBox2.BackColor = Color.FromArgb(111, 74, 204);
+                pictureBox3.BackColor = Color.FromArgb(111, 74, 204);
+                pictureBox4.BackColor = Color.FromArgb(111, 74, 204);
+                pictureBox5.BackColor = Color.FromArgb(111, 74, 204);
+                pictureBox11.BackColor = Color.FromArgb(111, 74, 204);
+                pictureBox12.BackColor = Color.FromArgb(111, 74, 204);
+                checkBox1.BackColor = Color.FromArgb(111, 74, 204);
+                checkBox2.BackColor = Color.FromArgb(111, 74, 204);
+                checkBox3.BackColor = Color.FromArgb(111, 74, 204);
+                checkBox4.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 ExibirTodosComponentes(false);
@@ -134,10 +160,12 @@ namespace VCT_A
             {
                 case "2021 - Berlin":
                     ConfigurarParaCBer();
-                    break;/*
+                    Limpar();
+                    break;
                 case "2022 - Instanbul":
                     ConfigurarParaCIns();
-                    break;
+                    Limpar();
+                    break;/*
                 case "2023 - Los Angeles":
                     ConfigurarParaCLos();
                     break;
@@ -187,7 +215,7 @@ namespace VCT_A
         }
         private void ConfigurarParaCBer()
         {
-           
+            Limpar();
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
             radioButton3.Text = "Fnatic";
@@ -203,43 +231,34 @@ namespace VCT_A
             checkBox4.Text = "4º Team Liquid";
 
             comboBox2.Items.Clear();
-            comboBox2.Items.AddRange(new object[] { "GMB Chronicle", "GMB d3ffo", "KRÜ Keznit" });
+            comboBox2.Items.AddRange(new object[] {"GMB Chronicle", "GMB d3ffo", "KRÜ Keznit"});
            
             comboBox3.Items.Clear();
-            comboBox3.Items.AddRange(new object[] { "GMB Chronicle", "GMB d3ffo", "KRÜ Keznit" });
-
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
         }
-
-        private void ConfigurarParaLosAngeles()
+        private void ConfigurarParaCIns()
         {
-            radioButton1.Text = "LA - Opção 1";
-            radioButton2.Text = "LA - Opção 2";
-            // ... Mude os outros RadioButtons aqui da mesma forma
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "Fnatic";
+            radioButton3.Text = "FunPlus Phoenix";
+            radioButton4.Text = "Leviatán";
+            radioButton5.Text = "LOUD";
+            radioButton6.Text = "OpTic Gaming";
+            radioButton7.Text = "Team Liquid";
+            radioButton8.Text = "XSET";
 
-            checkBox1.Text = "LA Check 1";
-            // ... Mude os outros CheckBoxes aqui
+            checkBox1.Text = "1º LOUD";
+            checkBox2.Text = "2º OpTic Gaming";
+            checkBox3.Text = "3º DRX";
+            checkBox4.Text = "4º FunPlus Phoenix";
 
             comboBox2.Items.Clear();
-            comboBox2.Items.AddRange(new object[] { "Grupo A (LA)", "Grupo B (LA)" });
+            comboBox2.Items.AddRange(new object[] { "OPTC yay", "OPTC Victor", "OPTC crashies" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
         }
-
-        private void ConfigurarParaTokyo()
-        {
-            radioButton1.Text = "Tokyo - Opção 1";
-            // ... configure para Tokyo
-        }
-
-        private void ConfigurarParaMadrid()
-        {
-            radioButton1.Text = "Madrid - Opção 1";
-            // ... configure para Madrid
-        }
-
-       
-
-        // =======================================================
-        // MÉTODO AUXILIAR PARA MOSTRAR/ESCONDER COMPONENTES
-        // =======================================================
         private void ExibirTodosComponentes(bool visivel)
         {
             groupBox1.Visible = visivel;
@@ -278,10 +297,25 @@ namespace VCT_A
             label4.Visible = visivel;
             label5.Visible = visivel;
         }
-    
+        private void Limpar()
+        {
+            pictureBox2.BackgroundImage = null;
+            pictureBox3.BackgroundImage = null;
+            pictureBox4.BackgroundImage = null;
+            pictureBox5.BackgroundImage = null;
+            pictureBox6.BackgroundImage = null;
+            pictureBox8.BackgroundImage = null;
+            pictureBox9.BackgroundImage = null;
+            pictureBox10.BackgroundImage = null;
+            pictureBox11.BackgroundImage = null;
+            pictureBox12.BackgroundImage = null;
+            comboBox2.SelectedIndex = -1;
+            comboBox3.SelectedIndex = -1;
+        }
 
 
-private void radioButton1_CheckedChanged(object sender, EventArgs e)
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             
         }
@@ -294,13 +328,13 @@ private void radioButton1_CheckedChanged(object sender, EventArgs e)
             if (rb != null && rb.Checked)
             {
                 // Exemplo: Altera imagem dependendo do texto ou nome do RadioButton
-                if (rb.Text.Contains("Seoul"))
+                if (rb.Text.Contains("LOUD"))
                 {
-                    // pictureBox1.Image = Properties.Resources.imagem_seoul;
+                    pictureBox10.BackgroundImage = Properties.Resources.LOUD;
                 }
-                else if (rb.Text.Contains("LA"))
+                else if (rb.Text.Contains("OpTic Gaming"))
                 {
-                    // pictureBox1.Image = Properties.Resources.imagem_la;
+                    pictureBox10.BackgroundImage = Properties.Resources.OpTicGaming;
                 }
             }
         }
@@ -320,7 +354,42 @@ private void radioButton1_CheckedChanged(object sender, EventArgs e)
             if (comboBox3.SelectedItem != null)
             {
                 string Mapas = comboBox3.SelectedItem.ToString();
-                // Faça o que precisar com a variável 'Mapas' aqui
+
+                // Altera a imagem da PictureBox dependendo do mapa selecionado
+                switch (Mapas)
+                {
+                    case "Ascent":
+                        pictureBox12.BackgroundImage = Properties.Resources.Ascent; // Substitua "ascent" pelo nome da sua imagem nos Resources
+                        break;
+
+                    /*case "Bind":
+                        pictureBox1.Image = Properties.Resources.bind;
+                        break;*/
+
+                    case "Breeze":
+                        pictureBox12.BackgroundImage = Properties.Resources.Breeze;
+                        break;
+
+                    /*case "Fracture":
+                        pictureBox1.Image = Properties.Resources.fracture;
+                        break;
+
+                    case "Haven":
+                        pictureBox1.Image = Properties.Resources.haven;
+                        break;
+
+                    case "Icebox":
+                        pictureBox1.Image = Properties.Resources.icebox;
+                        break;
+
+                    case "Pearl":
+                        pictureBox1.Image = Properties.Resources.pearl;
+                        break;
+
+                    default:
+                        pictureBox1.Image = null; // Caso não encontre, limpa a imagem
+                        break;*/
+                }
             }
         }
 

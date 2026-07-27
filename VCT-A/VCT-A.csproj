@@ -93,6 +93,15 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Ascent.png" />
+    <None Include="Resources\OpTicGaming.png" />
+    <None Include="Resources\OpTic Gaming1.png" />
+    <None Include="Resources\Ascent1.png" />
+    <Content Include="Resources\Breeze.png" />
+    <None Include="Resources\Breeze1.png" />
+    <Content Include="Resources\LOUD.png" />
+    <None Include="Resources\LOUD1.png" />
+    <Content Include="Resources\OpTic Gaming.png" />
     <Content Include="Resources\Super.wav" />
     <None Include="Resources\vctlogopreta.png" />
     <None Include="Resources\wallpapervctbranco.png" />

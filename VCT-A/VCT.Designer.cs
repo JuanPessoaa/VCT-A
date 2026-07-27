@@ -123,6 +123,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(53, 506);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
@@ -290,6 +291,8 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point(261, 506);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
@@ -300,6 +303,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Location = new System.Drawing.Point(469, 506);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
@@ -310,6 +314,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Location = new System.Drawing.Point(677, 506);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
@@ -330,6 +335,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Location = new System.Drawing.Point(923, 506);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
@@ -352,6 +358,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Location = new System.Drawing.Point(311, 226);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
@@ -362,6 +369,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox11.Location = new System.Drawing.Point(802, 243);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
@@ -447,53 +455,58 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Location = new System.Drawing.Point(64, 515);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(91, 21);
             this.checkBox1.TabIndex = 26;
             this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.Visible = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
             this.checkBox2.Location = new System.Drawing.Point(272, 515);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(91, 21);
             this.checkBox2.TabIndex = 27;
             this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.UseVisualStyleBackColor = false;
             this.checkBox2.Visible = false;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
             this.checkBox3.Location = new System.Drawing.Point(480, 515);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(91, 21);
             this.checkBox3.TabIndex = 28;
             this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.UseVisualStyleBackColor = false;
             this.checkBox3.Visible = false;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
+            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
             this.checkBox4.Location = new System.Drawing.Point(688, 515);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(91, 21);
             this.checkBox4.TabIndex = 29;
             this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.UseVisualStyleBackColor = false;
             this.checkBox4.Visible = false;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // pictureBox12
             // 
+            this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox12.Location = new System.Drawing.Point(1087, 243);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
@@ -525,9 +538,6 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox7);
@@ -535,6 +545,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
             this.Font = new System.Drawing.Font("Nirmala Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
