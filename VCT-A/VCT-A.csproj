@@ -99,12 +99,25 @@
     <None Include="Resources\Ascent1.png" />
     <Content Include="Resources\Breeze.png" />
     <None Include="Resources\Breeze1.png" />
+    <Content Include="Resources\CBer.mp3" />
+    <Content Include="Resources\CIns.mp3" />
     <Content Include="Resources\LOUD.png" />
     <None Include="Resources\LOUD1.png" />
     <Content Include="Resources\OpTic Gaming.png" />
     <Content Include="Resources\Super.wav" />
     <None Include="Resources\vctlogopreta.png" />
     <None Include="Resources\wallpapervctbranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

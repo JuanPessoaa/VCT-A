@@ -8,17 +8,34 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace VCT_A
 {
     public partial class VCT : Form
     {
+        private WindowsMediaPlayer[] players = new WindowsMediaPlayer[2];
         public VCT()
         {
             InitializeComponent();
+
             this.Size = new System.Drawing.Size(1920, 1080);
-    
+
+            string[] caminhosMusicas = new string[]
+            {
+                @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\CBer.mp3",
+                @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3"
+            };
+
+            for (int i = 0; i < players.Length; i++)
+            {
+                players[i] = new WindowsMediaPlayer();
+                players[i].URL = caminhosMusicas[i];
+                players[i].controls.stop();
+            }
         }
+    
+        
 
         private void VCT_Load(object sender, EventArgs e)
         {
@@ -56,6 +73,7 @@ namespace VCT_A
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 ExibirTodosComponentes(false);
+                Silenciar();
             }
             else if (selecao == "Masters")
             {
@@ -87,6 +105,7 @@ namespace VCT_A
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 ExibirTodosComponentes(false);
+                Silenciar();
             }
         }
 
@@ -159,12 +178,13 @@ namespace VCT_A
             switch (Campeonato)
             {
                 case "2021 - Berlin":
+            
                     ConfigurarParaCBer();
-                    Limpar();
+                    
                     break;
                 case "2022 - Instanbul":
                     ConfigurarParaCIns();
-                    Limpar();
+                    
                     break;/*
                 case "2023 - Los Angeles":
                     ConfigurarParaCLos();
@@ -235,6 +255,8 @@ namespace VCT_A
            
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
+
+            players[0].controls.play();
         }
         private void ConfigurarParaCIns()
         {
@@ -258,6 +280,8 @@ namespace VCT_A
 
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
+
+            players[1].controls.play();
         }
         private void ExibirTodosComponentes(bool visivel)
         {
@@ -311,6 +335,19 @@ namespace VCT_A
             pictureBox12.BackgroundImage = null;
             comboBox2.SelectedIndex = -1;
             comboBox3.SelectedIndex = -1;
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            Silenciar();
+        }
+
+        private void Silenciar()
+        {
+            foreach (var player in players)
+            {
+                player.controls.stop();
+            }
         }
 
 
@@ -395,7 +432,34 @@ namespace VCT_A
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
+            // Verifica se a CheckBox está marcada
+            if (checkBox1.Checked)
+            {
+                // Pega o texto da CheckBox para decidir qual imagem carregar
+                string Podio = checkBox1.Text;
 
+                // Exemplo baseando-se no texto da CheckBox
+                switch (Podio)
+                {
+                    case "1º LOUD":
+                        pictureBox2.BackgroundImage = Properties.Resources.LOUD; // Substitua "ascent" pelo nome da sua imagem nos Resources
+                        break;
+
+                    /*case "Bind":
+                        pictureBox1.Image = Properties.Resources.bind;
+                        break;*/
+
+                    case "1º OpTic Gaming":
+                        pictureBox2.BackgroundImage = Properties.Resources.OpTicGaming;
+                        break;
+                }
+            }
+            else
+            {
+                // O que acontece quando a CheckBox é desmarcada (ex: limpa a imagem)
+                pictureBox2.BackgroundImage = null;
+            }
+        
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
