@@ -8,20 +8,20 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WMPLib;
+//using WMPLib;
 
 namespace VCT_A
 {
     public partial class VCT : Form
     {
-        private WindowsMediaPlayer[] players = new WindowsMediaPlayer[2];
+        //private WindowsMediaPlayer[] players = new WindowsMediaPlayer[2];
         public VCT()
         {
             InitializeComponent();
 
             this.Size = new System.Drawing.Size(1920, 1080);
 
-            string[] caminhosMusicas = new string[]
+            /*string[] caminhosMusicas = new string[]
             {
                 @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\CBer.mp3",
                 @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3"
@@ -32,7 +32,7 @@ namespace VCT_A
                 players[i] = new WindowsMediaPlayer();
                 players[i].URL = caminhosMusicas[i];
                 players[i].controls.stop();
-            }
+            }*/
         }
     
         
@@ -253,7 +253,7 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
 
-            players[0].controls.play();
+            //players[0].controls.play();
         }
         private void ConfigurarParaCIns()
         {
@@ -278,7 +278,7 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
 
-            players[1].controls.play();
+            //players[1].controls.play();
         }
         private void ExibirTodosComponentes(bool visivel)
         {
@@ -341,10 +341,10 @@ namespace VCT_A
 
         private void Silenciar()
         {
-            foreach (var player in players)
+            /*foreach (var player in players)
             {
                 player.controls.stop();
-            }
+            }*/
         }
 
 
@@ -462,6 +462,16 @@ namespace VCT_A
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
         {
 
         }
