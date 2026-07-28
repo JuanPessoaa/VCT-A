@@ -48,7 +48,7 @@ namespace VCT_A
 
             string selecao = listBox1.SelectedItem.ToString();
 
-            comboBox1.Items.Clear(); // Limpa itens anteriores
+            //comboBox1.Items.Clear();
 
             if (selecao == "Champions")
             {
@@ -170,11 +170,8 @@ namespace VCT_A
 
             string Campeonato = comboBox1.SelectedItem.ToString();
             
-
-            // Mostra os demais componentes do form
             ExibirTodosComponentes(true);
 
-            // Preenche os textos de acordo com a cidade selecionada
             switch (Campeonato)
             {
                 case "2021 - Berlin":
@@ -361,10 +358,8 @@ namespace VCT_A
         {
             RadioButton rb = sender as RadioButton;
 
-            // Só executa se o RadioButton foi MARCADO (Checked == true)
             if (rb != null && rb.Checked)
             {
-                // Exemplo: Altera imagem dependendo do texto ou nome do RadioButton
                 if (rb.Text.Contains("LOUD"))
                 {
                     pictureBox10.BackgroundImage = Properties.Resources.LOUD;
@@ -378,11 +373,9 @@ namespace VCT_A
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Só lê o item SE algo foi de fato selecionado
             if (comboBox2.SelectedItem != null)
             {
                 string Players = comboBox2.SelectedItem.ToString();
-                // Faça o que precisar com a variável 'Players' aqui
             }
         }
 
@@ -392,11 +385,10 @@ namespace VCT_A
             {
                 string Mapas = comboBox3.SelectedItem.ToString();
 
-                // Altera a imagem da PictureBox dependendo do mapa selecionado
                 switch (Mapas)
                 {
                     case "Ascent":
-                        pictureBox12.BackgroundImage = Properties.Resources.Ascent; // Substitua "ascent" pelo nome da sua imagem nos Resources
+                        pictureBox12.BackgroundImage = Properties.Resources.Ascent;
                         break;
 
                     /*case "Bind":
@@ -432,17 +424,15 @@ namespace VCT_A
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            // Verifica se a CheckBox está marcada
             if (checkBox1.Checked)
             {
-                // Pega o texto da CheckBox para decidir qual imagem carregar
+
                 string Podio = checkBox1.Text;
 
-                // Exemplo baseando-se no texto da CheckBox
                 switch (Podio)
                 {
                     case "1º LOUD":
-                        pictureBox2.BackgroundImage = Properties.Resources.LOUD; // Substitua "ascent" pelo nome da sua imagem nos Resources
+                        pictureBox2.BackgroundImage = Properties.Resources.LOUD;
                         break;
 
                     /*case "Bind":
@@ -456,7 +446,6 @@ namespace VCT_A
             }
             else
             {
-                // O que acontece quando a CheckBox é desmarcada (ex: limpa a imagem)
                 pictureBox2.BackgroundImage = null;
             }
         
