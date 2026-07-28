@@ -93,6 +93,16 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOUDA {
+            get {
+                object obj = ResourceManager.GetObject("LOUDA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OpTic_Gaming {
             get {
                 object obj = ResourceManager.GetObject("OpTic Gaming", resourceCulture);
@@ -106,6 +116,16 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap OpTicGaming {
             get {
                 object obj = ResourceManager.GetObject("OpTicGaming", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpTicGamingA {
+            get {
+                object obj = ResourceManager.GetObject("OpTicGamingA", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

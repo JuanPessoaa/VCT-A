@@ -48,7 +48,7 @@ namespace VCT_A
 
             string selecao = listBox1.SelectedItem.ToString();
 
-            //comboBox1.Items.Clear();
+            comboBox1.Items.Clear();
 
             if (selecao == "Champions")
             {
@@ -182,10 +182,10 @@ namespace VCT_A
                 case "2022 - Instanbul":
                     ConfigurarParaCIns();
                     
-                    break;/*
+                    break;
                 case "2023 - Los Angeles":
                     ConfigurarParaCLos();
-                    break;
+                    break;/*
                 case "2024 - Seoul":
                     ConfigurarParaCSeo();
                     break;
@@ -235,7 +235,7 @@ namespace VCT_A
             Limpar();
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
-            radioButton3.Text = "Fnatic";
+            radioButton3.Text = "FNATIC";
             radioButton4.Text = "Gambit";
             radioButton5.Text = "KRÜ";
             radioButton6.Text = "Team Liquid";
@@ -259,7 +259,7 @@ namespace VCT_A
         {
             Limpar();
             radioButton1.Text = "DRX";
-            radioButton2.Text = "Fnatic";
+            radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
             radioButton4.Text = "Leviatán";
             radioButton5.Text = "LOUD";
@@ -279,6 +279,31 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
 
             //players[1].controls.play();
+        }
+        private void ConfigurarParaCLos()
+        {
+            Limpar();
+            radioButton1.Text = "Bilibili Gaming";
+            radioButton2.Text = "DRX";
+            radioButton3.Text = "EDward Gaming";
+            radioButton4.Text = "Evil Geniuses";
+            radioButton5.Text = "FNATIC";
+            radioButton6.Text = "FUT";
+            radioButton7.Text = "LOUD";
+            radioButton8.Text = "Paper Rex";
+
+            checkBox1.Text = "1º Evil Geniuses";
+            checkBox2.Text = "2º Paper Rex";
+            checkBox3.Text = "3º LOUD";
+            checkBox4.Text = "4º FNATIC";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "LOUD aspas", "EG Demon1", "LOUD Less" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
+
+            //players[2].controls.play();
         }
         private void ExibirTodosComponentes(bool visivel)
         {
@@ -362,11 +387,11 @@ namespace VCT_A
             {
                 if (rb.Text.Contains("LOUD"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.LOUD;
+                    pictureBox10.BackgroundImage = Properties.Resources.LOUDA;
                 }
                 else if (rb.Text.Contains("OpTic Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.OpTicGaming;
+                    pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingA;
                 }
             }
         }
@@ -416,7 +441,7 @@ namespace VCT_A
                         break;
 
                     default:
-                        pictureBox1.Image = null; // Caso não encontre, limpa a imagem
+                        pictureBox1.Image = null;
                         break;*/
                 }
             }
@@ -432,7 +457,7 @@ namespace VCT_A
                 switch (Podio)
                 {
                     case "1º LOUD":
-                        pictureBox2.BackgroundImage = Properties.Resources.LOUD;
+                        pictureBox2.BackgroundImage = Properties.Resources.LOUDA;
                         break;
 
                     /*case "Bind":
@@ -440,7 +465,7 @@ namespace VCT_A
                         break;*/
 
                     case "1º OpTic Gaming":
-                        pictureBox2.BackgroundImage = Properties.Resources.OpTicGaming;
+                        pictureBox2.BackgroundImage = Properties.Resources.OpTicGamingA;
                         break;
                 }
             }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -103,7 +103,11 @@
     <Content Include="Resources\CIns.mp3" />
     <Content Include="Resources\LOUD.png" />
     <None Include="Resources\LOUD1.png" />
+    <Content Include="Resources\LOUDA.png" />
+    <None Include="Resources\LOUDA1.png" />
     <Content Include="Resources\OpTic Gaming.png" />
+    <Content Include="Resources\OpTicGamingA.png" />
+    <None Include="Resources\OpTicGamingA1.png" />
     <Content Include="Resources\Super.wav" />
     <None Include="Resources\vctlogopreta.png" />
     <None Include="Resources\wallpapervctbranco.png" />
