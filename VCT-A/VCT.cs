@@ -21,7 +21,7 @@ namespace VCT_A
 {
     public partial class VCT : Form
     {
-        //private WindowsMediaPlayer[] players = new WindowsMediaPlayer[2];
+        //private WindowsMediaPlayer[] players = new WindowsMediaPlayer[16];
         public VCT()
         {
             InitializeComponent();
@@ -30,8 +30,8 @@ namespace VCT_A
 
             /*string[] caminhosMusicas = new string[]
             {
-                @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\CBer.mp3",
-                @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3"
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CBer.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3"
             };
 
             for (int i = 0; i < players.Length; i++)
@@ -41,8 +41,8 @@ namespace VCT_A
                 players[i].controls.stop();
             }*/
         }
-    
-        
+
+
 
         private void VCT_Load(object sender, EventArgs e)
         {
@@ -512,6 +512,84 @@ namespace VCT_A
 
             //players[10].controls.play();
         }
+        private void ConfigurarParaMMad()
+        {
+            Limpar();
+            radioButton1.Text = "EDward Gaming";
+            radioButton2.Text = "FunPlus Phoenix";
+            radioButton3.Text = "Gen.G";
+            radioButton4.Text = "Karmine Corp";
+            radioButton5.Text = "LOUD";
+            radioButton6.Text = "Paper Rex";
+            radioButton7.Text = "Sentinels";
+            radioButton8.Text = "Team Heretics";
+
+            checkBox1.Text = "1º Sentinels";
+            checkBox2.Text = "2º Gen.g";
+            checkBox3.Text = "3º Paper Rex";
+            checkBox4.Text = "4º LOUD";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "SEN zekken", "SEN TenZ", "SEN johnqt" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
+
+            //players[11].controls.play();
+        }
+        private void ConfigurarParaMSha()
+        {
+            Limpar();
+            radioButton1.Text = "100 Thieves";
+            radioButton2.Text = "EDward Gaming";
+            radioButton3.Text = "FNATIC";
+            radioButton4.Text = "FUT";
+            radioButton5.Text = "Gen.G";
+            radioButton6.Text = "G2";
+            radioButton7.Text = "Paper Rex";
+            radioButton8.Text = "Team Heretics";
+
+            checkBox1.Text = "1º Gen.G";
+            checkBox2.Text = "2º Team Heretics";
+            checkBox3.Text = "3º G2";
+            checkBox4.Text = "4º 100 Thieves";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "TH Wo0t", "TH RieNs", "TH benjyfishy" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
+
+            //players[12].controls.play();
+        }
+        private void ConfigurarParaMBan()
+        {
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "EDward Gaming";
+            radioButton3.Text = "G2 Esports";
+            radioButton4.Text = "Sentinels";
+            radioButton5.Text = "T1";
+            radioButton6.Text = "Team Liquid";
+            radioButton7.Text = "Team Vitality";
+            radioButton8.Text = "Trace";
+
+            checkBox1.Text = "1º T1";
+            checkBox2.Text = "2º G2";
+            checkBox3.Text = "3º Edward Gaming";
+            checkBox4.Text = "4º Team Vitality";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "TH Wo0t", "TH RieNs", "TH benjyfishy" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
+
+            //players[12].controls.play();
+        }
+
+
+
         private void ExibirTodosComponentes(bool visivel)
         {
             groupBox1.Visible = visivel;
