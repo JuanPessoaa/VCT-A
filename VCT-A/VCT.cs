@@ -8,7 +8,14 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 //using WMPLib;
+/*Nome: Windows Media Player
+Caminho: C:\Windows\system32\wmp.dll
+Versão: 1.0
+Versão do Arquivo: 12.0.26100.8875 (WinBuild.160101.0800)*/
 
 namespace VCT_A
 {
@@ -185,13 +192,13 @@ namespace VCT_A
                     break;
                 case "2023 - Los Angeles":
                     ConfigurarParaCLos();
-                    break;/*
+                    break;
                 case "2024 - Seoul":
                     ConfigurarParaCSeo();
                     break;
                 case "2025 - Paris":
                     ConfigurarParaCPar();
-                    break;
+                    break;/*
                 case "2021.1 - Reykjavík":
                     ConfigurarParaMRey1();
                     break;
@@ -208,7 +215,7 @@ namespace VCT_A
                     ConfigurarParaMSao();
                     break;
                 case "2023.1 - Tokyo":
-                    ConfigurarParaMTokd();
+                    ConfigurarParaMTok();
                     break;
                 case "2024.1 - Madrid":
                     ConfigurarParaMMad();
@@ -301,9 +308,209 @@ namespace VCT_A
             comboBox2.Items.AddRange(new object[] { "LOUD aspas", "EG Demon1", "LOUD Less" });
 
             comboBox3.Items.Clear();
-            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
 
             //players[2].controls.play();
+        }
+        private void ConfigurarParaCSeo()
+        {
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "EDward Gaming";
+            radioButton3.Text = "FNATIC";
+            radioButton4.Text = "G2";
+            radioButton5.Text = "Leviatán";
+            radioButton6.Text = "Sentinels";
+            radioButton7.Text = "Team Heretics";
+            radioButton8.Text = "Trace";
+
+            checkBox1.Text = "1º EDward Gaming";
+            checkBox2.Text = "2º Team Heretics";
+            checkBox3.Text = "3º Leviatán";
+            checkBox4.Text = "4º Sentinels";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "TH RieNs", "TH MiniBoo", "EDG ZmjjKK" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Abyss", "Ascent", "Bind", "Haven", "Icebox", "Lotus", "Sunset" });
+
+            //players[3].controls.play();
+        }
+        private void ConfigurarParaCPar()
+        {
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "FNATIC";
+            radioButton3.Text = "G2";
+            radioButton4.Text = "GIANTX";
+            radioButton5.Text = "MIBR";
+            radioButton6.Text = "NRG";
+            radioButton7.Text = "Paper Rex";
+            radioButton8.Text = "Team Heretics";
+
+            checkBox1.Text = "1º NRG";
+            checkBox2.Text = "2º FNATIC";
+            checkBox3.Text = "3º DRX";
+            checkBox4.Text = "4º Paper Rex";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "DRX Flashback", "FNC kaajak", "DRX HYUNMIN" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Abyss", "Ascent", "Bind", "Corrode", "Haven", "Lotus", "Sunset" });
+
+            //players[4].controls.play();
+        }
+        private void ConfigurarParaMRey1()
+        {
+            Limpar();
+            radioButton1.Text = "FNATIC";
+            radioButton2.Text = "KRÜ";
+            radioButton3.Text = "NUTURN";
+            radioButton4.Text = "Sentinels";
+            radioButton5.Text = "Team Liquid";
+            radioButton6.Text = "Team Vikings";
+            radioButton7.Text = "Version1";
+            radioButton8.Text = "X10 Esports";
+
+            checkBox1.Text = "1º Sentinels";
+            checkBox2.Text = "2º FNATIC";
+            checkBox3.Text = "3º NUTURN";
+            checkBox4.Text = "4º Team Liquid";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "FNC Derke", "FNC Magnum", "FNC Doma" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Haven", "Icebox", "Split" });
+
+            //players[5].controls.play();
+        }
+        private void ConfigurarParaMBer()
+        {
+            Limpar();
+            radioButton1.Text = "100 Thieves";
+            radioButton2.Text = "Acend";
+            radioButton3.Text = "Gambit";
+            radioButton4.Text = "G2";
+            radioButton5.Text = "KRÜ";
+            radioButton6.Text = "Sentinels";
+            radioButton7.Text = "Team Envy";
+            radioButton8.Text = "Vision Strikers";
+
+            checkBox1.Text = "1º Gambit";
+            checkBox2.Text = "2º Team Envy";
+            checkBox3.Text = "3º 100 Thieves";
+            checkBox4.Text = "4º G2";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "GMB nAts", "G2 keloqz", "GMB Chronicle" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Haven", "Icebox", "Split" });
+
+            //players[6].controls.play();
+        }
+        private void ConfigurarParaMRey2()
+        {
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "G2";
+            radioButton3.Text = "LOUD";
+            radioButton4.Text = "OpTic Gaming";
+            radioButton5.Text = "Paper Rex";
+            radioButton6.Text = "Team Liquid";
+            radioButton7.Text = "The Guard";
+            radioButton8.Text = "ZETA DIVISION";
+
+            checkBox1.Text = "1º OpTic Gaming";
+            checkBox2.Text = "2º LOUD";
+            checkBox3.Text = "3º ZETA DIVISION";
+            checkBox4.Text = "4º Paper Rex";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "OPTC yay", "OPTC Marved", "ZETA SugarZ3ro" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
+
+            //players[7].controls.play();
+        }
+        private void ConfigurarParaMCop()
+        {
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "FNATIC";
+            radioButton3.Text = "FunPlus Phoenix";
+            radioButton4.Text = "Guild";
+            radioButton5.Text = "Leviatán";
+            radioButton6.Text = "OpTic Gaming";
+            radioButton7.Text = "Paper Rex";
+            radioButton8.Text = "XSET";
+
+            checkBox1.Text = "1º FunPlus Phoenix";
+            checkBox2.Text = "2º Paper Rex";
+            checkBox3.Text = "3º OpTic Gaming";
+            checkBox4.Text = "4º FNATIC";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "FPX ardiis", "FPX Shao", "FPX Zyppan" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
+
+            //players[8].controls.play();
+        }
+        private void ConfigurarParaMSao()
+        {
+            Limpar();
+            radioButton1.Text = "100 Thieves";
+            radioButton2.Text = "DRX";
+            radioButton3.Text = "FNATIC";
+            radioButton4.Text = "Leviatán";
+            radioButton5.Text = "LOUD";
+            radioButton6.Text = "Natus Vicere";
+            radioButton7.Text = "NRG";
+            radioButton8.Text = "TALON";
+
+            checkBox1.Text = "1º FNATIC";
+            checkBox2.Text = "2º LOUD";
+            checkBox3.Text = "3º DRX";
+            checkBox4.Text = "4º Natus Vicere";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "LOUD Less", "LOUD aspas", "LOUD cauanzin" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Fracture", "Haven", "Icebox", "Lotus", "Pearl", "Split" });
+
+            //players[9].controls.play();
+        }
+        private void ConfigurarParaMTok()
+        {
+            Limpar();
+            radioButton1.Text = "DRX";
+            radioButton2.Text = "EDward Gaming";
+            radioButton3.Text = "Evil Geniuses";
+            radioButton4.Text = "FNATIC";
+            radioButton5.Text = "LOUD";
+            radioButton6.Text = "NRG";
+            radioButton7.Text = "Paper Rex";
+            radioButton8.Text = "Team Liquid";
+
+            checkBox1.Text = "1º FNATIC";
+            checkBox2.Text = "2º Evil Geniuses";
+            checkBox3.Text = "3º Paper Rex";
+            checkBox4.Text = "4º NRG";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "EDG ZmjjKK", "EG Demon1", "EG Boostio" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
+
+            //players[10].controls.play();
         }
         private void ExibirTodosComponentes(bool visivel)
         {
