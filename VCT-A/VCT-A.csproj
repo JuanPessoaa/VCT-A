@@ -93,7 +93,20 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\97e329a0-8f4ddde4.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Ascent.png" />
+    <Content Include="Resources\SS.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\teste.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\wallpaperchampions.png" />
+    <None Include="Resources\wallpapermasters.png" />
+    <None Include="Resources\wallpapertexto.png" />
+    <None Include="Resources\wallpaperdefault.jpg" />
     <None Include="Resources\OpTicGaming.png" />
     <None Include="Resources\OpTic Gaming1.png" />
     <None Include="Resources\Ascent1.png" />
@@ -113,6 +126,14 @@
     <None Include="Resources\wallpapervctbranco.png" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="WMPLib">
       <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
       <VersionMajor>1</VersionMajor>

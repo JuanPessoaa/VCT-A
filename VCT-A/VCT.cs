@@ -8,6 +8,8 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VCT_A.Properties;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
@@ -46,7 +48,7 @@ namespace VCT_A
 
         private void VCT_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,6 +81,7 @@ namespace VCT_A
                 checkBox4.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
+                this.BackgroundImage = Properties.Resources.wallpaperchampions;
                 ExibirTodosComponentes(false);
                 Silenciar();
             }
@@ -111,6 +114,7 @@ namespace VCT_A
                 checkBox4.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
+                this.BackgroundImage = Properties.Resources.wallpapermasters;
                 ExibirTodosComponentes(false);
                 Silenciar();
             }
@@ -784,6 +788,11 @@ namespace VCT_A
         private void pictureBox12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void VCT_Shown(object sender, EventArgs e)
+        {
+            
         }
     }
     }

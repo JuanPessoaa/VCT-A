@@ -20,7 +20,19 @@ namespace VCT_A
         {
             InitializeComponent();
             this.Size = new System.Drawing.Size(1920, 1080);
+            this.DoubleBuffered = true;
+           
+            // Define o caminho do GIF
+            string caminhoGif = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "SS.gif");
+
+            if (System.IO.File.Exists(caminhoGif))
+            {
+                // Carrega a imagem diretamente na memória
+                pictureBox1.Image = Image.FromFile(caminhoGif);
+            }
         }
+
+        
 
         private void SS_Load(object sender, EventArgs e)
         {
@@ -44,6 +56,11 @@ namespace VCT_A
         {
             timer1.Start();
             this.Close();
+        }
+
+        private void SS_Shown(object sender, EventArgs e)
+        {
+            
         }
     }
 }
