@@ -39,6 +39,10 @@ namespace VCT_A
             player.SoundLocation = @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\Super.wav";
             //player.Load();
             //player.Play();
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+
+            progressBar1.Parent = pictureBox1;
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
