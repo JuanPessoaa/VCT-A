@@ -29,6 +29,7 @@ namespace VCT_A
             InitializeComponent();
 
             this.Size = new System.Drawing.Size(1920, 1080);
+            this.DoubleBuffered = true;
 
             /*string[] caminhosMusicas = new string[]
             {
@@ -794,5 +795,7 @@ namespace VCT_A
         {
             
         }
+
+
     }
     }
