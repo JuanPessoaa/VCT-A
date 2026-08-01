@@ -36,7 +36,7 @@ namespace VCT_A
 
         private void SS_Load(object sender, EventArgs e)
         {
-            player.SoundLocation = @"C:\Users\Nathalia\source\repos\JuanPessoaa\VCT-A\VCT-A\Resources\Super.wav";
+            player.SoundLocation = @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\Super.wav";
             //player.Load();
             //player.Play();
             label1.Parent = pictureBox1;

@@ -346,6 +346,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.BackgroundImage = global::VCT_A.Properties.Resources.FNATIC1;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox9.Location = new System.Drawing.Point(817, 292);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
@@ -527,7 +528,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VCT_A.Properties.Resources.wallpaperdefault;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);

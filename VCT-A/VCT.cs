@@ -23,7 +23,7 @@ namespace VCT_A
 {
     public partial class VCT : Form
     {
-        //private WindowsMediaPlayer[] players = new WindowsMediaPlayer[16];
+        //private WindowsMediaPlayer[] players = new WindowsMediaPlayer[17];
         public VCT()
         {
             InitializeComponent();
@@ -43,6 +43,7 @@ namespace VCT_A
                 players[i].URL = caminhosMusicas[i];
                 players[i].controls.stop();
             }*/
+            //players[17].controls.play();
         }
 
 
@@ -70,17 +71,23 @@ namespace VCT_A
                 comboBox1.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox1.ForeColor = Color.Black;
                 comboBox2.BackColor = Color.FromArgb(197, 177, 116);
+                comboBox2.ForeColor = Color.White;
                 comboBox3.BackColor = Color.FromArgb(197, 177, 116);
-                pictureBox2.BackColor = Color.FromArgb(197, 177, 116);
-                pictureBox3.BackColor = Color.FromArgb(197, 177, 116);
-                pictureBox4.BackColor = Color.FromArgb(197, 177, 116);
-                pictureBox5.BackColor = Color.FromArgb(197, 177, 116);
+                comboBox3.ForeColor = Color.White;
+                pictureBox2.BackColor = Color.Black;
+                pictureBox3.BackColor = Color.Black;
+                pictureBox4.BackColor = Color.Black;
+                pictureBox5.BackColor = Color.Black;
                 pictureBox11.BackColor = Color.FromArgb(197, 177, 116);
                 pictureBox12.BackColor = Color.FromArgb(197, 177, 116);
-                checkBox1.BackColor = Color.FromArgb(197, 177, 116);
-                checkBox2.BackColor = Color.FromArgb(197, 177, 116);
-                checkBox3.BackColor = Color.FromArgb(197, 177, 116);
-                checkBox4.BackColor = Color.FromArgb(197, 177, 116);
+                checkBox1.BackColor = Color.Black;
+                checkBox2.BackColor = Color.Black;
+                checkBox3.BackColor = Color.Black;
+                checkBox4.BackColor = Color.Black;
+                checkBox1.ForeColor = Color.White;
+                checkBox2.ForeColor = Color.White;
+                checkBox3.ForeColor = Color.White;
+                checkBox4.ForeColor = Color.White;
                 listBox1.BackColor = Color.FromArgb(197, 177, 116);
                 listBox1.ForeColor = Color.Black;
                 groupBox1.ForeColor = Color.Black;
@@ -92,6 +99,13 @@ namespace VCT_A
                 radioButton6.ForeColor = Color.White;
                 radioButton7.ForeColor = Color.White;
                 radioButton8.ForeColor = Color.White;
+                label1.ForeColor = Color.Black;
+                label2.ForeColor = Color.Black;
+                label3.ForeColor = Color.Black;
+                label4.ForeColor = Color.Black;
+                label5.ForeColor = Color.Black;
+                this.Text = "Valorant Champions Tour | Champions";
+
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 this.BackgroundImage = Properties.Resources.wallpaperchampions;
@@ -115,17 +129,23 @@ namespace VCT_A
                 comboBox1.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox1.ForeColor = Color.White;
                 comboBox2.BackColor = Color.FromArgb(111, 74, 204);
+                comboBox2.ForeColor = Color.Black;
                 comboBox3.BackColor = Color.FromArgb(111, 74, 204);
-                pictureBox2.BackColor = Color.FromArgb(111, 74, 204);
-                pictureBox3.BackColor = Color.FromArgb(111, 74, 204);
-                pictureBox4.BackColor = Color.FromArgb(111, 74, 204);
-                pictureBox5.BackColor = Color.FromArgb(111, 74, 204);
+                comboBox2.ForeColor = Color.Black;
+                pictureBox2.BackColor = Color.White;
+                pictureBox3.BackColor = Color.White;
+                pictureBox4.BackColor = Color.White;
+                pictureBox5.BackColor = Color.White;
                 pictureBox11.BackColor = Color.FromArgb(111, 74, 204);
                 pictureBox12.BackColor = Color.FromArgb(111, 74, 204);
-                checkBox1.BackColor = Color.FromArgb(111, 74, 204);
-                checkBox2.BackColor = Color.FromArgb(111, 74, 204);
-                checkBox3.BackColor = Color.FromArgb(111, 74, 204);
-                checkBox4.BackColor = Color.FromArgb(111, 74, 204);
+                checkBox1.BackColor = Color.White;
+                checkBox2.BackColor = Color.White;
+                checkBox3.BackColor = Color.White;
+                checkBox4.BackColor = Color.White;
+                checkBox1.ForeColor = Color.Black;
+                checkBox2.ForeColor = Color.Black;
+                checkBox3.ForeColor = Color.Black;
+                checkBox4.ForeColor = Color.Black;
                 listBox1.BackColor = Color.FromArgb(111, 74, 204);
                 listBox1.ForeColor = Color.White;
                 comboBox1.Text = "";
@@ -138,6 +158,13 @@ namespace VCT_A
                 radioButton6.ForeColor = Color.Black;
                 radioButton7.ForeColor = Color.Black;
                 radioButton8.ForeColor = Color.Black;
+                label1.ForeColor = Color.White;
+                label2.ForeColor = Color.White;
+                label3.ForeColor = Color.White;
+                label4.ForeColor = Color.White;
+                label5.ForeColor = Color.White;
+                this.Text = "Valorant Champions Tour | Masters";
+                
                 comboBox1.Visible = true;
                 this.BackgroundImage = Properties.Resources.wallpapermasters;
                 ExibirTodosComponentes(false);
@@ -227,7 +254,7 @@ namespace VCT_A
                     break;
                 case "2025 - Paris":
                     ConfigurarParaCPar();
-                    break;/*
+                    break;
                 case "2021.1 - Reykjavík":
                     ConfigurarParaMRey1();
                     break;
@@ -263,12 +290,14 @@ namespace VCT_A
                     break;
                 case "2026.2 - London":
                     ConfigurarParaMLon();
-                    break;*/
+                    break;
             }
         }
         private void ConfigurarParaCBer()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Champions 2021 - Berlin";
+
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
             radioButton3.Text = "FNATIC";
@@ -294,6 +323,8 @@ namespace VCT_A
         private void ConfigurarParaCIns()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Champions 2022 - Instanbul";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -319,6 +350,8 @@ namespace VCT_A
         private void ConfigurarParaCLos()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Champions 2023 - Los Angeles";
+
             radioButton1.Text = "Bilibili Gaming";
             radioButton2.Text = "DRX";
             radioButton3.Text = "EDward Gaming";
@@ -344,6 +377,8 @@ namespace VCT_A
         private void ConfigurarParaCSeo()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Champions 2024 - Seoul";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "FNATIC";
@@ -369,6 +404,8 @@ namespace VCT_A
         private void ConfigurarParaCPar()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Champions 2025 - Paris";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "G2";
@@ -394,6 +431,9 @@ namespace VCT_A
         private void ConfigurarParaMRey1()
         {
             Limpar();
+            this.Text =
+            "Valorant Champions Tour | 2021.1 - Masters Reykjavík";
+
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "KRÜ";
             radioButton3.Text = "NUTURN";
@@ -401,7 +441,7 @@ namespace VCT_A
             radioButton5.Text = "Team Liquid";
             radioButton6.Text = "Team Vikings";
             radioButton7.Text = "Version1";
-            radioButton8.Text = "X10 Esports";
+            radioButton8.Text = "X10 CRIT";
 
             checkBox1.Text = "1º Sentinels";
             checkBox2.Text = "2º FNATIC";
@@ -419,6 +459,8 @@ namespace VCT_A
         private void ConfigurarParaMBer()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2021.2 - Berlin";
+
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "Acend";
             radioButton3.Text = "Gambit";
@@ -444,6 +486,8 @@ namespace VCT_A
         private void ConfigurarParaMRey2()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2022.1 - Reykjavík";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "G2";
             radioButton3.Text = "LOUD";
@@ -469,6 +513,8 @@ namespace VCT_A
         private void ConfigurarParaMCop()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2022.2 - Copenhagen";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -494,6 +540,8 @@ namespace VCT_A
         private void ConfigurarParaMSao()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo";
+
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "DRX";
             radioButton3.Text = "FNATIC";
@@ -519,6 +567,8 @@ namespace VCT_A
         private void ConfigurarParaMTok()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2023.1 - Tokyo";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "Evil Geniuses";
@@ -544,6 +594,8 @@ namespace VCT_A
         private void ConfigurarParaMMad()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2024.1 - Madrid";
+
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FunPlus Phoenix";
             radioButton3.Text = "Gen.G";
@@ -569,6 +621,8 @@ namespace VCT_A
         private void ConfigurarParaMSha()
         {
             Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2024.2 - Shangai";
+
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "FNATIC";
@@ -593,10 +647,12 @@ namespace VCT_A
         }
         private void ConfigurarParaMBan()
         {
-            Limpar();
+            Limpar(); 
+            this.Text = "Valorant Champions Tour | Masters 2025.1 - Bangkok";
+
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
-            radioButton3.Text = "G2 Esports";
+            radioButton3.Text = "G2";
             radioButton4.Text = "Sentinels";
             radioButton5.Text = "T1";
             radioButton6.Text = "Team Liquid";
@@ -614,7 +670,88 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
 
-            //players[12].controls.play();
+            //players[13].controls.play();
+        }
+        private void ConfigurarParaMTor()
+        {
+            Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2025.2 - Toronto";
+
+            radioButton1.Text = "FNATIC";
+            radioButton2.Text = "G2";
+            radioButton3.Text = "Gen.G";
+            radioButton4.Text = "Paper Rex";
+            radioButton5.Text = "Rex Regum Qeon";
+            radioButton6.Text = "Sentinels";
+            radioButton7.Text = "Wolves";
+            radioButton8.Text = "Xi Lai Gaming";
+
+            checkBox1.Text = "1º Paper Rex";
+            checkBox2.Text = "2º FNATIC";
+            checkBox3.Text = "3º Wolves";
+            checkBox4.Text = "4º G2";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "FNC Alfajer", "FNC kaajak", "PRX Jinggg" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Haven", "Icebox", "Lotus", "Pearl", "Split", "Sunset" });
+
+            //players[14].controls.play();
+        }
+        private void ConfigurarParaMSan()
+        {
+            Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2026.1 - Santiago";
+
+            radioButton1.Text = "All Gamers";
+            radioButton2.Text = "BBL";
+            radioButton3.Text = "FURIA";
+            radioButton4.Text = "G2";
+            radioButton5.Text = "Gentle Mates";
+            radioButton6.Text = "Nongshim RedForce";
+            radioButton7.Text = "NRG";
+            radioButton8.Text = "Paper Rex";
+
+            checkBox1.Text = "1º Nongshim RedForce";
+            checkBox2.Text = "2º Paper Rex";
+            checkBox3.Text = "3º NRG";
+            checkBox4.Text = "4º G2";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "PRX d4v41", "PRX Jinggg", "PRX f0rsakeN" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Abyss", "Bind", "Breeze", "Corrode", "Haven", "Pearl", "Split" });
+
+            //players[15].controls.play();
+        }
+        private void ConfigurarParaMLon()
+        {
+            Limpar();
+            this.Text = "Valorant Champions Tour | Masters 2026.2 - London";
+
+            radioButton1.Text = "EDward Gaming";
+            radioButton2.Text = "FUT";
+            radioButton3.Text = "G2";
+            radioButton4.Text = "Leviatán";
+            radioButton5.Text = "Paper Rex";
+            radioButton6.Text = "Team Heretics";
+            radioButton7.Text = "Team Vitality";
+            radioButton8.Text = "Xi Lai Gaming";
+
+            checkBox1.Text = "1º Leviatán";
+            checkBox2.Text = "2º Paper Rex";
+            checkBox3.Text = "3º EDward Gaming";
+            checkBox4.Text = "4º Team Vitality";
+
+            comboBox2.Items.Clear();
+            comboBox2.Items.AddRange(new object[] { "LEV spike", "LEV Neon", "LEV Sato" });
+
+            comboBox3.Items.Clear();
+            comboBox3.Items.AddRange(new object[] { "Ascent", "Breeze", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
+
+            //players[16].controls.play();
         }
 
 
@@ -699,13 +836,201 @@ namespace VCT_A
 
             if (rb != null && rb.Checked)
             {
-                if (rb.Text.Contains("LOUD"))
+                if (rb.Text.Contains("100 Thieves"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.LOUDA;
+                    pictureBox10.BackgroundImage = Properties.Resources._100Thieves;
+                }
+                else if (rb.Text.Contains("Acend"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Acend;
+                }
+                else if (rb.Text.Contains("All Gamers"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.AllGamers;
+                }
+                else if (rb.Text.Contains("BBL"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.BBL;
+                }
+                else if (rb.Text.Contains("Bilibili Gaming"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.BilibiliGaming;
+                }
+                else if (rb.Text.Contains("Cloud9"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Cloud9;
+                }
+                else if (rb.Text.Contains("DRX"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.DRX;
+                }
+                else if (rb.Text.Contains("EDward Gaming"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.EDwardGaming;
+                }
+                else if (rb.Text.Contains("Evil Geniuses"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.EvilGeniuses;
+                }
+                else if (rb.Text.Contains("FNATIC"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.FNATIC;
+                }
+                else if (rb.Text.Contains("FunPlus Phoenix"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenix;
+                }
+                else if (rb.Text.Contains("FURIA"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.FURIA;
+                }
+                else if (rb.Text.Contains("FUT"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.FUT;
+                }
+                else if (rb.Text.Contains("G2"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.G2;
+                }
+                else if (rb.Text.Contains("Gambit"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Gambit;
+                }
+                else if (rb.Text.Contains("Gen.G"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.GenG;
+                }
+                else if (rb.Text.Contains("Gentle Mates"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.GentleMates;
+                }
+                else if (rb.Text.Contains("GIANTX"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.GIANTX;
+                }
+                else if (rb.Text.Contains("Guild"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Guild;
+                }
+                else if (rb.Text.Contains("Karmine Corp"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.KarmineCorp;
+                }
+                else if (rb.Text.Contains("KRÜ"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.KRU;
+                }
+                else if (rb.Text.Contains("Leviatán"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Leviatan;
+                }
+                else if (rb.Text.Contains("LOUD"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.LOUD250;
+                }
+                else if (rb.Text.Contains("MIBR"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.MIBR;
+                }
+                else if (rb.Text.Contains("Natus Vicere"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.NatusVicere;
+                }
+                else if (rb.Text.Contains("Nongshim RedForce"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.NongshimRedForce;
+                }
+                else if (rb.Text.Contains("NRG"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.NRG;
+                }
+                else if (rb.Text.Contains("NUTURN"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.NUTURN;
                 }
                 else if (rb.Text.Contains("OpTic Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingA;
+                    pictureBox10.BackgroundImage = Properties.Resources.OpTicGaming250;
+                }
+                else if (rb.Text.Contains("Paper Rex"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.PaperRex;
+                }
+                else if (rb.Text.Contains("Rex Regum Qeon"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.RexRegumQeon;
+                }
+                else if (rb.Text.Contains("Sentinels"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Sentinels;
+                }
+                else if (rb.Text.Contains("T1"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.T1;
+                }
+                else if (rb.Text.Contains("TALON"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TALON;
+                }
+                else if (rb.Text.Contains("Team Envy"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamEnvy;
+                }
+                else if (rb.Text.Contains("Team Heretics"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamHeretics;
+                }
+                else if (rb.Text.Contains("Team Liquid"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamLiquid;
+                }
+                else if (rb.Text.Contains("Team Secret"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamSecret;
+                }
+                else if (rb.Text.Contains("Team Vikings"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamVikings;
+                }
+                else if (rb.Text.Contains("Team Vitality"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamVitality;
+                }
+                else if (rb.Text.Contains("The Guard"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.TheGuard;
+                }
+                else if (rb.Text.Contains("Trace"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Trace;
+                }
+                else if (rb.Text.Contains("Version1"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Version1;
+                }
+                else if (rb.Text.Contains("Vision Strikers"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.VisionStrikers;
+                }
+                else if (rb.Text.Contains("Wolves"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.Wolves;
+                }
+                else if (rb.Text.Contains("X10 CRIT"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.X10CRIT;
+                }
+                else if (rb.Text.Contains("Xi Lai Gaming"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.XiLaiGaming;
+                }
+                else if (rb.Text.Contains("XSET"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.XSET;
+                }
+                else if (rb.Text.Contains("ZETA DIVISION"))
+                {
+                    pictureBox10.BackgroundImage = Properties.Resources.ZETADIVISION;
                 }
             }
         }

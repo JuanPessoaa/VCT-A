@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,14 +70,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="VCT.resx">
       <DependentUpon>VCT.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,13 +93,89 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\XiLaiGaming.png" />
+    <None Include="Resources\Wolves.png" />
+    <None Include="Resources\ZETADIVISION.png" />
+    <None Include="Resources\XSET.png" />
+    <None Include="Resources\X10CRIT.png" />
+    <None Include="Resources\VisionStrikers.png" />
+    <None Include="Resources\Version1.png" />
+    <None Include="Resources\Trace.png" />
+    <None Include="Resources\TheGuard.png" />
+    <None Include="Resources\100Thieves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Resources\97e329a0-8f4ddde4.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Acend.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\AllGamers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Resources\Ascent.png" />
+    <None Include="Resources\EvilGeniuses.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\FNATIC.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\FunPlusPhoenix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\FUT.png" />
+    <None Include="Resources\G2.png" />
+    <None Include="Resources\GenG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\BilibiliGaming.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Cloud9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\DRX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\EDwardGaming.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Gambit.png" />
+    <None Include="Resources\GIANTX.png" />
+    <None Include="Resources\Guild.png" />
+    <None Include="Resources\KarmineCorp.png" />
+    <None Include="Resources\KRU.png" />
+    <None Include="Resources\Leviatan.png" />
+    <None Include="Resources\MIBR.png" />
+    <None Include="Resources\NatusVicere.png" />
+    <None Include="Resources\NRG.png" />
+    <None Include="Resources\NUTURN.png" />
+    <None Include="Resources\OpTicGaming250.png" />
+    <None Include="Resources\PaperRex.png" />
+    <None Include="Resources\Sentinels.png" />
+    <None Include="Resources\LOUD250.png" />
+    <None Include="Resources\BBL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\FURIA.png" />
+    <None Include="Resources\GentleMates.png" />
+    <None Include="Resources\NongshimRedForce.png" />
+    <None Include="Resources\RexRegumQeon.png" />
+    <None Include="Resources\GenG1.png" />
+    <None Include="Resources\FNATIC1.png" />
+    <Content Include="Resources\Gen.G.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\T1.png" />
+    <None Include="Resources\TeamHeretics.png" />
+    <None Include="Resources\TeamLiquid.png" />
+    <None Include="Resources\TALON.png" />
+    <None Include="Resources\TeamEnvy.png" />
+    <None Include="Resources\TeamSecret.png" />
+    <None Include="Resources\TeamVikings.png" />
+    <None Include="Resources\TeamVitality.png" />
     <Content Include="Resources\teste.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
