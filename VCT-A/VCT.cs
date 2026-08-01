@@ -1034,12 +1034,251 @@ namespace VCT_A
                 }
             }
         }
-
+        
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox2.SelectedItem != null)
             {
                 string Players = comboBox2.SelectedItem.ToString();
+
+                switch (Players)
+                {
+                    case "DRX Flashback":
+                        pictureBox11.BackgroundImage = Properties.Resources.DRXFlashbackCPar;
+                        break;
+
+                    case "DRX HYUNMIN":
+                        pictureBox11.BackgroundImage = Properties.Resources.DRXHYUNMINCPar;
+                        break;
+
+                    case "EDG ZmjjKK":
+                        if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.EDGZmjjKKCSeo;
+                        }
+                        else {
+                            pictureBox11.BackgroundImage = Properties.Resources.EDGZmjjKKMTok;
+                        }
+                        break;
+
+                    case "EG Boostio":
+                        pictureBox11.BackgroundImage = Properties.Resources.EGBoostioMTok;
+                        break;
+
+                    case "EG Demon1":
+                        if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.EGDemon1CLos;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.EGDemon1MTok;
+                        }
+                        break;
+
+                    case "FNC Alfajer":
+                        pictureBox11.BackgroundImage = Properties.Resources.FNCAlfajerMTor;
+                        break;
+
+                    case "FNC Derke":
+                        pictureBox11.BackgroundImage = Properties.Resources.FNCDerkeMRey1;
+                        break;
+
+                    case "FNC Doma":
+                        pictureBox11.BackgroundImage = Properties.Resources.FNCDomaMRey1;
+                        break;
+
+                    case "FNC kaajak":
+                        if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.FNCkaajakCPar;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.FNCkaajakMTor;
+                        }
+                        break;
+
+                    case "FNC Magnum":
+                        pictureBox11.BackgroundImage = Properties.Resources.FNCMagnumMRey1;
+                        break;
+
+                    case "FPX ardiis":
+                        pictureBox11.BackgroundImage = Properties.Resources.FPXardiisMCop;
+                        break;
+
+                    case "FPX Shao":
+                        pictureBox11.BackgroundImage = Properties.Resources.FPXShaoMCop;
+                        break;
+
+                    case "FPX Zyppan":
+                        pictureBox11.BackgroundImage = Properties.Resources.FPXZyppanMCop;
+                        break;
+
+                    case "G2 keloqz":
+                        pictureBox11.BackgroundImage = Properties.Resources.G2keloqzMBer;
+                        break;
+
+                    case "GMB Chronicle":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "GMB d3ffo":
+                        pictureBox11.BackgroundImage = Properties.Resources.GMBd3ffoCBer;
+                        break;
+
+                    case "GMB nAts":
+                        pictureBox11.BackgroundImage = Properties.Resources.GMBnAtsMBer;
+                        break;
+
+                    case "KRÜ Keznit":
+                        pictureBox11.BackgroundImage = Properties.Resources.KRUKeznitCBer;
+                        break;
+
+                    case "LEV Neon":
+                        pictureBox11.BackgroundImage = Properties.Resources.LEVNeonMLon;
+                        break;
+
+                    case "LEV Sato":
+                        pictureBox11.BackgroundImage = Properties.Resources.LEVSatoMLon;
+                        break;
+
+                    case "LEV spike":
+                        pictureBox11.BackgroundImage = Properties.Resources.LEVspikeMLon;
+                        break;
+
+                    case "LOUD aspas":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "LOUD cauanzin":
+                        pictureBox11.BackgroundImage = Properties.Resources.LOUDcauanzinMSao;
+                        break;
+
+                    case "LOUD Less":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "OPTC crashies":
+                        pictureBox11.BackgroundImage = Properties.Resources.OPTCcrashiesCIns;
+                        break;
+
+                    case "OPTC Marved":
+                        pictureBox11.BackgroundImage = Properties.Resources.OPTCMarvedMRey2;
+                        break;
+
+                    case "OPTC Victor":
+                        pictureBox11.BackgroundImage = Properties.Resources.OPTCVictorCIns;
+                        break;
+
+                    case "OPTC yay":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "PRX d4v41":
+                        pictureBox11.BackgroundImage = Properties.Resources.PRXd4v41MSan;
+                        break;
+
+                    case "PRX f0rsakeN":
+                        pictureBox11.BackgroundImage = Properties.Resources.PRXf0rsakeNMSan;
+                        break;
+
+                    case "PRX Jinggg":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "SEN johnqt":
+                        pictureBox11.BackgroundImage = Properties.Resources.SENjohnqtMMad;
+                        break;
+
+                    case "SEN TenZ":
+                        pictureBox11.BackgroundImage = Properties.Resources.SENTenZMMad;
+                        break;
+
+                    case "SEN zekken":
+                        pictureBox11.BackgroundImage = Properties.Resources.SENzekkenMMad;
+                        break;
+
+                    case "TH benjyfishy":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "TH MiniBoo":
+                        pictureBox11.BackgroundImage = Properties.Resources.THMiniBooCSeo;
+                        break;
+
+                    case "TH RieNs":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                        break;
+
+                    case "TH Wo0t":
+                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                        }
+                        else if ()
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        } 
+                        else 
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                        }
+                            break;
+
+                    case "ZETA SugarZ3ro":
+                        pictureBox11.BackgroundImage = Properties.Resources.ZETASugarZ3roMRey2;
+                        break;
+                }
             }
         }
 
@@ -1132,7 +1371,7 @@ namespace VCT_A
                         break;
 
                     case "1º Sentinels":
-                        pictureBox2.BackgroundImage = Properties.Resources.Sentinels;
+                        pictureBox2.BackgroundImage = Properties.Resources.Sentinels1;
                         break;
 
                     case "1º Gambit":
@@ -1318,7 +1557,7 @@ namespace VCT_A
                         break;
 
                     case "4º Sentinels":
-                        pictureBox5.BackgroundImage = Properties.Resources.Sentinels;
+                        pictureBox5.BackgroundImage = Properties.Resources.Sentinels1;
                         break;
 
                     case "4º Paper Rex":
