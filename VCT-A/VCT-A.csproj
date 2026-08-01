@@ -114,6 +114,7 @@
     <None Include="Resources\AllGamers.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\Abyss.png" />
     <Content Include="Resources\Ascent.png" />
     <None Include="Resources\EvilGeniuses.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -164,7 +165,16 @@
     <None Include="Resources\RexRegumQeon.png" />
     <None Include="Resources\GenG1.png" />
     <None Include="Resources\FNATIC1.png" />
+    <None Include="Resources\Bind.png" />
+    <None Include="Resources\Corrode.png" />
+    <None Include="Resources\Fracture.png" />
     <Content Include="Resources\Gen.G.png" />
+    <None Include="Resources\Sentinels1.png" />
+    <None Include="Resources\Haven.png" />
+    <None Include="Resources\Icebox.png" />
+    <None Include="Resources\Lotus.png" />
+    <None Include="Resources\Pearl.png" />
+    <None Include="Resources\Split.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -176,6 +186,7 @@
     <None Include="Resources\TeamSecret.png" />
     <None Include="Resources\TeamVikings.png" />
     <None Include="Resources\TeamVitality.png" />
+    <None Include="Resources\Sunset.png" />
     <Content Include="Resources\teste.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

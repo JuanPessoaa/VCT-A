@@ -50,7 +50,7 @@ namespace VCT_A
 
         private void VCT_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace VCT_A
                 radioButton1.ForeColor = Color.Black;
                 radioButton2.ForeColor = Color.Black;
                 radioButton3.ForeColor = Color.Black;
-                radioButton4.ForeColor = Color.Black;    ;
+                radioButton4.ForeColor = Color.Black; ;
                 radioButton5.ForeColor = Color.Black;
                 radioButton6.ForeColor = Color.Black;
                 radioButton7.ForeColor = Color.Black;
@@ -164,7 +164,7 @@ namespace VCT_A
                 label4.ForeColor = Color.White;
                 label5.ForeColor = Color.White;
                 this.Text = "Valorant Champions Tour | Masters";
-                
+
                 comboBox1.Visible = true;
                 this.BackgroundImage = Properties.Resources.wallpapermasters;
                 ExibirTodosComponentes(false);
@@ -232,19 +232,19 @@ namespace VCT_A
             if (comboBox1.SelectedItem == null) return;
 
             string Campeonato = comboBox1.SelectedItem.ToString();
-            
+
             ExibirTodosComponentes(true);
 
             switch (Campeonato)
             {
                 case "2021 - Berlin":
-            
+
                     ConfigurarParaCBer();
-                    
+
                     break;
                 case "2022 - Instanbul":
                     ConfigurarParaCIns();
-                    
+
                     break;
                 case "2023 - Los Angeles":
                     ConfigurarParaCLos();
@@ -313,8 +313,8 @@ namespace VCT_A
             checkBox4.Text = "4º Team Liquid";
 
             comboBox2.Items.Clear();
-            comboBox2.Items.AddRange(new object[] {"GMB Chronicle", "GMB d3ffo", "KRÜ Keznit"});
-           
+            comboBox2.Items.AddRange(new object[] { "GMB Chronicle", "GMB d3ffo", "KRÜ Keznit" });
+
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
 
@@ -547,14 +547,14 @@ namespace VCT_A
             radioButton3.Text = "FNATIC";
             radioButton4.Text = "Leviatán";
             radioButton5.Text = "LOUD";
-            radioButton6.Text = "Natus Vicere";
+            radioButton6.Text = "Natus Vincere";
             radioButton7.Text = "NRG";
             radioButton8.Text = "TALON";
 
             checkBox1.Text = "1º FNATIC";
             checkBox2.Text = "2º LOUD";
             checkBox3.Text = "3º DRX";
-            checkBox4.Text = "4º Natus Vicere";
+            checkBox4.Text = "4º Natus Vincere";
 
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "LOUD Less", "LOUD aspas", "LOUD cauanzin" });
@@ -647,7 +647,7 @@ namespace VCT_A
         }
         private void ConfigurarParaMBan()
         {
-            Limpar(); 
+            Limpar();
             this.Text = "Valorant Champions Tour | Masters 2025.1 - Bangkok";
 
             radioButton1.Text = "DRX";
@@ -661,7 +661,7 @@ namespace VCT_A
 
             checkBox1.Text = "1º T1";
             checkBox2.Text = "2º G2";
-            checkBox3.Text = "3º Edward Gaming";
+            checkBox3.Text = "3º EDward Gaming";
             checkBox4.Text = "4º Team Vitality";
 
             comboBox2.Items.Clear();
@@ -827,7 +827,7 @@ namespace VCT_A
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
@@ -932,7 +932,7 @@ namespace VCT_A
                 {
                     pictureBox10.BackgroundImage = Properties.Resources.MIBR;
                 }
-                else if (rb.Text.Contains("Natus Vicere"))
+                else if (rb.Text.Contains("Natus Vincere"))
                 {
                     pictureBox10.BackgroundImage = Properties.Resources.NatusVicere;
                 }
@@ -962,7 +962,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Sentinels"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Sentinels;
+                    pictureBox10.BackgroundImage = Properties.Resources.Sentinels1;
                 }
                 else if (rb.Text.Contains("T1"))
                 {
@@ -1051,37 +1051,53 @@ namespace VCT_A
 
                 switch (Mapas)
                 {
+                    case "Abyss":
+                        pictureBox12.BackgroundImage = Properties.Resources.Abyss;
+                        break;
+
                     case "Ascent":
                         pictureBox12.BackgroundImage = Properties.Resources.Ascent;
                         break;
 
-                    /*case "Bind":
-                        pictureBox1.Image = Properties.Resources.bind;
-                        break;*/
+                    case "Bind":
+                        pictureBox12.BackgroundImage = Properties.Resources.Bind;
+                        break;
 
                     case "Breeze":
                         pictureBox12.BackgroundImage = Properties.Resources.Breeze;
                         break;
 
-                    /*case "Fracture":
-                        pictureBox1.Image = Properties.Resources.fracture;
+                    case "Corrode":
+                        pictureBox12.BackgroundImage = Properties.Resources.Corrode;
+                        break;
+
+                    case "Fracture":
+                        pictureBox12.BackgroundImage = Properties.Resources.Fracture;
                         break;
 
                     case "Haven":
-                        pictureBox1.Image = Properties.Resources.haven;
+                        pictureBox12.BackgroundImage = Properties.Resources.Haven;
                         break;
 
                     case "Icebox":
-                        pictureBox1.Image = Properties.Resources.icebox;
+                        pictureBox12.BackgroundImage = Properties.Resources.Icebox;
+                        break;
+
+                    case "Lotus":
+                        pictureBox12.BackgroundImage = Properties.Resources.Lotus;
                         break;
 
                     case "Pearl":
-                        pictureBox1.Image = Properties.Resources.pearl;
+                        pictureBox12.BackgroundImage = Properties.Resources.Pearl;
                         break;
 
-                    default:
-                        pictureBox1.Image = null;
-                        break;*/
+                    case "Split":
+                        pictureBox12.BackgroundImage = Properties.Resources.Split;
+                        break;
+
+                    case "Sunset":
+                        pictureBox12.BackgroundImage = Properties.Resources.Sunset;
+                        break;
                 }
             }
         }
@@ -1095,16 +1111,64 @@ namespace VCT_A
 
                 switch (Podio)
                 {
-                    case "1º LOUD":
-                        pictureBox2.BackgroundImage = Properties.Resources.LOUDA;
+                    case "1º Acend":
+                        pictureBox2.BackgroundImage = Properties.Resources.Acend;
                         break;
 
-                    /*case "Bind":
-                        pictureBox1.Image = Properties.Resources.bind;
-                        break;*/
+                    case "1º LOUD":
+                        pictureBox2.BackgroundImage = Properties.Resources.LOUD250;
+                        break;
+
+                    case "1º Evil Geniuses":
+                        pictureBox2.BackgroundImage = Properties.Resources.EvilGeniuses;
+                        break;
+
+                    case "1º EDward Gaming":
+                        pictureBox2.BackgroundImage = Properties.Resources.EDwardGaming;
+                        break;
+
+                    case "1º NRG":
+                        pictureBox2.BackgroundImage = Properties.Resources.NRG;
+                        break;
+
+                    case "1º Sentinels":
+                        pictureBox2.BackgroundImage = Properties.Resources.Sentinels;
+                        break;
+
+                    case "1º Gambit":
+                        pictureBox2.BackgroundImage = Properties.Resources.Gambit;
+                        break;
 
                     case "1º OpTic Gaming":
-                        pictureBox2.BackgroundImage = Properties.Resources.OpTicGamingA;
+                        pictureBox2.BackgroundImage = Properties.Resources.OpTicGaming250;
+                        break;
+
+                    case "1º FunPlus Phoenix":
+                        pictureBox2.BackgroundImage = Properties.Resources.FunPlusPhoenix;
+                        break;
+
+                    case "1º FNATIC":
+                        pictureBox2.BackgroundImage = Properties.Resources.FNATIC;
+                        break;
+
+                    case "1º Gen.G":
+                        pictureBox2.BackgroundImage = Properties.Resources.GenG;
+                        break;
+
+                    case "1º T1":
+                        pictureBox2.BackgroundImage = Properties.Resources.T1;
+                        break;
+
+                    case "1º Paper Rex":
+                        pictureBox2.BackgroundImage = Properties.Resources.PaperRex;
+                        break;
+
+                    case "1º Nongshim RedForce":
+                        pictureBox2.BackgroundImage = Properties.Resources.NongshimRedForce;
+                        break;
+
+                    case "1º Leviatán":
+                        pictureBox2.BackgroundImage = Properties.Resources.Leviatan;
                         break;
                 }
             }
@@ -1112,22 +1176,184 @@ namespace VCT_A
             {
                 pictureBox2.BackgroundImage = null;
             }
-        
+
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox2.Checked)
+            {
+                string Podio = checkBox2.Text;
 
+                switch (Podio)
+                {
+                    case "2º Gambit":
+                        pictureBox3.BackgroundImage = Properties.Resources.Gambit;
+                        break;
+
+                    case "2º OpTic Gaming":
+                        pictureBox3.BackgroundImage = Properties.Resources.OpTicGaming250;
+                        break;
+
+                    case "2º Paper Rex":
+                        pictureBox3.BackgroundImage = Properties.Resources.PaperRex;
+                        break;
+
+                    case "2º Team Heretics":
+                        pictureBox3.BackgroundImage = Properties.Resources.TeamHeretics;
+                        break;
+
+                    case "2º FNATIC":
+                        pictureBox3.BackgroundImage = Properties.Resources.FNATIC;
+                        break;
+
+                    case "2º Team Envy":
+                        pictureBox3.BackgroundImage = Properties.Resources.TeamEnvy;
+                        break;
+
+                    case "2º LOUD":
+                        pictureBox3.BackgroundImage = Properties.Resources.LOUD250;
+                        break;
+
+                    case "2º Evil Geniuses":
+                        pictureBox3.BackgroundImage = Properties.Resources.EvilGeniuses;
+                        break;
+
+                    case "2º Gen.g":
+                        pictureBox3.BackgroundImage = Properties.Resources.GenG;
+                        break;
+
+                    case "2º G2":
+                        pictureBox3.BackgroundImage = Properties.Resources.G2;
+                        break;
+                }
+            }
+            else
+            {
+                pictureBox3.BackgroundImage = null;
+            }
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox3.Checked)
+            {
+                string Podio = checkBox3.Text;
 
+                switch (Podio)
+                {
+                    case "3º KRÜ":
+                        pictureBox4.BackgroundImage = Properties.Resources.KRU;
+                        break;
+
+                    case "3º DRX":
+                        pictureBox4.BackgroundImage = Properties.Resources.DRX;
+                        break;
+
+                    case "3º LOUD":
+                        pictureBox4.BackgroundImage = Properties.Resources.LOUD250;
+                        break;
+
+                    case "3º Leviatán":
+                        pictureBox4.BackgroundImage = Properties.Resources.Leviatan;
+                        break;
+
+                    case "3º NUTURN":
+                        pictureBox4.BackgroundImage = Properties.Resources.NUTURN;
+                        break;
+
+                    case "3º 100 Thieves":
+                        pictureBox4.BackgroundImage = Properties.Resources._100Thieves;
+                        break;
+
+                    case "3º ZETA DIVISION":
+                        pictureBox4.BackgroundImage = Properties.Resources.ZETADIVISION;
+                        break;
+
+                    case "3º OpTic Gaming":
+                        pictureBox4.BackgroundImage = Properties.Resources.OpTicGaming250;
+                        break;
+
+                    case "3º Paper Rex":
+                        pictureBox4.BackgroundImage = Properties.Resources.PaperRex;
+                        break;
+
+                    case "3º G2":
+                        pictureBox4.BackgroundImage = Properties.Resources.G2;
+                        break;
+
+                    case "3º Wolves":
+                        pictureBox4.BackgroundImage = Properties.Resources.Wolves;
+                        break;
+
+                    case "3º NRG":
+                        pictureBox4.BackgroundImage = Properties.Resources.NRG;
+                        break;
+                }
+            }
+            else
+            {
+                pictureBox4.BackgroundImage = null;
+            }
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox4.Checked)
+            {
+                string Podio = checkBox4.Text;
 
+                switch (Podio)
+                {
+                    case "4º Team Liquid":
+                        pictureBox5.BackgroundImage = Properties.Resources.TeamLiquid;
+                        break;
+
+                    case "4º FunPlus Phoenix":
+                        pictureBox5.BackgroundImage = Properties.Resources.FunPlusPhoenix;
+                        break;
+
+                    case "4º FNATIC":
+                        pictureBox5.BackgroundImage = Properties.Resources.FNATIC;
+                        break;
+
+                    case "4º Sentinels":
+                        pictureBox5.BackgroundImage = Properties.Resources.Sentinels;
+                        break;
+
+                    case "4º Paper Rex":
+                        pictureBox5.BackgroundImage = Properties.Resources.PaperRex;
+                        break;
+
+                    case "4º G2":
+                        pictureBox5.BackgroundImage = Properties.Resources.G2;
+                        break;
+
+                    case "4º Natus Vincere":
+                        pictureBox5.BackgroundImage = Properties.Resources.NatusVicere;
+                        break;
+
+                    case "4º NRG":
+                        pictureBox5.BackgroundImage = Properties.Resources.NRG;
+                        break;
+
+                    case "4º LOUD":
+                        pictureBox5.BackgroundImage = Properties.Resources.LOUD250;
+                        break;
+
+                    case "4º 100 Thieves":
+                        pictureBox5.BackgroundImage = Properties.Resources._100Thieves;
+                        break;
+
+                    case "4º Team Vitality":
+                        pictureBox5.BackgroundImage = Properties.Resources.TeamVitality;
+                        break;
+                }
+            }
+            else
+            {
+                pictureBox5.BackgroundImage = null;
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -1142,9 +1368,9 @@ namespace VCT_A
 
         private void VCT_Shown(object sender, EventArgs e)
         {
-            
+
         }
 
 
     }
-    }
+}
