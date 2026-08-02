@@ -34,13 +34,29 @@ namespace VCT_A
             /*string[] caminhosMusicas = new string[]
             {
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CBer.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3"
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CLos.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CSeo.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CPar.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MRey1.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MBer.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MRey2.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MCop.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSao.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MTok.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MMad.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSha.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MBan.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MTor.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSan.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MLon.mp3"
             };
 
             for (int i = 0; i < players.Length; i++)
             {
                 players[i] = new WindowsMediaPlayer();
                 players[i].URL = caminhosMusicas[i];
+                players[i].settings.setMode("loop", true);
                 players[i].controls.stop();
             }*/
             //players[17].controls.play();
@@ -298,6 +314,10 @@ namespace VCT_A
             Limpar();
             this.Text = "Valorant Champions Tour | Champions 2021 - Berlin";
 
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoCBer;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaCBer;
+
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
             radioButton3.Text = "FNATIC";
@@ -320,10 +340,14 @@ namespace VCT_A
 
             //players[0].controls.play();
         }
+
         private void ConfigurarParaCIns()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Champions 2022 - Instanbul";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoCIns;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaCIns;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
@@ -347,10 +371,14 @@ namespace VCT_A
 
             //players[1].controls.play();
         }
+
         private void ConfigurarParaCLos()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Champions 2023 - Los Angeles";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoCLos;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaCLos;
 
             radioButton1.Text = "Bilibili Gaming";
             radioButton2.Text = "DRX";
@@ -374,10 +402,14 @@ namespace VCT_A
 
             //players[2].controls.play();
         }
+
         private void ConfigurarParaCSeo()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Champions 2024 - Seoul";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoCSeo;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaCSeo;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
@@ -401,10 +433,14 @@ namespace VCT_A
 
             //players[3].controls.play();
         }
+
         private void ConfigurarParaCPar()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Champions 2025 - Paris";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoCPar;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaCPar;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
@@ -428,11 +464,14 @@ namespace VCT_A
 
             //players[4].controls.play();
         }
+
         private void ConfigurarParaMRey1()
         {
             Limpar();
-            this.Text =
-            "Valorant Champions Tour | 2021.1 - Masters Reykjavík";
+            this.Text = "Valorant Champions Tour | 2021.1 - Masters Reykjavík";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey1;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMRey1;
 
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "KRÜ";
@@ -456,10 +495,14 @@ namespace VCT_A
 
             //players[5].controls.play();
         }
+
         private void ConfigurarParaMBer()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2021.2 - Berlin";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMBer;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMBer;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMBer;
 
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "Acend";
@@ -483,10 +526,14 @@ namespace VCT_A
 
             //players[6].controls.play();
         }
+
         private void ConfigurarParaMRey2()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2022.1 - Reykjavík";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey2;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMRey2;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "G2";
@@ -510,10 +557,14 @@ namespace VCT_A
 
             //players[7].controls.play();
         }
+
         private void ConfigurarParaMCop()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2022.2 - Copenhagen";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMCop;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMCop;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMCop;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
@@ -537,10 +588,14 @@ namespace VCT_A
 
             //players[8].controls.play();
         }
+
         private void ConfigurarParaMSao()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMSao;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMSao;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMSao;
 
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "DRX";
@@ -564,10 +619,14 @@ namespace VCT_A
 
             //players[9].controls.play();
         }
+
         private void ConfigurarParaMTok()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2023.1 - Tokyo";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMTok;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMTok;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMTok;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
@@ -591,10 +650,14 @@ namespace VCT_A
 
             //players[10].controls.play();
         }
+
         private void ConfigurarParaMMad()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2024.1 - Madrid";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMMad;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMMad;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMMad;
 
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FunPlus Phoenix";
@@ -618,10 +681,14 @@ namespace VCT_A
 
             //players[11].controls.play();
         }
+
         private void ConfigurarParaMSha()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2024.2 - Shangai";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMSha;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMSha;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMSha;
 
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "EDward Gaming";
@@ -645,10 +712,14 @@ namespace VCT_A
 
             //players[12].controls.play();
         }
+
         private void ConfigurarParaMBan()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2025.1 - Bangkok";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMBan;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMBan;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMBan;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
@@ -672,10 +743,14 @@ namespace VCT_A
 
             //players[13].controls.play();
         }
+
         private void ConfigurarParaMTor()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2025.2 - Toronto";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMTor;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMTor;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMTor;
 
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "G2";
@@ -699,10 +774,14 @@ namespace VCT_A
 
             //players[14].controls.play();
         }
+
         private void ConfigurarParaMSan()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2026.1 - Santiago";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMSan;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMSan;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMSan;
 
             radioButton1.Text = "All Gamers";
             radioButton2.Text = "BBL";
@@ -726,10 +805,14 @@ namespace VCT_A
 
             //players[15].controls.play();
         }
+
         private void ConfigurarParaMLon()
         {
             Limpar();
             this.Text = "Valorant Champions Tour | Masters 2026.2 - London";
+            pictureBox8.BackgroundImage = Properties.Resources.TrophyMLon;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMLon;
+            //pictureBox67.BackgroundImage = Properties.Resources.CapaMLon;
 
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FUT";
@@ -1034,7 +1117,7 @@ namespace VCT_A
                 }
             }
         }
-        
+
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox2.SelectedItem != null)
@@ -1056,7 +1139,8 @@ namespace VCT_A
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.EDGZmjjKKCSeo;
                         }
-                        else {
+                        else
+                        {
                             pictureBox11.BackgroundImage = Properties.Resources.EDGZmjjKKMTok;
                         }
                         break;
@@ -1155,13 +1239,13 @@ namespace VCT_A
                         break;
 
                     case "LOUD aspas":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.LOUDaspasCLos;
                         }
                         else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.LOUDaspasMSao;
                         }
                         break;
 
@@ -1170,13 +1254,13 @@ namespace VCT_A
                         break;
 
                     case "LOUD Less":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.LOUDLessCLos;
                         }
                         else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.LOUDLessMSao;
                         }
                         break;
 
@@ -1193,13 +1277,13 @@ namespace VCT_A
                         break;
 
                     case "OPTC yay":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.OPTCyayCIns;
                         }
                         else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.OPTCyayMRey2;
                         }
                         break;
 
@@ -1212,13 +1296,13 @@ namespace VCT_A
                         break;
 
                     case "PRX Jinggg":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.PRXJingggMTor;
                         }
                         else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.PRXJingggMSan;
                         }
                         break;
 
@@ -1235,13 +1319,13 @@ namespace VCT_A
                         break;
 
                     case "TH benjyfishy":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.THbenjyfishyMSha;
                         }
                         else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.THbenjyfishyMBan;
                         }
                         break;
 
@@ -1250,30 +1334,31 @@ namespace VCT_A
                         break;
 
                     case "TH RieNs":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.THRieNsCSeo;
+                        }
+                        else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
+                        {
+                            pictureBox11.BackgroundImage = Properties.Resources.THRieNsMSha;
                         }
                         else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.THRieNsMBan;
                         }
                         break;
 
                     case "TH Wo0t":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.THWo0tMSha;
                         }
-                        else if ()
+                        else
                         {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
-                        } 
-                        else 
-                        {
-                            pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
+                            pictureBox11.BackgroundImage = Properties.Resources.THWo0tMBan;
                         }
-                            break;
+
+                        break;
 
                     case "ZETA SugarZ3ro":
                         pictureBox11.BackgroundImage = Properties.Resources.ZETASugarZ3roMRey2;
