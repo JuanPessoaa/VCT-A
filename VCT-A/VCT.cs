@@ -49,7 +49,8 @@ namespace VCT_A
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MBan.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MTor.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSan.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MLon.mp3"
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MLon.mp3",
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\FEARKESS.mp3"
             };
 
             for (int i = 0; i < players.Length; i++)

@@ -113,7 +113,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::VCT_A.Properties.Resources.vctlogopreta;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(870, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(900, 72);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 120);
@@ -347,7 +347,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox9.Location = new System.Drawing.Point(817, 292);
+            this.pictureBox9.Location = new System.Drawing.Point(835, 292);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(250, 250);
@@ -359,7 +359,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox10.Location = new System.Drawing.Point(430, 296);
+            this.pictureBox10.Location = new System.Drawing.Point(447, 296);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(250, 250);
