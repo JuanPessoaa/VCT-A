@@ -13,7 +13,8 @@ using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
-//using WMPLib;
+using WMPLib;
+using System.Runtime.ConstrainedExecution;
 /*Nome: Windows Media Player
 Caminho: C:\Windows\system32\wmp.dll
 Versão: 1.0
@@ -23,7 +24,7 @@ namespace VCT_A
 {
     public partial class VCT : Form
     {
-        //private WindowsMediaPlayer[] players = new WindowsMediaPlayer[17];
+        private WindowsMediaPlayer[] players = new WindowsMediaPlayer[17];
         public VCT()
         {
             InitializeComponent();
@@ -31,9 +32,9 @@ namespace VCT_A
             this.Size = new System.Drawing.Size(1920, 1080);
             this.DoubleBuffered = true;
 
-            /*string[] caminhosMusicas = new string[]
+            string[] caminhosMusicas = new string[]
             {
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CBer.mp3",
+                @"C:\Users\Aluno\Source\Repos\VCT - A\VCT - A\Resources\CBer.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CLos.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CSeo.mp3",
@@ -59,7 +60,7 @@ namespace VCT_A
                 players[i].URL = caminhosMusicas[i];
                 players[i].settings.setMode("loop", true);
                 players[i].controls.stop();
-            }*/
+            }
             //players[17].controls.play();
         }
 
@@ -339,7 +340,7 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
 
-            //players[0].controls.play();
+            players[0].controls.play();
         }
 
         private void ConfigurarParaCIns()
