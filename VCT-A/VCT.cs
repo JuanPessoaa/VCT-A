@@ -34,7 +34,7 @@ namespace VCT_A
 
             string[] caminhosMusicas = new string[]
             {
-                @"C:\Users\Aluno\Source\Repos\VCT - A\VCT - A\Resources\CBer.mp3",
+                /*System.IO.Path.Combine(basePath, "Resources", "CBer.mp3"),
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CLos.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CSeo.mp3",
@@ -51,15 +51,15 @@ namespace VCT_A
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MTor.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSan.mp3",
                 @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MLon.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\FEARKESS.mp3"
+                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\FEARKESS.mp3"*/
             };
 
             for (int i = 0; i < players.Length; i++)
             {
-                players[i] = new WindowsMediaPlayer();
+                players[i] = new WMPLib.WindowsMediaPlayer();
+                players[i].settings.autoStart = false; // Garante que não vai tocar ao carregar
                 players[i].URL = caminhosMusicas[i];
                 players[i].settings.setMode("loop", true);
-                players[i].controls.stop();
             }
             //players[17].controls.play();
         }
@@ -126,7 +126,7 @@ namespace VCT_A
 
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
-                this.BackgroundImage = Properties.Resources.wallpaperchampions;
+                this.BackgroundImage = Properties.Resources.WallpaperChampionsB;
                 ExibirTodosComponentes(false);
                 Silenciar();
             }
@@ -184,7 +184,7 @@ namespace VCT_A
                 this.Text = "Valorant Champions Tour | Masters";
 
                 comboBox1.Visible = true;
-                this.BackgroundImage = Properties.Resources.wallpapermasters;
+                this.BackgroundImage = Properties.Resources.WallpaperMastersB;
                 ExibirTodosComponentes(false);
                 Silenciar();
             }
@@ -318,7 +318,7 @@ namespace VCT_A
 
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCBer;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaCBer;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaCBer;
 
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
@@ -349,7 +349,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Champions 2022 - Instanbul";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCIns;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaCIns;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaCIns;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
@@ -371,7 +371,7 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
 
-            //players[1].controls.play();
+            players[1].controls.play();
         }
 
         private void ConfigurarParaCLos()
@@ -380,7 +380,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Champions 2023 - Los Angeles";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCLos;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaCLos;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaCLos;
 
             radioButton1.Text = "Bilibili Gaming";
             radioButton2.Text = "DRX";
@@ -411,7 +411,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Champions 2024 - Seoul";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCSeo;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaCSeo;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaCSeo;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
@@ -442,7 +442,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Champions 2025 - Paris";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCPar;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaCPar;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaCPar;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
@@ -473,7 +473,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | 2021.1 - Masters Reykjavík";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey1;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMRey1;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMRey1;
 
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "KRÜ";
@@ -504,7 +504,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2021.2 - Berlin";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBer;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBer;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMBer;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMBer;
 
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "Acend";
@@ -535,7 +535,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2022.1 - Reykjavík";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey2;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMRey2;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMRey2;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "G2";
@@ -566,7 +566,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2022.2 - Copenhagen";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMCop;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMCop;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMCop;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMCop;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
@@ -597,7 +597,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSao;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSao;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMSao;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMSao;
 
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "DRX";
@@ -628,7 +628,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2023.1 - Tokyo";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTok;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTok;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMTok;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMTok;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
@@ -659,7 +659,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2024.1 - Madrid";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMMad;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMMad;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMMad;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMMad;
 
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FunPlus Phoenix";
@@ -690,7 +690,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2024.2 - Shangai";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSha;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSha;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMSha;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMSha;
 
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "EDward Gaming";
@@ -721,7 +721,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2025.1 - Bangkok";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBan;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMBan;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMBan;
 
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
@@ -752,7 +752,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2025.2 - Toronto";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTor;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTor;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMTor;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMTor;
 
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "G2";
@@ -783,7 +783,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2026.1 - Santiago";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSan;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMSan;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMSan;
 
             radioButton1.Text = "All Gamers";
             radioButton2.Text = "BBL";
@@ -814,7 +814,7 @@ namespace VCT_A
             this.Text = "Valorant Champions Tour | Masters 2026.2 - London";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMLon;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMLon;
-            //pictureBox67.BackgroundImage = Properties.Resources.CapaMLon;
+            pictureBox6.BackgroundImage = Properties.Resources.CapaMLon;
 
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FUT";

@@ -93,6 +93,8 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\WallpaperMastersB.png" />
+    <None Include="Resources\WallpaperChampionsB.png" />
     <None Include="Resources\TrophyMCop.png" />
     <None Include="Resources\TrophyMRey1.png" />
     <None Include="Resources\TrophyMTor.png" />
