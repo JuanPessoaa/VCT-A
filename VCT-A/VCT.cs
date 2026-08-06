@@ -15,6 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 using WMPLib;
 using System.Runtime.ConstrainedExecution;
+using NAudio.Wave;
 /*Nome: Windows Media Player
 Caminho: C:\Windows\system32\wmp.dll
 Versão: 1.0
@@ -24,7 +25,11 @@ namespace VCT_A
 {
     public partial class VCT : Form
     {
-        private WindowsMediaPlayer[] players = new WindowsMediaPlayer[17];
+        // Instâncias independentes para cada áudio (permite tocar juntos se desejar)
+        private AudioPlayerItem playerCBer = new AudioPlayerItem();
+        //ivate AudioPlayerItem playerCIns = new AudioPlayerItem();
+        //ivate AudioPlayerItem playerCLos = new AudioPlayerItem();
+
         public VCT()
         {
             InitializeComponent();
@@ -32,36 +37,8 @@ namespace VCT_A
             this.Size = new System.Drawing.Size(1920, 1080);
             this.DoubleBuffered = true;
 
-            string[] caminhosMusicas = new string[]
-            {
-                /*System.IO.Path.Combine(basePath, "Resources", "CBer.mp3"),
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CIns.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CLos.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CSeo.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\CPar.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MRey1.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MBer.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MRey2.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MCop.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSao.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MTok.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MMad.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSha.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MBan.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MTor.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MSan.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\MLon.mp3",
-                @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\FEARKESS.mp3"*/
-            };
 
-            for (int i = 0; i < players.Length; i++)
-            {
-                players[i] = new WMPLib.WindowsMediaPlayer();
-                players[i].settings.autoStart = false; // Garante que não vai tocar ao carregar
-                players[i].URL = caminhosMusicas[i];
-                players[i].settings.setMode("loop", true);
-            }
-            //players[17].controls.play();
+            
         }
 
 
@@ -340,7 +317,7 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
 
-            players[0].controls.play();
+            playerCBer.PlayFromResource(Properties.Resources.MusicCber);
         }
 
         private void ConfigurarParaCIns()
@@ -371,7 +348,7 @@ namespace VCT_A
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
 
-            players[1].controls.play();
+            //ayers[1].controls.play();
         }
 
         private void ConfigurarParaCLos()

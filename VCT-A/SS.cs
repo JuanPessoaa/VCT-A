@@ -37,8 +37,8 @@ namespace VCT_A
         private void SS_Load(object sender, EventArgs e)
         {
             player.SoundLocation = @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\Super.wav";
-            //player.Load();
-            //player.Play();
+            player.Load();
+            player.Play();
             label1.Parent = pictureBox1;
             label1.BackColor = Color.Transparent;
 
@@ -65,6 +65,11 @@ namespace VCT_A
         private void SS_Shown(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -323,6 +323,16 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CBer {
+            get {
+                object obj = ResourceManager.GetObject("CBer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cloud9 {
             get {
                 object obj = ResourceManager.GetObject("Cloud9", resourceCulture);
@@ -1057,6 +1067,16 @@ namespace VCT_A.Properties {
             get {
                 object obj = ResourceManager.GetObject("MIBR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] MusicCber {
+            get {
+                object obj = ResourceManager.GetObject("MusicCber", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
