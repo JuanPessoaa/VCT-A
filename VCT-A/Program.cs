@@ -16,7 +16,7 @@ namespace VCT_A
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SS());
+            //Application.Run(new SS());
             Application.Run(new VCT());
         }
     }

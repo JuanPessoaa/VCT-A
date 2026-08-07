@@ -15,7 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 using WMPLib;
 using System.Runtime.ConstrainedExecution;
-using NAudio.Wave;
+using System.IO;
 /*Nome: Windows Media Player
 Caminho: C:\Windows\system32\wmp.dll
 Versão: 1.0
@@ -25,27 +25,32 @@ namespace VCT_A
 {
     public partial class VCT : Form
     {
-        // Instâncias independentes para cada áudio (permite tocar juntos se desejar)
-        private AudioPlayerItem playerCBer = new AudioPlayerItem();
-        //ivate AudioPlayerItem playerCIns = new AudioPlayerItem();
-        //ivate AudioPlayerItem playerCLos = new AudioPlayerItem();
-
+        private WindowsMediaPlayer player = new WindowsMediaPlayer();
         public VCT()
         {
             InitializeComponent();
+            player.settings.setMode("loop", true);
 
             this.Size = new System.Drawing.Size(1920, 1080);
             this.DoubleBuffered = true;
-
-
-            
         }
-
-
-
         private void VCT_Load(object sender, EventArgs e)
         {
+            Tocar("MusicFEARLESS.mp3");
+        }
 
+        private void Tocar(string arquivo)
+        {
+            player.controls.stop();
+
+            // Use System.IO.Path e System.Windows.Forms.Application
+            string caminho = System.IO.Path.Combine(
+                System.Windows.Forms.Application.StartupPath,
+                "Audio", // Ou "Audio", dependendo do nome da sua pasta
+                arquivo);
+
+            player.URL = caminho;
+            player.controls.play();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,6 +63,7 @@ namespace VCT_A
 
             if (selecao == "Champions")
             {
+                player.controls.stop();
                 comboBox1.Items.Add("2021 - Berlin");
                 comboBox1.Items.Add("2022 - Instanbul");
                 comboBox1.Items.Add("2023 - Los Angeles");
@@ -103,12 +109,12 @@ namespace VCT_A
 
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
-                this.BackgroundImage = Properties.Resources.WallpaperChampionsB;
+                this.BackgroundImage = Properties.Resources.WallpaperChampionsD;
                 ExibirTodosComponentes(false);
-                Silenciar();
             }
             else if (selecao == "Masters")
             {
+                player.controls.stop();
                 comboBox1.Items.Add("2021.1 - Reykjavík");
                 comboBox1.Items.Add("2021.2 - Berlin");
                 comboBox1.Items.Add("2022.1 - Reykjavík");
@@ -148,7 +154,7 @@ namespace VCT_A
                 radioButton1.ForeColor = Color.Black;
                 radioButton2.ForeColor = Color.Black;
                 radioButton3.ForeColor = Color.Black;
-                radioButton4.ForeColor = Color.Black; ;
+                radioButton4.ForeColor = Color.Black; 
                 radioButton5.ForeColor = Color.Black;
                 radioButton6.ForeColor = Color.Black;
                 radioButton7.ForeColor = Color.Black;
@@ -161,66 +167,11 @@ namespace VCT_A
                 this.Text = "Valorant Champions Tour | Masters";
 
                 comboBox1.Visible = true;
-                this.BackgroundImage = Properties.Resources.WallpaperMastersB;
+                this.BackgroundImage = Properties.Resources.WallpaperMastersD;
                 ExibirTodosComponentes(false);
-                Silenciar();
             }
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -291,12 +242,11 @@ namespace VCT_A
         private void ConfigurarParaCBer()
         {
             Limpar();
+            Tocar("MusicCBer.mp3");
             this.Text = "Valorant Champions Tour | Champions 2021 - Berlin";
-
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCBer;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCBer;
-
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
             radioButton3.Text = "FNATIC";
@@ -305,29 +255,24 @@ namespace VCT_A
             radioButton6.Text = "Team Liquid";
             radioButton7.Text = "Team Secret";
             radioButton8.Text = "X10 CRIT";
-
             checkBox1.Text = "1º Acend";
             checkBox2.Text = "2º Gambit";
             checkBox3.Text = "3º KRÜ";
             checkBox4.Text = "4º Team Liquid";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "GMB Chronicle", "GMB d3ffo", "KRÜ Keznit" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
-
-            playerCBer.PlayFromResource(Properties.Resources.MusicCber);
         }
 
         private void ConfigurarParaCIns()
         {
             Limpar();
+            Tocar("MusicCIns.mp3");
             this.Text = "Valorant Champions Tour | Champions 2022 - Instanbul";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCIns;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCIns;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -336,29 +281,24 @@ namespace VCT_A
             radioButton6.Text = "OpTic Gaming";
             radioButton7.Text = "Team Liquid";
             radioButton8.Text = "XSET";
-
             checkBox1.Text = "1º LOUD";
             checkBox2.Text = "2º OpTic Gaming";
             checkBox3.Text = "3º DRX";
             checkBox4.Text = "4º FunPlus Phoenix";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "OPTC yay", "OPTC Victor", "OPTC crashies" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
-
-            //ayers[1].controls.play();
         }
 
         private void ConfigurarParaCLos()
         {
             Limpar();
+            Tocar("MusicCLos.mp3");
             this.Text = "Valorant Champions Tour | Champions 2023 - Los Angeles";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCLos;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCLos;
-
             radioButton1.Text = "Bilibili Gaming";
             radioButton2.Text = "DRX";
             radioButton3.Text = "EDward Gaming";
@@ -367,29 +307,24 @@ namespace VCT_A
             radioButton6.Text = "FUT";
             radioButton7.Text = "LOUD";
             radioButton8.Text = "Paper Rex";
-
             checkBox1.Text = "1º Evil Geniuses";
             checkBox2.Text = "2º Paper Rex";
             checkBox3.Text = "3º LOUD";
             checkBox4.Text = "4º FNATIC";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "LOUD aspas", "EG Demon1", "LOUD Less" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
-
-            //players[2].controls.play();
         }
 
         private void ConfigurarParaCSeo()
         {
             Limpar();
+            Tocar("MusicCSeo.mp3");
             this.Text = "Valorant Champions Tour | Champions 2024 - Seoul";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCSeo;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCSeo;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "FNATIC";
@@ -398,29 +333,24 @@ namespace VCT_A
             radioButton6.Text = "Sentinels";
             radioButton7.Text = "Team Heretics";
             radioButton8.Text = "Trace";
-
             checkBox1.Text = "1º EDward Gaming";
             checkBox2.Text = "2º Team Heretics";
             checkBox3.Text = "3º Leviatán";
             checkBox4.Text = "4º Sentinels";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "TH RieNs", "TH MiniBoo", "EDG ZmjjKK" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Abyss", "Ascent", "Bind", "Haven", "Icebox", "Lotus", "Sunset" });
-
-            //players[3].controls.play();
         }
 
         private void ConfigurarParaCPar()
         {
             Limpar();
+            Tocar("MusicCPar.mp3");
             this.Text = "Valorant Champions Tour | Champions 2025 - Paris";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCPar;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCPar;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "G2";
@@ -429,29 +359,24 @@ namespace VCT_A
             radioButton6.Text = "NRG";
             radioButton7.Text = "Paper Rex";
             radioButton8.Text = "Team Heretics";
-
             checkBox1.Text = "1º NRG";
             checkBox2.Text = "2º FNATIC";
             checkBox3.Text = "3º DRX";
             checkBox4.Text = "4º Paper Rex";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "DRX Flashback", "FNC kaajak", "DRX HYUNMIN" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Abyss", "Ascent", "Bind", "Corrode", "Haven", "Lotus", "Sunset" });
-
-            //players[4].controls.play();
         }
 
         private void ConfigurarParaMRey1()
         {
             Limpar();
+            Tocar("MusicMRey1.mp3");
             this.Text = "Valorant Champions Tour | 2021.1 - Masters Reykjavík";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey1;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMRey1;
-
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "KRÜ";
             radioButton3.Text = "NUTURN";
@@ -460,29 +385,24 @@ namespace VCT_A
             radioButton6.Text = "Team Vikings";
             radioButton7.Text = "Version1";
             radioButton8.Text = "X10 CRIT";
-
             checkBox1.Text = "1º Sentinels";
             checkBox2.Text = "2º FNATIC";
             checkBox3.Text = "3º NUTURN";
             checkBox4.Text = "4º Team Liquid";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "FNC Derke", "FNC Magnum", "FNC Doma" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Haven", "Icebox", "Split" });
-
-            //players[5].controls.play();
         }
 
         private void ConfigurarParaMBer()
         {
             Limpar();
+            Tocar("MusicMBer.mp3");
             this.Text = "Valorant Champions Tour | Masters 2021.2 - Berlin";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBer;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBer;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMBer;
-
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "Acend";
             radioButton3.Text = "Gambit";
@@ -491,29 +411,24 @@ namespace VCT_A
             radioButton6.Text = "Sentinels";
             radioButton7.Text = "Team Envy";
             radioButton8.Text = "Vision Strikers";
-
             checkBox1.Text = "1º Gambit";
             checkBox2.Text = "2º Team Envy";
             checkBox3.Text = "3º 100 Thieves";
             checkBox4.Text = "4º G2";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "GMB nAts", "G2 keloqz", "GMB Chronicle" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Haven", "Icebox", "Split" });
-
-            //players[6].controls.play();
         }
 
         private void ConfigurarParaMRey2()
         {
             Limpar();
+            Tocar("MusicMRey2.mp3");
             this.Text = "Valorant Champions Tour | Masters 2022.1 - Reykjavík";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey2;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMRey2;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "G2";
             radioButton3.Text = "LOUD";
@@ -522,29 +437,24 @@ namespace VCT_A
             radioButton6.Text = "Team Liquid";
             radioButton7.Text = "The Guard";
             radioButton8.Text = "ZETA DIVISION";
-
             checkBox1.Text = "1º OpTic Gaming";
             checkBox2.Text = "2º LOUD";
             checkBox3.Text = "3º ZETA DIVISION";
             checkBox4.Text = "4º Paper Rex";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "OPTC yay", "OPTC Marved", "ZETA SugarZ3ro" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
-
-            //players[7].controls.play();
         }
 
         private void ConfigurarParaMCop()
         {
             Limpar();
+            Tocar("MusicMCop.mp3");
             this.Text = "Valorant Champions Tour | Masters 2022.2 - Copenhagen";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMCop;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMCop;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMCop;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -553,29 +463,24 @@ namespace VCT_A
             radioButton6.Text = "OpTic Gaming";
             radioButton7.Text = "Paper Rex";
             radioButton8.Text = "XSET";
-
             checkBox1.Text = "1º FunPlus Phoenix";
             checkBox2.Text = "2º Paper Rex";
             checkBox3.Text = "3º OpTic Gaming";
             checkBox4.Text = "4º FNATIC";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "FPX ardiis", "FPX Shao", "FPX Zyppan" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
-
-            //players[8].controls.play();
         }
 
         private void ConfigurarParaMSao()
         {
             Limpar();
+            Tocar("MusicMSao.mp3");
             this.Text = "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSao;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSao;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMSao;
-
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "DRX";
             radioButton3.Text = "FNATIC";
@@ -584,29 +489,24 @@ namespace VCT_A
             radioButton6.Text = "Natus Vincere";
             radioButton7.Text = "NRG";
             radioButton8.Text = "TALON";
-
             checkBox1.Text = "1º FNATIC";
             checkBox2.Text = "2º LOUD";
             checkBox3.Text = "3º DRX";
             checkBox4.Text = "4º Natus Vincere";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "LOUD Less", "LOUD aspas", "LOUD cauanzin" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Fracture", "Haven", "Icebox", "Lotus", "Pearl", "Split" });
-
-            //players[9].controls.play();
         }
 
         private void ConfigurarParaMTok()
         {
             Limpar();
+            Tocar("MusicMTok.mp3");
             this.Text = "Valorant Champions Tour | Masters 2023.1 - Tokyo";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTok;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTok;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMTok;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "Evil Geniuses";
@@ -615,29 +515,24 @@ namespace VCT_A
             radioButton6.Text = "NRG";
             radioButton7.Text = "Paper Rex";
             radioButton8.Text = "Team Liquid";
-
             checkBox1.Text = "1º FNATIC";
             checkBox2.Text = "2º Evil Geniuses";
             checkBox3.Text = "3º Paper Rex";
             checkBox4.Text = "4º NRG";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "EDG ZmjjKK", "EG Demon1", "EG Boostio" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
-
-            //players[10].controls.play();
         }
 
         private void ConfigurarParaMMad()
         {
             Limpar();
+            Tocar("MusicMMad.mp3");
             this.Text = "Valorant Champions Tour | Masters 2024.1 - Madrid";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMMad;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMMad;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMMad;
-
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FunPlus Phoenix";
             radioButton3.Text = "Gen.G";
@@ -646,29 +541,24 @@ namespace VCT_A
             radioButton6.Text = "Paper Rex";
             radioButton7.Text = "Sentinels";
             radioButton8.Text = "Team Heretics";
-
             checkBox1.Text = "1º Sentinels";
             checkBox2.Text = "2º Gen.g";
             checkBox3.Text = "3º Paper Rex";
             checkBox4.Text = "4º LOUD";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "SEN zekken", "SEN TenZ", "SEN johnqt" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
-
-            //players[11].controls.play();
         }
 
         private void ConfigurarParaMSha()
         {
             Limpar();
+            Tocar("MusicMSha.mp3");
             this.Text = "Valorant Champions Tour | Masters 2024.2 - Shangai";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSha;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSha;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMSha;
-
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "FNATIC";
@@ -677,29 +567,24 @@ namespace VCT_A
             radioButton6.Text = "G2";
             radioButton7.Text = "Paper Rex";
             radioButton8.Text = "Team Heretics";
-
             checkBox1.Text = "1º Gen.G";
             checkBox2.Text = "2º Team Heretics";
             checkBox3.Text = "3º G2";
             checkBox4.Text = "4º 100 Thieves";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "TH Wo0t", "TH RieNs", "TH benjyfishy" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
-
-            //players[12].controls.play();
         }
 
         private void ConfigurarParaMBan()
         {
             Limpar();
+            Tocar("MusicMBan.mp3");
             this.Text = "Valorant Champions Tour | Masters 2025.1 - Bangkok";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBan;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMBan;
-
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "G2";
@@ -708,29 +593,24 @@ namespace VCT_A
             radioButton6.Text = "Team Liquid";
             radioButton7.Text = "Team Vitality";
             radioButton8.Text = "Trace";
-
             checkBox1.Text = "1º T1";
             checkBox2.Text = "2º G2";
             checkBox3.Text = "3º EDward Gaming";
             checkBox4.Text = "4º Team Vitality";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "TH Wo0t", "TH RieNs", "TH benjyfishy" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
-
-            //players[13].controls.play();
         }
 
         private void ConfigurarParaMTor()
         {
             Limpar();
+            Tocar("MusicMTor.mp3");
             this.Text = "Valorant Champions Tour | Masters 2025.2 - Toronto";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTor;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTor;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMTor;
-
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "G2";
             radioButton3.Text = "Gen.G";
@@ -739,29 +619,24 @@ namespace VCT_A
             radioButton6.Text = "Sentinels";
             radioButton7.Text = "Wolves";
             radioButton8.Text = "Xi Lai Gaming";
-
             checkBox1.Text = "1º Paper Rex";
             checkBox2.Text = "2º FNATIC";
             checkBox3.Text = "3º Wolves";
             checkBox4.Text = "4º G2";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "FNC Alfajer", "FNC kaajak", "PRX Jinggg" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Haven", "Icebox", "Lotus", "Pearl", "Split", "Sunset" });
-
-            //players[14].controls.play();
         }
 
         private void ConfigurarParaMSan()
         {
             Limpar();
+            Tocar("MusicMSan.mp3");
             this.Text = "Valorant Champions Tour | Masters 2026.1 - Santiago";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSan;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMSan;
-
             radioButton1.Text = "All Gamers";
             radioButton2.Text = "BBL";
             radioButton3.Text = "FURIA";
@@ -770,29 +645,24 @@ namespace VCT_A
             radioButton6.Text = "Nongshim RedForce";
             radioButton7.Text = "NRG";
             radioButton8.Text = "Paper Rex";
-
             checkBox1.Text = "1º Nongshim RedForce";
             checkBox2.Text = "2º Paper Rex";
             checkBox3.Text = "3º NRG";
             checkBox4.Text = "4º G2";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "PRX d4v41", "PRX Jinggg", "PRX f0rsakeN" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Abyss", "Bind", "Breeze", "Corrode", "Haven", "Pearl", "Split" });
-
-            //players[15].controls.play();
         }
 
         private void ConfigurarParaMLon()
         {
             Limpar();
+            Tocar("MusicMLon.mp3");
             this.Text = "Valorant Champions Tour | Masters 2026.2 - London";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMLon;
-            pictureBox9.BackgroundImage = Properties.Resources.LogoMLon;
+            pictureBox9.BackgroundImage = Properties.Resources.LogoMLon1;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMLon;
-
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FUT";
             radioButton3.Text = "G2";
@@ -801,30 +671,34 @@ namespace VCT_A
             radioButton6.Text = "Team Heretics";
             radioButton7.Text = "Team Vitality";
             radioButton8.Text = "Xi Lai Gaming";
-
             checkBox1.Text = "1º Leviatán";
             checkBox2.Text = "2º Paper Rex";
             checkBox3.Text = "3º EDward Gaming";
             checkBox4.Text = "4º Team Vitality";
-
             comboBox2.Items.Clear();
             comboBox2.Items.AddRange(new object[] { "LEV spike", "LEV Neon", "LEV Sato" });
-
             comboBox3.Items.Clear();
             comboBox3.Items.AddRange(new object[] { "Ascent", "Breeze", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
-
-            //players[16].controls.play();
         }
 
 
 
         private void ExibirTodosComponentes(bool visivel)
         {
+            label1.Visible = visivel;
+            label2.Visible = visivel;
+            label3.Visible = visivel;
+            label4.Visible = visivel;
+            label5.Visible = visivel;
             groupBox1.Visible = visivel;
-
-            comboBox2.Visible = visivel;
-            comboBox3.Visible = visivel;
-
+            radioButton1.Visible = visivel;
+            radioButton2.Visible = visivel;
+            radioButton3.Visible = visivel;
+            radioButton4.Visible = visivel;
+            radioButton5.Visible = visivel;
+            radioButton6.Visible = visivel;
+            radioButton7.Visible = visivel;
+            radioButton8.Visible = visivel;
             pictureBox2.Visible = visivel;
             pictureBox3.Visible = visivel;
             pictureBox4.Visible = visivel;
@@ -835,29 +709,21 @@ namespace VCT_A
             pictureBox10.Visible = visivel;
             pictureBox11.Visible = visivel;
             pictureBox12.Visible = visivel;
-
-            radioButton1.Visible = visivel;
-            radioButton2.Visible = visivel;
-            radioButton3.Visible = visivel;
-            radioButton4.Visible = visivel;
-            radioButton5.Visible = visivel;
-            radioButton6.Visible = visivel;
-            radioButton7.Visible = visivel;
-            radioButton8.Visible = visivel;
-
             checkBox1.Visible = visivel;
             checkBox2.Visible = visivel;
             checkBox3.Visible = visivel;
             checkBox4.Visible = visivel;
-
-            label1.Visible = visivel;
-            label2.Visible = visivel;
-            label3.Visible = visivel;
-            label4.Visible = visivel;
-            label5.Visible = visivel;
+            comboBox2.Visible = visivel;
+            comboBox3.Visible = visivel;
         }
         private void Limpar()
         {
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            comboBox2.SelectedIndex = -1;
+            comboBox3.SelectedIndex = -1;
             pictureBox2.BackgroundImage = null;
             pictureBox3.BackgroundImage = null;
             pictureBox4.BackgroundImage = null;
@@ -868,28 +734,6 @@ namespace VCT_A
             pictureBox10.BackgroundImage = null;
             pictureBox11.BackgroundImage = null;
             pictureBox12.BackgroundImage = null;
-            comboBox2.SelectedIndex = -1;
-            comboBox3.SelectedIndex = -1;
-            checkBox1.Checked = false;
-            checkBox2.Checked = false;
-            checkBox3.Checked = false;
-            checkBox4.Checked = false;
-            Silenciar();
-        }
-
-        private void Silenciar()
-        {
-            /*foreach (var player in players)
-            {
-                player.controls.stop();
-            }*/
-        }
-
-
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
@@ -1674,6 +1518,64 @@ namespace VCT_A
 
         }
 
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

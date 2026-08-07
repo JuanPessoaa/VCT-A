@@ -92,14 +92,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioPlayerItem.cs" />
-    <Compile Include="AudioPlayerItem.Designer.cs">
-      <DependentUpon>AudioPlayerItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoopStream.cs" />
-    <Compile Include="LoopStream.Designer.cs">
-      <DependentUpon>LoopStream.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,12 +111,6 @@
     <Compile Include="VCT.Designer.cs">
       <DependentUpon>VCT.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AudioPlayerItem.resx">
-      <DependentUpon>AudioPlayerItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoopStream.resx">
-      <DependentUpon>LoopStream.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SS.resx">
       <DependentUpon>SS.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +140,10 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\WallpaperChampionsD.png" />
+    <None Include="Resources\WallpaperMastersD.png" />
+    <None Include="Resources\WallpaperChampionsC.png" />
+    <None Include="Resources\WallpaperMastersC.png" />
     <None Include="Resources\WallpaperMastersB.png" />
     <None Include="Resources\WallpaperChampionsB.png" />
     <None Include="Resources\TrophyMCop.png" />
@@ -191,6 +181,60 @@
     <None Include="Resources\100Thieves.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="Audio\MusicCBer.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicCIns.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicCLos.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicCPar.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicCSeo.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicFEARLESS.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMBan.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMBer.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMCop.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMLon.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMMad.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMRey1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMRey2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMSan.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMSao.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMSha.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMTok.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\MusicMTor.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\97e329a0-8f4ddde4.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -288,20 +332,7 @@
     <None Include="Resources\CapaMSha.png" />
     <None Include="Resources\CapaMTok.png" />
     <None Include="Resources\CapaMTor.png" />
-    <EmbeddedResource Include="Resources\CBer.mp3" />
     <None Include="Resources\CBer.bmp" />
-    <Content Include="Resources\CLos.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\CPar.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\CSeo.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\FEARLESS.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />
@@ -350,43 +381,7 @@
     <None Include="Resources\LogoMSha.png" />
     <None Include="Resources\LogoMTok.png" />
     <None Include="Resources\LogoMTor.png" />
-    <Content Include="Resources\MBan.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MBer.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MCop.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MLon.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MMad.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MRey1.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MRey2.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MSan.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MSao.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MSha.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MTok.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\MTor.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\MusicCber.mp3" />
+    <None Include="Resources\LogoMLon1.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -411,9 +406,6 @@
     <None Include="Resources\Ascent1.png" />
     <Content Include="Resources\Breeze.png" />
     <None Include="Resources\Breeze1.png" />
-    <Content Include="Resources\CIns.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Resources\LOUD.png" />
     <None Include="Resources\LOUD1.png" />
     <Content Include="Resources\LOUDA.png" />

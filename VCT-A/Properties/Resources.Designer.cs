@@ -903,6 +903,16 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoMLon1 {
+            get {
+                object obj = ResourceManager.GetObject("LogoMLon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoMMad {
             get {
                 object obj = ResourceManager.GetObject("LogoMMad", resourceCulture);
@@ -1067,16 +1077,6 @@ namespace VCT_A.Properties {
             get {
                 object obj = ResourceManager.GetObject("MIBR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Byte[].
-        /// </summary>
-        internal static byte[] MusicCber {
-            get {
-                object obj = ResourceManager.GetObject("MusicCber", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         
@@ -1723,6 +1723,26 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap WallpaperChampionsC {
+            get {
+                object obj = ResourceManager.GetObject("WallpaperChampionsC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WallpaperChampionsD {
+            get {
+                object obj = ResourceManager.GetObject("WallpaperChampionsD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallpaperdefault {
             get {
                 object obj = ResourceManager.GetObject("wallpaperdefault", resourceCulture);
@@ -1746,6 +1766,26 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap WallpaperMastersB {
             get {
                 object obj = ResourceManager.GetObject("WallpaperMastersB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WallpaperMastersC {
+            get {
+                object obj = ResourceManager.GetObject("WallpaperMastersC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WallpaperMastersD {
+            get {
+                object obj = ResourceManager.GetObject("WallpaperMastersD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
