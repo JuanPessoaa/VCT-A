@@ -30,15 +30,16 @@ namespace VCT_A
                 // Carrega a imagem diretamente na memória
                 pictureBox1.Image = Image.FromFile(caminhoGif);
             }
+            player.SoundLocation = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Super.wav");
         }
-
-        
 
         private void SS_Load(object sender, EventArgs e)
         {
-            player.SoundLocation = @"C:\Users\Aluno\Source\Repos\JuanPessoaa\VCT-A\VCT-A\Resources\Super.wav";
-            player.Load();
-            player.Play();
+            // O Play será executado automaticamente ASSIM QUE o áudio terminar de carregar
+            player.LoadCompleted += (s, args) => player.Play();
+            player.LoadAsync();
+
+            // Configurações dos componentes de tela
             label1.Parent = pictureBox1;
             label1.BackColor = Color.Transparent;
 

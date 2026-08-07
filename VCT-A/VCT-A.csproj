@@ -333,6 +333,12 @@
     <None Include="Resources\CapaMTok.png" />
     <None Include="Resources\CapaMTor.png" />
     <None Include="Resources\CBer.bmp" />
+    <Content Include="Resources\AudioComboBox.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioListBox.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />
@@ -413,7 +419,9 @@
     <Content Include="Resources\OpTic Gaming.png" />
     <Content Include="Resources\OpTicGamingA.png" />
     <None Include="Resources\OpTicGamingA1.png" />
-    <Content Include="Resources\Super.wav" />
+    <Content Include="Resources\Super.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\vctlogopreta.png" />
     <None Include="Resources\wallpapervctbranco.png" />
   </ItemGroup>

@@ -385,9 +385,6 @@
   <data name="Wolves" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wolves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WallpaperMastersC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WallpaperMastersC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="XSET" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\XSET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -577,9 +574,6 @@
   <data name="KarmineCorp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KarmineCorp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wallpapermasters" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpapermasters.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LEVNeonMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LEVNeonMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -603,9 +597,6 @@
   </data>
   <data name="LogoCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WallpaperMastersB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WallpaperMastersB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TrophyMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

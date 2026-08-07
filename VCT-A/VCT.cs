@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Reflection.Emit;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VCT_A.Properties;
+using WMPLib;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
-using WMPLib;
-using System.Runtime.ConstrainedExecution;
-using System.IO;
 /*Nome: Windows Media Player
 Caminho: C:\Windows\system32\wmp.dll
 Versão: 1.0
@@ -26,9 +27,11 @@ namespace VCT_A
     public partial class VCT : Form
     {
         private WindowsMediaPlayer player = new WindowsMediaPlayer();
+        SoundPlayer playerwav = new SoundPlayer();
         public VCT()
         {
             InitializeComponent();
+
             player.settings.setMode("loop", true);
 
             this.Size = new System.Drawing.Size(1920, 1080);
@@ -44,13 +47,29 @@ namespace VCT_A
             player.controls.stop();
 
             // Use System.IO.Path e System.Windows.Forms.Application
-            string caminho = System.IO.Path.Combine(
-                System.Windows.Forms.Application.StartupPath,
-                "Audio", // Ou "Audio", dependendo do nome da sua pasta
-                arquivo);
-
+            string caminho = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath,"Audio",arquivo);
             player.URL = caminho;
             player.controls.play();
+        }
+
+        private void TocarWav(string nomeArquivo)
+        {
+            string caminho = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", nomeArquivo);
+
+            if (System.IO.File.Exists(caminho))
+            {
+                // Remove e adiciona o evento para evitar acúmulo de inscrições duplicadas
+                playerwav.LoadCompleted -= Playerwav_LoadCompleted;
+                playerwav.LoadCompleted += Playerwav_LoadCompleted;
+                playerwav.SoundLocation = caminho;
+                playerwav.LoadAsync();
+            }
+        }
+
+        // Evento que executa o Play assim que o áudio termina de carregar
+        private void Playerwav_LoadCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            playerwav.Play();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -63,7 +82,10 @@ namespace VCT_A
 
             if (selecao == "Champions")
             {
+                TocarWav("AudioListBox.wav");
                 player.controls.stop();
+                comboBox1.Text = "";
+                comboBox1.Visible = true;
                 comboBox1.Items.Add("2021 - Berlin");
                 comboBox1.Items.Add("2022 - Instanbul");
                 comboBox1.Items.Add("2023 - Los Angeles");
@@ -75,21 +97,8 @@ namespace VCT_A
                 comboBox2.ForeColor = Color.White;
                 comboBox3.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox3.ForeColor = Color.White;
-                /*pictureBox2.BackColor = Color.Black;
-                pictureBox3.BackColor = Color.Black;
-                pictureBox4.BackColor = Color.Black;
-                pictureBox5.BackColor = Color.Black;*/
-                
                 pictureBox11.BackColor = Color.FromArgb(197, 177, 116);
                 pictureBox12.BackColor = Color.FromArgb(197, 177, 116);
-                /*checkBox1.BackColor = Color.Black;
-                checkBox2.BackColor = Color.Black;
-                checkBox3.BackColor = Color.Black;
-                checkBox4.BackColor = Color.Black;
-                checkBox1.ForeColor = Color.White;
-                checkBox2.ForeColor = Color.White;
-                checkBox3.ForeColor = Color.White;
-                checkBox4.ForeColor = Color.White;*/
                 listBox1.BackColor = Color.FromArgb(197, 177, 116);
                 listBox1.ForeColor = Color.Black;
                 groupBox1.ForeColor = Color.Black;
@@ -107,15 +116,16 @@ namespace VCT_A
                 label4.ForeColor = Color.Black;
                 label5.ForeColor = Color.Black;
                 this.Text = "Valorant Champions Tour | Champions";
-
-                comboBox1.Text = "";
-                comboBox1.Visible = true;
                 this.BackgroundImage = Properties.Resources.WallpaperChampionsD;
                 ExibirTodosComponentes(false);
             }
             else if (selecao == "Masters")
             {
+                // Reprodução de áudio
+                TocarWav("AudioListBox.wav");
                 player.controls.stop();
+                comboBox1.Text = "";
+                comboBox1.Visible = true;
                 comboBox1.Items.Add("2021.1 - Reykjavík");
                 comboBox1.Items.Add("2021.2 - Berlin");
                 comboBox1.Items.Add("2022.1 - Reykjavík");
@@ -133,46 +143,22 @@ namespace VCT_A
                 comboBox2.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox2.ForeColor = Color.Black;
                 comboBox3.BackColor = Color.FromArgb(111, 74, 204);
-                comboBox2.ForeColor = Color.Black;
-                /*pictureBox2.BackColor = Color.White;
-                pictureBox3.BackColor = Color.White;
-                pictureBox4.BackColor = Color.White;
-                pictureBox5.BackColor = Color.White;*/
+                comboBox3.ForeColor = Color.Black;
                 pictureBox11.BackColor = Color.FromArgb(111, 74, 204);
                 pictureBox12.BackColor = Color.FromArgb(111, 74, 204);
-                /*checkBox1.BackColor = Color.White;
-                checkBox2.BackColor = Color.White;
-                checkBox3.BackColor = Color.White;
-                checkBox4.BackColor = Color.White;
-                checkBox1.ForeColor = Color.Black;
-                checkBox2.ForeColor = Color.Black;
-                checkBox3.ForeColor = Color.Black;
-                checkBox4.ForeColor = Color.Black;*/
                 listBox1.BackColor = Color.FromArgb(111, 74, 204);
                 listBox1.ForeColor = Color.White;
-                comboBox1.Text = "";
                 groupBox1.ForeColor = Color.White;
-                radioButton1.ForeColor = Color.Black;
-                radioButton2.ForeColor = Color.Black;
-                radioButton3.ForeColor = Color.Black;
-                radioButton4.ForeColor = Color.Black; 
-                radioButton5.ForeColor = Color.Black;
-                radioButton6.ForeColor = Color.Black;
-                radioButton7.ForeColor = Color.Black;
-                radioButton8.ForeColor = Color.Black;
                 label1.ForeColor = Color.White;
                 label2.ForeColor = Color.White;
                 label3.ForeColor = Color.White;
                 label4.ForeColor = Color.White;
                 label5.ForeColor = Color.White;
                 this.Text = "Valorant Champions Tour | Masters";
-
-                comboBox1.Visible = true;
                 this.BackgroundImage = Properties.Resources.WallpaperMastersD;
                 ExibirTodosComponentes(false);
             }
         }
-
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -181,17 +167,15 @@ namespace VCT_A
             string Campeonato = comboBox1.SelectedItem.ToString();
 
             ExibirTodosComponentes(true);
+            TocarWav("AudioComboBox.wav");
 
             switch (Campeonato)
             {
                 case "2021 - Berlin":
-
                     ConfigurarParaCBer();
-
                     break;
                 case "2022 - Instanbul":
                     ConfigurarParaCIns();
-
                     break;
                 case "2023 - Los Angeles":
                     ConfigurarParaCLos();
@@ -682,8 +666,6 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Breeze", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
         }
 
-
-
         private void ExibirTodosComponentes(bool visivel)
         {
             label1.Visible = visivel;
@@ -953,11 +935,9 @@ namespace VCT_A
                     case "DRX Flashback":
                         pictureBox11.BackgroundImage = Properties.Resources.DRXFlashbackCPar;
                         break;
-
                     case "DRX HYUNMIN":
                         pictureBox11.BackgroundImage = Properties.Resources.DRXHYUNMINCPar;
                         break;
-
                     case "EDG ZmjjKK":
                         if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
                         {
@@ -968,11 +948,9 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.EDGZmjjKKMTok;
                         }
                         break;
-
                     case "EG Boostio":
                         pictureBox11.BackgroundImage = Properties.Resources.EGBoostioMTok;
                         break;
-
                     case "EG Demon1":
                         if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
                         {
@@ -983,19 +961,15 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.EGDemon1MTok;
                         }
                         break;
-
                     case "FNC Alfajer":
                         pictureBox11.BackgroundImage = Properties.Resources.FNCAlfajerMTor;
                         break;
-
                     case "FNC Derke":
                         pictureBox11.BackgroundImage = Properties.Resources.FNCDerkeMRey1;
                         break;
-
                     case "FNC Doma":
                         pictureBox11.BackgroundImage = Properties.Resources.FNCDomaMRey1;
                         break;
-
                     case "FNC kaajak":
                         if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
                         {
@@ -1006,27 +980,21 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.FNCkaajakMTor;
                         }
                         break;
-
                     case "FNC Magnum":
                         pictureBox11.BackgroundImage = Properties.Resources.FNCMagnumMRey1;
                         break;
-
                     case "FPX ardiis":
                         pictureBox11.BackgroundImage = Properties.Resources.FPXardiisMCop;
                         break;
-
                     case "FPX Shao":
                         pictureBox11.BackgroundImage = Properties.Resources.FPXShaoMCop;
                         break;
-
                     case "FPX Zyppan":
                         pictureBox11.BackgroundImage = Properties.Resources.FPXZyppanMCop;
                         break;
-
                     case "G2 keloqz":
                         pictureBox11.BackgroundImage = Properties.Resources.G2keloqzMBer;
                         break;
-
                     case "GMB Chronicle":
                         if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
                         {
@@ -1037,31 +1005,24 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleMBer;
                         }
                         break;
-
                     case "GMB d3ffo":
                         pictureBox11.BackgroundImage = Properties.Resources.GMBd3ffoCBer;
                         break;
-
                     case "GMB nAts":
                         pictureBox11.BackgroundImage = Properties.Resources.GMBnAtsMBer;
                         break;
-
                     case "KRÜ Keznit":
                         pictureBox11.BackgroundImage = Properties.Resources.KRUKeznitCBer;
                         break;
-
                     case "LEV Neon":
                         pictureBox11.BackgroundImage = Properties.Resources.LEVNeonMLon;
                         break;
-
                     case "LEV Sato":
                         pictureBox11.BackgroundImage = Properties.Resources.LEVSatoMLon;
                         break;
-
                     case "LEV spike":
                         pictureBox11.BackgroundImage = Properties.Resources.LEVspikeMLon;
                         break;
-
                     case "LOUD aspas":
                         if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
                         {
@@ -1072,11 +1033,9 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.LOUDaspasMSao;
                         }
                         break;
-
                     case "LOUD cauanzin":
                         pictureBox11.BackgroundImage = Properties.Resources.LOUDcauanzinMSao;
                         break;
-
                     case "LOUD Less":
                         if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
                         {
@@ -1087,19 +1046,15 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.LOUDLessMSao;
                         }
                         break;
-
                     case "OPTC crashies":
                         pictureBox11.BackgroundImage = Properties.Resources.OPTCcrashiesCIns;
                         break;
-
                     case "OPTC Marved":
                         pictureBox11.BackgroundImage = Properties.Resources.OPTCMarvedMRey2;
                         break;
-
                     case "OPTC Victor":
                         pictureBox11.BackgroundImage = Properties.Resources.OPTCVictorCIns;
                         break;
-
                     case "OPTC yay":
                         if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
                         {
@@ -1110,15 +1065,12 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.OPTCyayMRey2;
                         }
                         break;
-
                     case "PRX d4v41":
                         pictureBox11.BackgroundImage = Properties.Resources.PRXd4v41MSan;
                         break;
-
                     case "PRX f0rsakeN":
                         pictureBox11.BackgroundImage = Properties.Resources.PRXf0rsakeNMSan;
                         break;
-
                     case "PRX Jinggg":
                         if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
                         {
@@ -1129,19 +1081,15 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.PRXJingggMSan;
                         }
                         break;
-
                     case "SEN johnqt":
                         pictureBox11.BackgroundImage = Properties.Resources.SENjohnqtMMad;
                         break;
-
                     case "SEN TenZ":
                         pictureBox11.BackgroundImage = Properties.Resources.SENTenZMMad;
                         break;
-
                     case "SEN zekken":
                         pictureBox11.BackgroundImage = Properties.Resources.SENzekkenMMad;
                         break;
-
                     case "TH benjyfishy":
                         if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
                         {
@@ -1152,11 +1100,9 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.THbenjyfishyMBan;
                         }
                         break;
-
                     case "TH MiniBoo":
                         pictureBox11.BackgroundImage = Properties.Resources.THMiniBooCSeo;
                         break;
-
                     case "TH RieNs":
                         if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
                         {
@@ -1171,7 +1117,6 @@ namespace VCT_A
                             pictureBox11.BackgroundImage = Properties.Resources.THRieNsMBan;
                         }
                         break;
-
                     case "TH Wo0t":
                         if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
                         {
@@ -1181,9 +1126,7 @@ namespace VCT_A
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THWo0tMBan;
                         }
-
                         break;
-
                     case "ZETA SugarZ3ro":
                         pictureBox11.BackgroundImage = Properties.Resources.ZETASugarZ3roMRey2;
                         break;
@@ -1202,47 +1145,36 @@ namespace VCT_A
                     case "Abyss":
                         pictureBox12.BackgroundImage = Properties.Resources.Abyss;
                         break;
-
                     case "Ascent":
                         pictureBox12.BackgroundImage = Properties.Resources.Ascent;
                         break;
-
                     case "Bind":
                         pictureBox12.BackgroundImage = Properties.Resources.Bind;
                         break;
-
                     case "Breeze":
                         pictureBox12.BackgroundImage = Properties.Resources.Breeze;
                         break;
-
                     case "Corrode":
                         pictureBox12.BackgroundImage = Properties.Resources.Corrode;
                         break;
-
                     case "Fracture":
                         pictureBox12.BackgroundImage = Properties.Resources.Fracture;
                         break;
-
                     case "Haven":
                         pictureBox12.BackgroundImage = Properties.Resources.Haven;
                         break;
-
                     case "Icebox":
                         pictureBox12.BackgroundImage = Properties.Resources.Icebox;
                         break;
-
                     case "Lotus":
                         pictureBox12.BackgroundImage = Properties.Resources.Lotus;
                         break;
-
                     case "Pearl":
                         pictureBox12.BackgroundImage = Properties.Resources.Pearl;
                         break;
-
                     case "Split":
                         pictureBox12.BackgroundImage = Properties.Resources.Split;
                         break;
-
                     case "Sunset":
                         pictureBox12.BackgroundImage = Properties.Resources.Sunset;
                         break;
@@ -1262,59 +1194,45 @@ namespace VCT_A
                     case "1º Acend":
                         pictureBox2.BackgroundImage = Properties.Resources.Acend;
                         break;
-
                     case "1º LOUD":
                         pictureBox2.BackgroundImage = Properties.Resources.LOUD250;
                         break;
-
                     case "1º Evil Geniuses":
                         pictureBox2.BackgroundImage = Properties.Resources.EvilGeniuses;
                         break;
-
                     case "1º EDward Gaming":
                         pictureBox2.BackgroundImage = Properties.Resources.EDwardGaming;
                         break;
-
                     case "1º NRG":
                         pictureBox2.BackgroundImage = Properties.Resources.NRG;
                         break;
-
                     case "1º Sentinels":
                         pictureBox2.BackgroundImage = Properties.Resources.Sentinels1;
                         break;
-
                     case "1º Gambit":
                         pictureBox2.BackgroundImage = Properties.Resources.Gambit;
                         break;
-
                     case "1º OpTic Gaming":
                         pictureBox2.BackgroundImage = Properties.Resources.OpTicGaming250;
                         break;
-
                     case "1º FunPlus Phoenix":
                         pictureBox2.BackgroundImage = Properties.Resources.FunPlusPhoenix;
                         break;
-
                     case "1º FNATIC":
                         pictureBox2.BackgroundImage = Properties.Resources.FNATIC;
                         break;
-
                     case "1º Gen.G":
                         pictureBox2.BackgroundImage = Properties.Resources.GenG;
                         break;
-
                     case "1º T1":
                         pictureBox2.BackgroundImage = Properties.Resources.T1;
                         break;
-
                     case "1º Paper Rex":
                         pictureBox2.BackgroundImage = Properties.Resources.PaperRex;
                         break;
-
                     case "1º Nongshim RedForce":
                         pictureBox2.BackgroundImage = Properties.Resources.NongshimRedForce;
                         break;
-
                     case "1º Leviatán":
                         pictureBox2.BackgroundImage = Properties.Resources.Leviatan;
                         break;
@@ -1338,39 +1256,30 @@ namespace VCT_A
                     case "2º Gambit":
                         pictureBox3.BackgroundImage = Properties.Resources.Gambit;
                         break;
-
                     case "2º OpTic Gaming":
                         pictureBox3.BackgroundImage = Properties.Resources.OpTicGaming250;
                         break;
-
                     case "2º Paper Rex":
                         pictureBox3.BackgroundImage = Properties.Resources.PaperRex;
                         break;
-
                     case "2º Team Heretics":
                         pictureBox3.BackgroundImage = Properties.Resources.TeamHeretics;
                         break;
-
                     case "2º FNATIC":
                         pictureBox3.BackgroundImage = Properties.Resources.FNATIC;
                         break;
-
                     case "2º Team Envy":
                         pictureBox3.BackgroundImage = Properties.Resources.TeamEnvy;
                         break;
-
                     case "2º LOUD":
                         pictureBox3.BackgroundImage = Properties.Resources.LOUD250;
                         break;
-
                     case "2º Evil Geniuses":
                         pictureBox3.BackgroundImage = Properties.Resources.EvilGeniuses;
                         break;
-
                     case "2º Gen.g":
                         pictureBox3.BackgroundImage = Properties.Resources.GenG;
                         break;
-
                     case "2º G2":
                         pictureBox3.BackgroundImage = Properties.Resources.G2;
                         break;
@@ -1387,53 +1296,41 @@ namespace VCT_A
             if (checkBox3.Checked)
             {
                 string Podio = checkBox3.Text;
-
                 switch (Podio)
                 {
                     case "3º KRÜ":
                         pictureBox4.BackgroundImage = Properties.Resources.KRU;
                         break;
-
                     case "3º DRX":
                         pictureBox4.BackgroundImage = Properties.Resources.DRX;
                         break;
-
                     case "3º LOUD":
                         pictureBox4.BackgroundImage = Properties.Resources.LOUD250;
                         break;
-
                     case "3º Leviatán":
                         pictureBox4.BackgroundImage = Properties.Resources.Leviatan;
                         break;
-
                     case "3º NUTURN":
                         pictureBox4.BackgroundImage = Properties.Resources.NUTURN;
                         break;
-
                     case "3º 100 Thieves":
                         pictureBox4.BackgroundImage = Properties.Resources._100Thieves;
                         break;
-
                     case "3º ZETA DIVISION":
                         pictureBox4.BackgroundImage = Properties.Resources.ZETADIVISION;
                         break;
-
                     case "3º OpTic Gaming":
                         pictureBox4.BackgroundImage = Properties.Resources.OpTicGaming250;
                         break;
-
                     case "3º Paper Rex":
                         pictureBox4.BackgroundImage = Properties.Resources.PaperRex;
                         break;
-
                     case "3º G2":
                         pictureBox4.BackgroundImage = Properties.Resources.G2;
                         break;
-
                     case "3º Wolves":
                         pictureBox4.BackgroundImage = Properties.Resources.Wolves;
                         break;
-
                     case "3º NRG":
                         pictureBox4.BackgroundImage = Properties.Resources.NRG;
                         break;
@@ -1450,49 +1347,38 @@ namespace VCT_A
             if (checkBox4.Checked)
             {
                 string Podio = checkBox4.Text;
-
                 switch (Podio)
                 {
                     case "4º Team Liquid":
                         pictureBox5.BackgroundImage = Properties.Resources.TeamLiquid;
                         break;
-
                     case "4º FunPlus Phoenix":
                         pictureBox5.BackgroundImage = Properties.Resources.FunPlusPhoenix;
                         break;
-
                     case "4º FNATIC":
                         pictureBox5.BackgroundImage = Properties.Resources.FNATIC;
                         break;
-
                     case "4º Sentinels":
                         pictureBox5.BackgroundImage = Properties.Resources.Sentinels1;
                         break;
-
                     case "4º Paper Rex":
                         pictureBox5.BackgroundImage = Properties.Resources.PaperRex;
                         break;
-
                     case "4º G2":
                         pictureBox5.BackgroundImage = Properties.Resources.G2;
                         break;
-
                     case "4º Natus Vincere":
                         pictureBox5.BackgroundImage = Properties.Resources.NatusVicere;
                         break;
-
                     case "4º NRG":
                         pictureBox5.BackgroundImage = Properties.Resources.NRG;
                         break;
-
                     case "4º LOUD":
                         pictureBox5.BackgroundImage = Properties.Resources.LOUD250;
                         break;
-
                     case "4º 100 Thieves":
                         pictureBox5.BackgroundImage = Properties.Resources._100Thieves;
                         break;
-
                     case "4º Team Vitality":
                         pictureBox5.BackgroundImage = Properties.Resources.TeamVitality;
                         break;

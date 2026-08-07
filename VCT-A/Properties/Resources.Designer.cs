@@ -1753,36 +1753,6 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wallpapermasters {
-            get {
-                object obj = ResourceManager.GetObject("wallpapermasters", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WallpaperMastersB {
-            get {
-                object obj = ResourceManager.GetObject("WallpaperMastersB", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WallpaperMastersC {
-            get {
-                object obj = ResourceManager.GetObject("WallpaperMastersC", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap WallpaperMastersD {
             get {
                 object obj = ResourceManager.GetObject("WallpaperMastersD", resourceCulture);
