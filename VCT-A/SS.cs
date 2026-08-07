@@ -71,5 +71,9 @@ namespace VCT_A
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+                    }
     }
 }

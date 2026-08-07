@@ -75,20 +75,21 @@ namespace VCT_A
                 comboBox2.ForeColor = Color.White;
                 comboBox3.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox3.ForeColor = Color.White;
-                pictureBox2.BackColor = Color.Black;
+                /*pictureBox2.BackColor = Color.Black;
                 pictureBox3.BackColor = Color.Black;
                 pictureBox4.BackColor = Color.Black;
-                pictureBox5.BackColor = Color.Black;
+                pictureBox5.BackColor = Color.Black;*/
+                
                 pictureBox11.BackColor = Color.FromArgb(197, 177, 116);
                 pictureBox12.BackColor = Color.FromArgb(197, 177, 116);
-                checkBox1.BackColor = Color.Black;
+                /*checkBox1.BackColor = Color.Black;
                 checkBox2.BackColor = Color.Black;
                 checkBox3.BackColor = Color.Black;
                 checkBox4.BackColor = Color.Black;
                 checkBox1.ForeColor = Color.White;
                 checkBox2.ForeColor = Color.White;
                 checkBox3.ForeColor = Color.White;
-                checkBox4.ForeColor = Color.White;
+                checkBox4.ForeColor = Color.White;*/
                 listBox1.BackColor = Color.FromArgb(197, 177, 116);
                 listBox1.ForeColor = Color.Black;
                 groupBox1.ForeColor = Color.Black;
@@ -133,20 +134,20 @@ namespace VCT_A
                 comboBox2.ForeColor = Color.Black;
                 comboBox3.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox2.ForeColor = Color.Black;
-                pictureBox2.BackColor = Color.White;
+                /*pictureBox2.BackColor = Color.White;
                 pictureBox3.BackColor = Color.White;
                 pictureBox4.BackColor = Color.White;
-                pictureBox5.BackColor = Color.White;
+                pictureBox5.BackColor = Color.White;*/
                 pictureBox11.BackColor = Color.FromArgb(111, 74, 204);
                 pictureBox12.BackColor = Color.FromArgb(111, 74, 204);
-                checkBox1.BackColor = Color.White;
+                /*checkBox1.BackColor = Color.White;
                 checkBox2.BackColor = Color.White;
                 checkBox3.BackColor = Color.White;
                 checkBox4.BackColor = Color.White;
                 checkBox1.ForeColor = Color.Black;
                 checkBox2.ForeColor = Color.Black;
                 checkBox3.ForeColor = Color.Black;
-                checkBox4.ForeColor = Color.Black;
+                checkBox4.ForeColor = Color.Black;*/
                 listBox1.BackColor = Color.FromArgb(111, 74, 204);
                 listBox1.ForeColor = Color.White;
                 comboBox1.Text = "";
@@ -1574,6 +1575,21 @@ namespace VCT_A
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
         {
 
         }
