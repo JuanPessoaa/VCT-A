@@ -434,6 +434,7 @@
             // comboBox2
             // 
             this.comboBox2.BackColor = System.Drawing.Color.White;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox2.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(1342, 296);
@@ -447,6 +448,7 @@
             // comboBox3
             // 
             this.comboBox3.BackColor = System.Drawing.Color.White;
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox3.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(1600, 296);
@@ -461,11 +463,11 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.White;
-            this.checkBox1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(62, 747);
+            this.checkBox1.Location = new System.Drawing.Point(65, 753);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 34);
+            this.checkBox1.Size = new System.Drawing.Size(111, 25);
             this.checkBox1.TabIndex = 26;
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -476,11 +478,11 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.White;
-            this.checkBox2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.Color.Black;
-            this.checkBox2.Location = new System.Drawing.Point(321, 747);
+            this.checkBox2.Location = new System.Drawing.Point(324, 753);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(138, 34);
+            this.checkBox2.Size = new System.Drawing.Size(111, 25);
             this.checkBox2.TabIndex = 27;
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -491,11 +493,11 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.Color.White;
-            this.checkBox3.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.ForeColor = System.Drawing.Color.Black;
-            this.checkBox3.Location = new System.Drawing.Point(579, 747);
+            this.checkBox3.Location = new System.Drawing.Point(582, 753);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(138, 34);
+            this.checkBox3.Size = new System.Drawing.Size(111, 25);
             this.checkBox3.TabIndex = 28;
             this.checkBox3.Text = "checkBox3";
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -506,11 +508,11 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.Color.White;
-            this.checkBox4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.ForeColor = System.Drawing.Color.Black;
-            this.checkBox4.Location = new System.Drawing.Point(838, 747);
+            this.checkBox4.Location = new System.Drawing.Point(841, 753);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(138, 34);
+            this.checkBox4.Size = new System.Drawing.Size(111, 25);
             this.checkBox4.TabIndex = 29;
             this.checkBox4.Text = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = false;
@@ -536,12 +538,12 @@
             this.BackgroundImage = global::VCT_A.Properties.Resources.wallpaperdefault;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
