@@ -40,6 +40,10 @@ namespace VCT_A
         private void VCT_Load(object sender, EventArgs e)
         {
             Tocar("MusicFEARLESS.mp3");
+            //comboBox2.Parent = pictureBox12;
+            //comboBox3.Parent = pictureBox11;
+            //pictureBox11.Parent = comboBox3;
+                //pictureBox12.Parent = comboBox2;
         }
 
         private void Tocar(string arquivo)
