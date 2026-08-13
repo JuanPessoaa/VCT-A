@@ -339,6 +339,8 @@
     <Content Include="Resources\AudioListBox.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Bind1.png" />
+    <None Include="Resources\BindA.png" />
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />

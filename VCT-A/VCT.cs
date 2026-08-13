@@ -40,17 +40,11 @@ namespace VCT_A
         private void VCT_Load(object sender, EventArgs e)
         {
             Tocar("MusicFEARLESS.mp3");
-            //comboBox2.Parent = pictureBox12;
-            //comboBox3.Parent = pictureBox11;
-            //pictureBox11.Parent = comboBox3;
-                //pictureBox12.Parent = comboBox2;
         }
 
         private void Tocar(string arquivo)
         {
             player.controls.stop();
-
-            // Use System.IO.Path e System.Windows.Forms.Application
             string caminho = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath,"Audio",arquivo);
             player.URL = caminho;
             player.controls.play();
@@ -62,7 +56,7 @@ namespace VCT_A
 
             if (System.IO.File.Exists(caminho))
             {
-                // Remove e adiciona o evento para evitar acúmulo de inscrições duplicadas
+                // Remove e adiciona o evento pra nn duplicar
                 playerwav.LoadCompleted -= Playerwav_LoadCompleted;
                 playerwav.LoadCompleted += Playerwav_LoadCompleted;
                 playerwav.SoundLocation = caminho;
@@ -70,7 +64,7 @@ namespace VCT_A
             }
         }
 
-        // Evento que executa o Play assim que o áudio termina de carregar
+        //executa o wav assim que carregar
         private void Playerwav_LoadCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
             playerwav.Play();
@@ -125,7 +119,6 @@ namespace VCT_A
             }
             else if (selecao == "Masters")
             {
-                // Reprodução de áudio
                 TocarWav("AudioListBox.wav");
                 player.controls.stop();
                 comboBox1.Text = "";
@@ -1153,7 +1146,7 @@ namespace VCT_A
                         pictureBox12.BackgroundImage = Properties.Resources.Ascent;
                         break;
                     case "Bind":
-                        pictureBox12.BackgroundImage = Properties.Resources.Bind;
+                        pictureBox12.BackgroundImage = Properties.Resources.BindA;
                         break;
                     case "Breeze":
                         pictureBox12.BackgroundImage = Properties.Resources.Breeze;
