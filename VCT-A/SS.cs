@@ -22,33 +22,27 @@ namespace VCT_A
             this.Size = new System.Drawing.Size(1920, 1080);
             this.DoubleBuffered = true;
            
-            // Define o caminho do GIF
+            // Define o caminho do gif
             string caminhoGif = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "SS.gif");
 
             if (System.IO.File.Exists(caminhoGif))
             {
-                // Carrega a imagem diretamente na memória
+                // carrega o gif
                 pictureBox1.Image = Image.FromFile(caminhoGif);
             }
+
             player.SoundLocation = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Super.wav");
         }
 
         private void SS_Load(object sender, EventArgs e)
         {
-            // O Play será executado automaticamente ASSIM QUE o áudio terminar de carregar
             player.LoadCompleted += (s, args) => player.Play();
             player.LoadAsync();
 
-            // Configurações dos componentes de tela
             label1.Parent = pictureBox1;
             label1.BackColor = Color.Transparent;
 
             progressBar1.Parent = pictureBox1;
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void timer2_Tick_1(object sender, EventArgs e)
@@ -73,8 +67,13 @@ namespace VCT_A
 
         }
 
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-                    }
+        
+        }
     }
 }
