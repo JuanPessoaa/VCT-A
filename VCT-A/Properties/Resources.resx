@@ -259,8 +259,8 @@
   <data name="Trace" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="100Thieves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\100Thieves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TeamLiquid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamLiquid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,9 +274,6 @@
   <data name="TrophyMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="100Thieves" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\100Thieves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TrophyChampions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyChampions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -288,9 +285,6 @@
   </data>
   <data name="FNCDomaMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FNCDomaMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GIANTX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIANTX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gen.G" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gen.G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -418,6 +412,9 @@
   <data name="TrophyMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LogoMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LogoMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -541,6 +538,9 @@
   <data name="FNCAlfajerMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FNCAlfajerMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LogoMRey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoMRey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TrophyMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -559,8 +559,8 @@
   <data name="RexRegumQeon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RexRegumQeon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoMRey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoMRey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GIANTX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIANTX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vctlogopreta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vctlogopreta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -600,6 +600,9 @@
   </data>
   <data name="LogoCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BindA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BindA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TrophyMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -655,7 +658,13 @@
   <data name="Sentinels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sentinels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BindA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BindA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vcticonbranca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vcticonbranca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vcticonpreta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vcticonpreta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpaperbase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaperbase.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

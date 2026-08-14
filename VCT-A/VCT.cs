@@ -22,8 +22,6 @@ Caminho: C:\Windows\system32\wmp.dll
 Versão: 1.0
 Versão do Arquivo: 12.0.26100.8875 (WinBuild.160101.0800)*/
 
-//vctlogopreta
-//wallpaperdefault
 //label6 total
 //label7 numero
 //label8 data
@@ -119,8 +117,12 @@ namespace VCT_A
                 label3.ForeColor = Color.Black;
                 label4.ForeColor = Color.Black;
                 label5.ForeColor = Color.Black;
+                label6.ForeColor = Color.Black;
+                label8.ForeColor = Color.Black;
+                label9.ForeColor = Color.Black;
                 this.Text = "Valorant Champions Tour | Champions";
                 this.BackgroundImage = Properties.Resources.WallpaperChampionsD;
+                pictureBox1.BackgroundImage = Properties.Resources.vcticonpreta;
                 ExibirTodosComponentes(false);
             }
             else if (selecao == "Masters")
@@ -157,8 +159,12 @@ namespace VCT_A
                 label3.ForeColor = Color.White;
                 label4.ForeColor = Color.White;
                 label5.ForeColor = Color.White;
+                label6.ForeColor = Color.White;
+                label8.ForeColor = Color.White;
+                label9.ForeColor = Color.White;
                 this.Text = "Valorant Champions Tour | Masters";
                 this.BackgroundImage = Properties.Resources.WallpaperMastersD;
+                pictureBox1.BackgroundImage = Properties.Resources.vcticonbranca;
                 ExibirTodosComponentes(false);
             }
         }
@@ -235,6 +241,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCBer;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCBer;
+            label7.Text = "$1.000.000";
+            label8.Text = "1 a 12 de dezembro de 2021";
+            label9.Text = "Berlin, Alemanha";
+            label10.Text = "$350.000";
+            label11.Text = "$150.000";
+            label12.Text = "$90.000";
+            label13.Text = "$90.000";
             radioButton1.Text = "Acend";
             radioButton2.Text = "Cloud9";
             radioButton3.Text = "FNATIC";
@@ -261,6 +274,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCIns;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCIns;
+            label7.Text = "$1.000.000";
+            label8.Text = "1 a 12 de dezembro de 2021";
+            label9.Text = "Berlin, Alemanha";
+            label10.Text = "$350.000";
+            label11.Text = "$150.000";
+            label12.Text = "$90.000";
+            label13.Text = "$90.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -676,6 +696,10 @@ namespace VCT_A
             label3.Visible = visivel;
             label4.Visible = visivel;
             label5.Visible = visivel;
+            label6.Visible = visivel;
+            label7.Visible = visivel;
+            label8.Visible = visivel;
+            label9.Visible = visivel;
             groupBox1.Visible = visivel;
             radioButton1.Visible = visivel;
             radioButton2.Visible = visivel;

@@ -1683,6 +1683,26 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap vcticonbranca {
+            get {
+                object obj = ResourceManager.GetObject("vcticonbranca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vcticonpreta {
+            get {
+                object obj = ResourceManager.GetObject("vcticonpreta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vctlogopreta {
             get {
                 object obj = ResourceManager.GetObject("vctlogopreta", resourceCulture);
@@ -1706,6 +1726,16 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap VisionStrikers {
             get {
                 object obj = ResourceManager.GetObject("VisionStrikers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaperbase {
+            get {
+                object obj = ResourceManager.GetObject("wallpaperbase", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

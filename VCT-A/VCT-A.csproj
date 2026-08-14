@@ -140,6 +140,9 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wallpaperbase.jpg" />
+    <None Include="Resources\vcticonpreta.png" />
+    <None Include="Resources\vcticonbranca.png" />
     <None Include="Resources\WallpaperChampionsD.png" />
     <None Include="Resources\WallpaperMastersD.png" />
     <None Include="Resources\WallpaperChampionsC.png" />
