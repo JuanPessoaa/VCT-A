@@ -22,6 +22,12 @@ Caminho: C:\Windows\system32\wmp.dll
 Versão: 1.0
 Versão do Arquivo: 12.0.26100.8875 (WinBuild.160101.0800)*/
 
+//vctlogopreta
+//wallpaperdefault
+//label6 total
+//label7 numero
+//label8 data
+//label9 local
 namespace VCT_A
 {
     public partial class VCT : Form
