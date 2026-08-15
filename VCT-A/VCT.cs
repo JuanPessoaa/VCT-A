@@ -875,7 +875,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Acend"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Acend;
+                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.AcendFullCBer;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.AcendFullMBer;
+                    }
                 }
                 else if (rb.Text.Contains("All Gamers"))
                 {
@@ -891,7 +898,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Cloud9"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Cloud9;
+                    pictureBox10.BackgroundImage = Properties.Resources.Cloud9FullCBer;
                 }
                 else if (rb.Text.Contains("DRX"))
                 {
@@ -907,7 +914,50 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("FNATIC"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.FNATIC;
+                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCBer;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCLos;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCPar;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMRey1;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMCop;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMSao;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMTok;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMSha;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMTor;
+                    }
                 }
                 else if (rb.Text.Contains("FunPlus Phoenix"))
                 {
@@ -927,7 +977,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Gambit"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Gambit;
+                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GambitFullCBer;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GambitFullMBer;
+                    }
                 }
                 else if (rb.Text.Contains("Gen.G"))
                 {
@@ -951,7 +1008,18 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("KRÜ"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.KRU;
+                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.KruFullCBer;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.KruFullMRey1;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.KruFullMBer;
+                    }
                 }
                 else if (rb.Text.Contains("Leviatán"))
                 {
@@ -975,7 +1043,7 @@ namespace VCT_A
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullMSao;
                     }
-                    else if(this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullMTok;
                     }
@@ -1049,11 +1117,34 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Team Liquid"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamLiquid;
+                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullCBer;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMRey1;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMRey2;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMTok;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMBan;
+                    }
                 }
                 else if (rb.Text.Contains("Team Secret"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamSecret;
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamSecretFullCBer;
                 }
                 else if (rb.Text.Contains("Team Vikings"))
                 {
@@ -1085,7 +1176,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("X10 CRIT"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.X10CRIT;
+                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.X10CritFullCBer;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.X10CritFullMRey1;
+                    }
                 }
                 else if (rb.Text.Contains("Xi Lai Gaming"))
                 {

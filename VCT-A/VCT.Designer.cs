@@ -370,7 +370,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.BackgroundImage = global::VCT_A.Properties.Resources.OpTicGamingFullMRey2;
+            this.pictureBox10.BackgroundImage = global::VCT_A.Properties.Resources.X10CritFullMRey1;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox10.Location = new System.Drawing.Point(447, 220);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
@@ -682,6 +682,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox2);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

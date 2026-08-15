@@ -140,6 +140,8 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\X10CritFullMRey1.png" />
+    <None Include="Resources\X10CritFullCBer.png" />
     <None Include="Resources\wallpaperbase.jpg" />
     <None Include="Resources\vcticonpreta.png" />
     <None Include="Resources\vcticonbranca.png" />
@@ -248,6 +250,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\Abyss.png" />
+    <None Include="Resources\AcendFullCBer.png" />
+    <None Include="Resources\AcendFullMBer.png" />
     <Content Include="Resources\Ascent.png" />
     <None Include="Resources\EvilGeniuses.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -344,6 +348,20 @@
     </Content>
     <None Include="Resources\Bind1.png" />
     <None Include="Resources\BindA.png" />
+    <None Include="Resources\Cloud9FullCBer.png" />
+    <None Include="Resources\FnaticFullCBer.png" />
+    <None Include="Resources\FnaticFullCIns.png" />
+    <None Include="Resources\FnaticFullCLos.png" />
+    <None Include="Resources\FnaticFullCPar.png" />
+    <None Include="Resources\FnaticFullCSeo.png" />
+    <None Include="Resources\FnaticFullMCop.png" />
+    <None Include="Resources\FnaticFullMRey1.png" />
+    <None Include="Resources\FnaticFullMSao.png" />
+    <None Include="Resources\FnaticFullMSha.png" />
+    <None Include="Resources\FnaticFullMTok.png" />
+    <None Include="Resources\FnaticFullMTor.png" />
+    <None Include="Resources\GambitFullCBer.png" />
+    <None Include="Resources\GambitFullMBer.png" />
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />
@@ -403,6 +421,9 @@
     <None Include="Resources\OpTicGamingFullCIns.png" />
     <None Include="Resources\OpTicGamingFullMCop.png" />
     <None Include="Resources\OpTicGamingFullMRey2.png" />
+    <None Include="Resources\KruFullCBer.png" />
+    <None Include="Resources\KruFullMBer.png" />
+    <None Include="Resources\KruFullMRey1.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -415,6 +436,13 @@
     <None Include="Resources\TeamVikings.png" />
     <None Include="Resources\TeamVitality.png" />
     <None Include="Resources\Sunset.png" />
+    <None Include="Resources\TeamLiquidFullCBer.png" />
+    <None Include="Resources\TeamLiquidFullCIns.png" />
+    <None Include="Resources\TeamLiquidFullMBan.png" />
+    <None Include="Resources\TeamLiquidFullMRey1.png" />
+    <None Include="Resources\TeamLiquidFullMRey2.png" />
+    <None Include="Resources\TeamLiquidFullMTok.png" />
+    <None Include="Resources\TeamSecretFullCBer.png" />
     <Content Include="Resources\teste.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
