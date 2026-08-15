@@ -853,6 +853,14 @@ namespace VCT_A
             pictureBox10.BackgroundImage = null;
             pictureBox11.BackgroundImage = null;
             pictureBox12.BackgroundImage = null;
+
+            foreach (Control control in groupBox1.Controls) //ferifica o radiobuttom e desmarca
+            {
+                if (control is RadioButton radio)
+                {
+                    radio.Checked = false;
+                }
+            }
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
@@ -951,7 +959,30 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("LOUD"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.LOUD250;
+                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LoudFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LoudFullCLos;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LoudFullMRey2;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LoudFullMSao;
+                    }
+                    else if(this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LoudFullMTok;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LoudFullMMad;
+                    }
                 }
                 else if (rb.Text.Contains("MIBR"))
                 {
@@ -975,7 +1006,18 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("OpTic Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.OpTicGaming250;
+                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingFullMRey2;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingFullMCop;
+                    }
                 }
                 else if (rb.Text.Contains("Paper Rex"))
                 {

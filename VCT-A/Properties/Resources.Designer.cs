@@ -1063,6 +1063,76 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoudFull {
+            get {
+                object obj = ResourceManager.GetObject("LoudFull", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoudFullCIns {
+            get {
+                object obj = ResourceManager.GetObject("LoudFullCIns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoudFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("LoudFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoudFullMMad {
+            get {
+                object obj = ResourceManager.GetObject("LoudFullMMad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoudFullMRey2 {
+            get {
+                object obj = ResourceManager.GetObject("LoudFullMRey2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoudFullMSao {
+            get {
+                object obj = ResourceManager.GetObject("LoudFullMSao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoudFullMTok {
+            get {
+                object obj = ResourceManager.GetObject("LoudFullMTok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOUDLessCLos {
             get {
                 object obj = ResourceManager.GetObject("LOUDLessCLos", resourceCulture);
@@ -1216,6 +1286,36 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap OpTicGamingA {
             get {
                 object obj = ResourceManager.GetObject("OpTicGamingA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpTicGamingFullCIns {
+            get {
+                object obj = ResourceManager.GetObject("OpTicGamingFullCIns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpTicGamingFullMCop {
+            get {
+                object obj = ResourceManager.GetObject("OpTicGamingFullMCop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpTicGamingFullMRey2 {
+            get {
+                object obj = ResourceManager.GetObject("OpTicGamingFullMRey2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

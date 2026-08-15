@@ -393,6 +393,16 @@
     <None Include="Resources\LogoMTok.png" />
     <None Include="Resources\LogoMTor.png" />
     <None Include="Resources\LogoMLon1.png" />
+    <None Include="Resources\LoudFull.png" />
+    <None Include="Resources\LoudFullCIns.png" />
+    <None Include="Resources\LoudFullCLos.png" />
+    <None Include="Resources\LoudFullMMad.png" />
+    <None Include="Resources\LoudFullMRey2.png" />
+    <None Include="Resources\LoudFullMSao.png" />
+    <None Include="Resources\LoudFullMTok.png" />
+    <None Include="Resources\OpTicGamingFullCIns.png" />
+    <None Include="Resources\OpTicGamingFullMCop.png" />
+    <None Include="Resources\OpTicGamingFullMRey2.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

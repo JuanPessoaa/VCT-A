@@ -370,11 +370,12 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.BackgroundImage = global::VCT_A.Properties.Resources.OpTicGamingFullMRey2;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox10.Location = new System.Drawing.Point(447, 296);
+            this.pictureBox10.Location = new System.Drawing.Point(447, 220);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox10.Size = new System.Drawing.Size(250, 400);
             this.pictureBox10.TabIndex = 17;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Visible = false;
