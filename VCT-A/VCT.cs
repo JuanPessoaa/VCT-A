@@ -138,7 +138,7 @@ namespace VCT_A
                 comboBox1.Items.Add("2023.0 - São Paulo");
                 comboBox1.Items.Add("2023.1 - Tokyo");
                 comboBox1.Items.Add("2024.1 - Madrid");
-                comboBox1.Items.Add("2024.2 - Shangai");
+                comboBox1.Items.Add("2024.2 - Shanghai");
                 comboBox1.Items.Add("2025.1 - Bangkok");
                 comboBox1.Items.Add("2025.2 - Toronto");
                 comboBox1.Items.Add("2026.1 - Santiago");
@@ -216,7 +216,7 @@ namespace VCT_A
                 case "2024.1 - Madrid":
                     ConfigurarParaMMad();
                     break;
-                case "2024.2 - Shangai":
+                case "2024.2 - Shanghai":
                     ConfigurarParaMSha();
                     break;
                 case "2025.1 - Bangkok":
@@ -243,7 +243,7 @@ namespace VCT_A
             pictureBox6.BackgroundImage = Properties.Resources.CapaCBer;
             label7.Text = "$1.000.000";
             label8.Text = "1 a 12 de dezembro de 2021";
-            label9.Text = "Berlin, Alemanha";
+            label9.Text = "Berlim, Alemanha";
             label10.Text = "$350.000";
             label11.Text = "$150.000";
             label12.Text = "$90.000";
@@ -275,12 +275,12 @@ namespace VCT_A
             pictureBox9.BackgroundImage = Properties.Resources.LogoCIns;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCIns;
             label7.Text = "$1.000.000";
-            label8.Text = "1 a 12 de dezembro de 2021";
-            label9.Text = "Berlin, Alemanha";
-            label10.Text = "$350.000";
+            label8.Text = "31 de agosto a 19 de setembro de 2022";
+            label9.Text = "Istanbul, Turquia";
+            label10.Text = "$300.000";
             label11.Text = "$150.000";
-            label12.Text = "$90.000";
-            label13.Text = "$90.000";
+            label12.Text = "$110.000";
+            label13.Text = "$80.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -307,6 +307,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCLos;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCLos;
+            label7.Text = "$2.250.000";
+            label8.Text = "6 a 27 de agosto de 2023";
+            label9.Text = "Los Angeles, EUA";
+            label10.Text = "$1.000.000";
+            label11.Text = "$400.000";
+            label12.Text = "$250.000";
+            label13.Text = "$130.000";
             radioButton1.Text = "Bilibili Gaming";
             radioButton2.Text = "DRX";
             radioButton3.Text = "EDward Gaming";
@@ -333,6 +340,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCSeo;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCSeo;
+            label7.Text = "$2.250.000";
+            label8.Text = "1 a 25 de agosto de 2024";
+            label9.Text = "Incheon | Seoul, Coreia do Sul";
+            label10.Text = "$1.000.000";
+            label11.Text = "$400.000";
+            label12.Text = "$250.000";
+            label13.Text = "$130.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "FNATIC";
@@ -359,6 +373,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCPar;
             pictureBox6.BackgroundImage = Properties.Resources.CapaCPar;
+            label7.Text = "$2.250.000";
+            label8.Text = "12 de setembro a 5 de outubro de 2025";
+            label9.Text = "Paris, França";
+            label10.Text = "$1.000.000";
+            label11.Text = "$400.000";
+            label12.Text = "$250.000";
+            label13.Text = "$130.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "G2";
@@ -385,6 +406,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey1;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMRey1;
+            label7.Text = "$600.000";
+            label8.Text = "24 a 30 de maio de 2021";
+            label9.Text = "Reykjavik, Islândia";
+            label10.Text = "$200.000";
+            label11.Text = "$100.000";
+            label12.Text = "$80.000";
+            label13.Text = "$60.000";
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "KRÜ";
             radioButton3.Text = "NUTURN";
@@ -411,6 +439,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBer;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBer;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMBer;
+            label7.Text = "$700.000";
+            label8.Text = "10 a 19 de setembro de 2021";
+            label9.Text = "Berlim, Alemanha";
+            label10.Text = "$225.000";
+            label11.Text = "$125.000";
+            label12.Text = "$85.000";
+            label13.Text = "$85.000";
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "Acend";
             radioButton3.Text = "Gambit";
@@ -437,6 +472,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey2;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMRey2;
+            label7.Text = "$650.000";
+            label8.Text = "10 a 24 de abril de 2022";
+            label9.Text = " Reykjavík, Islândia";
+            label10.Text = "$200.000";
+            label11.Text = "$120.000";
+            label12.Text = "$85.000";
+            label13.Text = "$65.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "G2";
             radioButton3.Text = "LOUD";
@@ -463,6 +505,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMCop;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMCop;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMCop;
+            label7.Text = "$650.000";
+            label8.Text = "10 a 24 de julho de 2022";
+            label9.Text = "Copenhagen, Dinamarca";
+            label10.Text = "$200.000";
+            label11.Text = "$120.000";
+            label12.Text = "$85.000";
+            label13.Text = "$65.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "FNATIC";
             radioButton3.Text = "FunPlus Phoenix";
@@ -489,6 +538,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSao;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSao;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMSao;
+            label7.Text = "$500.000";
+            label8.Text = "13 de fevereiro a 5 de março de 2023";
+            label9.Text = "São Paulo, Brasil";
+            label10.Text = "$100.000";
+            label11.Text = "$60.000";
+            label12.Text = "$40.000";
+            label13.Text = "$40.000";
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "DRX";
             radioButton3.Text = "FNATIC";
@@ -515,6 +571,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTok;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTok;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMTok;
+            label7.Text = "$1.000.000";
+            label8.Text = "11 a 25 de junho de 2023";
+            label9.Text = "Tokyo, Jãpão";
+            label10.Text = "$350.000";
+            label11.Text = "$200.000";
+            label12.Text = "$125.000";
+            label13.Text = "$75.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "Evil Geniuses";
@@ -541,6 +604,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMMad;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMMad;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMMad;
+            label7.Text = "$500.000";
+            label8.Text = "14 a 24 de março de 2024";
+            label9.Text = "Madri, Espanha";
+            label10.Text = "$250.000";
+            label11.Text = "$100.000";
+            label12.Text = "$65.000";
+            label13.Text = "$35.000";
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FunPlus Phoenix";
             radioButton3.Text = "Gen.G";
@@ -563,10 +633,17 @@ namespace VCT_A
         {
             Limpar();
             Tocar("MusicMSha.mp3");
-            this.Text = "Valorant Champions Tour | Masters 2024.2 - Shangai";
+            this.Text = "Valorant Champions Tour | Masters 2024.2 - Shanghai";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSha;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSha;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMSha;
+            label7.Text = "$1.000.000";
+            label8.Text = "23 de maio a 9 de junho de 2024";
+            label9.Text = "Shanghai, China";
+            label10.Text = "$350.000";
+            label11.Text = "$200.000";
+            label12.Text = "$125.000";
+            label13.Text = "$75.000";
             radioButton1.Text = "100 Thieves";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "FNATIC";
@@ -593,6 +670,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBan;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMBan;
+            label7.Text = "$500.000";
+            label8.Text = "20 de fevereiro a 2 de março de 2025";
+            label9.Text = "Bangkok, Tailândia";
+            label10.Text = "$250.000";
+            label11.Text = "$100.000";
+            label12.Text = "$65.000";
+            label13.Text = "$35.000";
             radioButton1.Text = "DRX";
             radioButton2.Text = "EDward Gaming";
             radioButton3.Text = "G2";
@@ -619,6 +703,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTor;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTor;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMTor;
+            label7.Text = "$1.000.000";
+            label8.Text = "7 a 22 de junho de 2025";
+            label9.Text = "Toronto, Canadá";
+            label10.Text = "$350.000";
+            label11.Text = "$200.000";
+            label12.Text = "$125.000";
+            label13.Text = "$75.000";
             radioButton1.Text = "FNATIC";
             radioButton2.Text = "G2";
             radioButton3.Text = "Gen.G";
@@ -645,6 +736,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSan;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMSan;
+            label7.Text = "$1.000.000";
+            label8.Text = "28 de fevereiro a 15 de março de 2026";
+            label9.Text = "Santiago, Chile";
+            label10.Text = "$350.000";
+            label11.Text = "$200.000";
+            label12.Text = "$125.000";
+            label13.Text = "$75.000";
             radioButton1.Text = "All Gamers";
             radioButton2.Text = "BBL";
             radioButton3.Text = "FURIA";
@@ -671,6 +769,13 @@ namespace VCT_A
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMLon;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMLon1;
             pictureBox6.BackgroundImage = Properties.Resources.CapaMLon;
+            label7.Text = "$1.000.000";
+            label8.Text = "5 a 21 de junho de 2026";
+            label9.Text = "Londres, Canadá";
+            label10.Text = "$350.000";
+            label11.Text = "$200.000";
+            label12.Text = "$125.000";
+            label13.Text = "$75.000";
             radioButton1.Text = "EDward Gaming";
             radioButton2.Text = "FUT";
             radioButton3.Text = "G2";
@@ -700,6 +805,10 @@ namespace VCT_A
             label7.Visible = visivel;
             label8.Visible = visivel;
             label9.Visible = visivel;
+            label10.Visible = visivel;
+            label11.Visible = visivel;
+            label12.Visible = visivel;
+            label13.Visible = visivel;
             groupBox1.Visible = visivel;
             radioButton1.Visible = visivel;
             radioButton2.Visible = visivel;
@@ -1118,7 +1227,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.SENzekkenMMad;
                         break;
                     case "TH benjyfishy":
-                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
+                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THbenjyfishyMSha;
                         }
@@ -1135,7 +1244,7 @@ namespace VCT_A
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THRieNsCSeo;
                         }
-                        else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
+                        else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THRieNsMSha;
                         }
@@ -1145,7 +1254,7 @@ namespace VCT_A
                         }
                         break;
                     case "TH Wo0t":
-                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shangai")
+                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THWo0tMSha;
                         }
