@@ -410,6 +410,11 @@
     <None Include="Resources\G2FullCSeo.png" />
     <None Include="Resources\BBLFullMSan.png" />
     <None Include="Resources\FuriaFullMSan.png" />
+    <None Include="Resources\FUTFullMLon.png" />
+    <None Include="Resources\EDwardGamingFullMBan.png" />
+    <None Include="Resources\EDwardGamingFullMLon.png" />
+    <None Include="Resources\EDwardGamingFullMSha1.png" />
+    <None Include="Resources\EDwardGamingFullMTok.png" />
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />

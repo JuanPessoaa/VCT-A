@@ -30,29 +30,29 @@ namespace VCT_A
 {
     public partial class VCT : Form
     {
-        private WindowsMediaPlayer player = new WindowsMediaPlayer();
-        SoundPlayer playerwav = new SoundPlayer();
+        private WindowsMediaPlayer PlayerMp3 = new WindowsMediaPlayer();
+        SoundPlayer PlayerWav = new SoundPlayer();
         string Campeonato = "";
         public VCT()
         {
             InitializeComponent();
 
-            player.settings.setMode("loop", true);
+            PlayerMp3.settings.setMode("loop", true);
 
             this.Size = new System.Drawing.Size(1920, 1080);
             this.DoubleBuffered = true;
         }
         private void VCT_Load(object sender, EventArgs e)
         {
-            Tocar("MusicFEARLESS.mp3");
+            TocarMp3("MusicFEARLESS.mp3");
         }
 
-        private void Tocar(string arquivo)
+        private void TocarMp3(string arquivo)
         {
-            player.controls.stop();
+            PlayerMp3.controls.stop();
             string caminho = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath,"Audio",arquivo);
-            player.URL = caminho;
-            player.controls.play();
+            PlayerMp3.URL = caminho;
+            PlayerMp3.controls.play();
         }
 
         private void TocarWav(string nomeArquivo)
@@ -62,17 +62,17 @@ namespace VCT_A
             if (System.IO.File.Exists(caminho))
             {
                 // Remove e adiciona o evento pra nn duplicar
-                playerwav.LoadCompleted -= Playerwav_LoadCompleted;
-                playerwav.LoadCompleted += Playerwav_LoadCompleted;
-                playerwav.SoundLocation = caminho;
-                playerwav.LoadAsync();
+                PlayerWav.LoadCompleted -= Playerwav_LoadCompleted;
+                PlayerWav.LoadCompleted += Playerwav_LoadCompleted;
+                PlayerWav.SoundLocation = caminho;
+                PlayerWav.LoadAsync();
             }
         }
 
         //executa o wav assim que carregar
         private void Playerwav_LoadCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
-            playerwav.Play();
+            PlayerWav.Play();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,8 +85,9 @@ namespace VCT_A
 
             if (selecao == "Champions")
             {
+                Limpar();
                 TocarWav("AudioListBox.wav");
-                player.controls.stop();
+                PlayerMp3.controls.stop();
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 comboBox1.Items.Add("2021 - Berlin");
@@ -128,8 +129,9 @@ namespace VCT_A
             }
             else if (selecao == "Masters")
             {
+                Limpar();
                 TocarWav("AudioListBox.wav");
-                player.controls.stop();
+                PlayerMp3.controls.stop();
                 comboBox1.Text = "";
                 comboBox1.Visible = true;
                 comboBox1.Items.Add("2021.1 - Reykjavík");
@@ -182,63 +184,64 @@ namespace VCT_A
             switch (Campeonato)
             {
                 case "2021 - Berlin":
-                    ConfigurarParaCBer();
+                    ConfigCBer();
                     break;
                 case "2022 - Instanbul":
-                    ConfigurarParaCIns();
+                    ConfigCIns();
                     break;
                 case "2023 - Los Angeles":
-                    ConfigurarParaCLos();
+                    ConfigCLos();
                     break;
                 case "2024 - Seoul":
-                    ConfigurarParaCSeo();
+                    ConfigCSeo();
                     break;
                 case "2025 - Paris":
-                    ConfigurarParaCPar();
+                    ConfigCPar();
                     break;
                 case "2021.1 - Reykjavík":
-                    ConfigurarParaMRey1();
+                    ConfigMRey1();
                     break;
                 case "2021.2 - Berlin":
-                    ConfigurarParaMBer();
+                    ConfigMBer();
                     break;
                 case "2022.1 - Reykjavík":
-                    ConfigurarParaMRey2();
+                    ConfigMRey2();
                     break;
                 case "2022.2 - Copenhagen":
-                    ConfigurarParaMCop();
+                    ConfigMCop();
                     break;
                 case "2023.0 - São Paulo":
-                    ConfigurarParaMSao();
+                    ConfigMSao();
                     break;
                 case "2023.1 - Tokyo":
-                    ConfigurarParaMTok();
+                    ConfigMTok();
                     break;
                 case "2024.1 - Madrid":
-                    ConfigurarParaMMad();
+                    ConfigMMad();
                     break;
                 case "2024.2 - Shanghai":
-                    ConfigurarParaMSha();
+                    ConfigMSha();
                     break;
                 case "2025.1 - Bangkok":
-                    ConfigurarParaMBan();
+                    ConfigMBan();
                     break;
                 case "2025.2 - Toronto":
-                    ConfigurarParaMTor();
+                    ConfigMTor();
                     break;
                 case "2026.1 - Santiago":
-                    ConfigurarParaMSan();
+                    ConfigMSan();
                     break;
                 case "2026.2 - London":
-                    ConfigurarParaMLon();
+                    ConfigMLon();
                     break;
             }
         }
-        private void ConfigurarParaCBer()
+
+        private void ConfigCBer()
         {
             Limpar();
             Campeonato = "CBer";
-            Tocar("MusicCBer.mp3");
+            TocarMp3("MusicCBer.mp3");
             this.Text = "Valorant Champions Tour | Champions 2021 - Berlin";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCBer;
@@ -268,10 +271,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
         }
 
-        private void ConfigurarParaCIns()
+        private void ConfigCIns()
         {
             Limpar();
-            Tocar("MusicCIns.mp3");
+            Campeonato = "CIns";
+            TocarMp3("MusicCIns.mp3");
             this.Text = "Valorant Champions Tour | Champions 2022 - Instanbul";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCIns;
@@ -301,10 +305,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Pearl" });
         }
 
-        private void ConfigurarParaCLos()
+        private void ConfigCLos()
         {
             Limpar();
-            Tocar("MusicCLos.mp3");
+            Campeonato = "CLos";
+            TocarMp3("MusicCLos.mp3");
             this.Text = "Valorant Champions Tour | Champions 2023 - Los Angeles";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCLos;
@@ -334,10 +339,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
         }
 
-        private void ConfigurarParaCSeo()
+        private void ConfigCSeo()
         {
             Limpar();
-            Tocar("MusicCSeo.mp3");
+            Campeonato = "CSeo";
+            TocarMp3("MusicCSeo.mp3");
             this.Text = "Valorant Champions Tour | Champions 2024 - Seoul";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCSeo;
@@ -367,10 +373,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Abyss", "Ascent", "Bind", "Haven", "Icebox", "Lotus", "Sunset" });
         }
 
-        private void ConfigurarParaCPar()
+        private void ConfigCPar()
         {
             Limpar();
-            Tocar("MusicCPar.mp3");
+            Campeonato = "CPar";
+            TocarMp3("MusicCPar.mp3");
             this.Text = "Valorant Champions Tour | Champions 2025 - Paris";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
             pictureBox9.BackgroundImage = Properties.Resources.LogoCPar;
@@ -400,10 +407,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Abyss", "Ascent", "Bind", "Corrode", "Haven", "Lotus", "Sunset" });
         }
 
-        private void ConfigurarParaMRey1()
+        private void ConfigMRey1()
         {
             Limpar();
-            Tocar("MusicMRey1.mp3");
+            Campeonato = "MRey1";
+            TocarMp3("MusicMRey1.mp3");
             this.Text = "Valorant Champions Tour | 2021.1 - Masters Reykjavík";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey1;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
@@ -433,10 +441,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Haven", "Icebox", "Split" });
         }
 
-        private void ConfigurarParaMBer()
+        private void ConfigMBer()
         {
             Limpar();
-            Tocar("MusicMBer.mp3");
+            Campeonato = "MBer";
+            TocarMp3("MusicMBer.mp3");
             this.Text = "Valorant Champions Tour | Masters 2021.2 - Berlin";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBer;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBer;
@@ -466,10 +475,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Haven", "Icebox", "Split" });
         }
 
-        private void ConfigurarParaMRey2()
+        private void ConfigMRey2()
         {
             Limpar();
-            Tocar("MusicMRey2.mp3");
+            Campeonato = "MRey2";
+            TocarMp3("MusicMRey2.mp3");
             this.Text = "Valorant Champions Tour | Masters 2022.1 - Reykjavík";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMRey2;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMRey;
@@ -499,10 +509,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
         }
 
-        private void ConfigurarParaMCop()
+        private void ConfigMCop()
         {
             Limpar();
-            Tocar("MusicMCop.mp3");
+            Campeonato = "MCop";
+            TocarMp3("MusicMCop.mp3");
             this.Text = "Valorant Champions Tour | Masters 2022.2 - Copenhagen";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMCop;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMCop;
@@ -532,10 +543,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Split" });
         }
 
-        private void ConfigurarParaMSao()
+        private void ConfigMSao()
         {
             Limpar();
-            Tocar("MusicMSao.mp3");
+            Campeonato = "MSao";
+            TocarMp3("MusicMSao.mp3");
             this.Text = "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSao;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSao;
@@ -565,10 +577,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Fracture", "Haven", "Icebox", "Lotus", "Pearl", "Split" });
         }
 
-        private void ConfigurarParaMTok()
+        private void ConfigMTok()
         {
             Limpar();
-            Tocar("MusicMTok.mp3");
+            Campeonato = "MTok";
+            TocarMp3("MusicMTok.mp3");
             this.Text = "Valorant Champions Tour | Masters 2023.1 - Tokyo";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTok;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTok;
@@ -598,10 +611,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Fracture", "Haven", "Lotus", "Pearl", "Split" });
         }
 
-        private void ConfigurarParaMMad()
+        private void ConfigMMad()
         {
             Limpar();
-            Tocar("MusicMMad.mp3");
+            Campeonato = "MMad";
+            TocarMp3("MusicMMad.mp3");
             this.Text = "Valorant Champions Tour | Masters 2024.1 - Madrid";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMMad;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMMad;
@@ -631,10 +645,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
         }
 
-        private void ConfigurarParaMSha()
+        private void ConfigMSha()
         {
             Limpar();
-            Tocar("MusicMSha.mp3");
+            Campeonato = "MSha";
+            TocarMp3("MusicMSha.mp3");
             this.Text = "Valorant Champions Tour | Masters 2024.2 - Shanghai";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSha;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSha;
@@ -664,10 +679,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
         }
 
-        private void ConfigurarParaMBan()
+        private void ConfigMBan()
         {
             Limpar();
-            Tocar("MusicMBan.mp3");
+            Campeonato = "MBan";
+            TocarMp3("MusicMBan.mp3");
             this.Text = "Valorant Champions Tour | Masters 2025.1 - Bangkok";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMBan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMBan;
@@ -697,10 +713,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Bind", "Breeze", "Icebox", "Lotus", "Split", "Sunset" });
         }
 
-        private void ConfigurarParaMTor()
+        private void ConfigMTor()
         {
             Limpar();
-            Tocar("MusicMTor.mp3");
+            Campeonato = "MTor";
+            TocarMp3("MusicMTor.mp3");
             this.Text = "Valorant Champions Tour | Masters 2025.2 - Toronto";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMTor;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMTor;
@@ -730,10 +747,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Ascent", "Haven", "Icebox", "Lotus", "Pearl", "Split", "Sunset" });
         }
 
-        private void ConfigurarParaMSan()
+        private void ConfigMSan()
         {
             Limpar();
-            Tocar("MusicMSan.mp3");
+            Campeonato = "MSan";
+            TocarMp3("MusicMSan.mp3");
             this.Text = "Valorant Champions Tour | Masters 2026.1 - Santiago";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMSan;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMSan;
@@ -763,10 +781,11 @@ namespace VCT_A
             comboBox3.Items.AddRange(new object[] { "Abyss", "Bind", "Breeze", "Corrode", "Haven", "Pearl", "Split" });
         }
 
-        private void ConfigurarParaMLon()
+        private void ConfigMLon()
         {
             Limpar();
-            Tocar("MusicMLon.mp3");
+            Campeonato = "MLon";
+            TocarMp3("MusicMLon.mp3");
             this.Text = "Valorant Champions Tour | Masters 2026.2 - London";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyMLon;
             pictureBox9.BackgroundImage = Properties.Resources.LogoMLon1;
@@ -807,10 +826,6 @@ namespace VCT_A
             label7.Visible = visivel;
             label8.Visible = visivel;
             label9.Visible = visivel;
-            label10.Visible = visivel;
-            label11.Visible = visivel;
-            label12.Visible = visivel;
-            label13.Visible = visivel;
             groupBox1.Visible = visivel;
             radioButton1.Visible = visivel;
             radioButton2.Visible = visivel;
@@ -873,113 +888,148 @@ namespace VCT_A
             {
                 if (rb.Text.Contains("100 Thieves"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Masters 2021.2 - Berlin")
+                    if (Campeonato == "MBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources._100ThievesFullMBer;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    else if (Campeonato == "MSao")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources._100ThievesFullMSao;
                     }
-                    else
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources._100ThievesFullMSha;
+                        checkBox4.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("Acend"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    if (Campeonato == "CBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.AcendFullCBer;
+                        checkBox1.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.AcendFullMBer;
                     }
                 }
                 else if (rb.Text.Contains("All Gamers"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.AllGamersFullMSan;
+                    if (Campeonato == "MSan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.AllGamersFullMSan;
+                    }
                 }
                 else if (rb.Text.Contains("BBL"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.BBLFullMSan;
+                    if (Campeonato == "MSan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.BBLFullMSan;
+                    }
                 }
                 else if (rb.Text.Contains("Bilibili Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.BilibiliGamingFullCLos;
+                    if (Campeonato == "CLos")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.BilibiliGamingFullCLos;
+                    }
                 }
                 else if (rb.Text.Contains("Cloud9"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Cloud9FullCBer;
+                    if (Campeonato == "CBer")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.Cloud9FullCBer;
+                    }
                 }
                 else if (rb.Text.Contains("DRX"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullCIns;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    else if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullCLos;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    else if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullCSeo;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    else if (Campeonato == "CPar")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullCPar;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    else if (Campeonato == "MRey2")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullMRey2;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullMCop;
                     }
-                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    else if (Campeonato == "MSao")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullMSao;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullMTok;
                     }
-                    else
+                    else if (Campeonato == "MBan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.DRXFullMBan;
                     }
                 }
                 else if (rb.Text.Contains("EDward Gaming"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullCLos;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    else if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullCSeo;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    else if (Campeonato == "MTok")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMTok;
+                    }
+                    else if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMMad;
                     }
-                    else
+                    else if (Campeonato == "MSha")
                     {
-                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMSha;
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMSha1;
+                    }
+                    else if (Campeonato == "MBan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMBan;
+                        checkBox3.Checked = true;
+                    }
+                    else if (Campeonato == "MLon")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMLon;
+                        checkBox3.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("Evil Geniuses"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.EvilGeniusesFullCLos;
+                        checkBox1.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.EvilGeniusesFullMTok;
+                        checkBox2.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("FNATIC"))
@@ -988,495 +1038,612 @@ namespace VCT_A
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCBer;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    else if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCIns;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    else if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCLos;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    else if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCSeo;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    else if (Campeonato == "CPar")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCPar;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    else if (Campeonato == "MRey1")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMRey1;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMCop;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    else if (Campeonato == "MSao")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMSao;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMTok;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMSha;
                     }
-                    else
+                    else if (Campeonato == "MTor")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullMTor;
+                        checkBox2.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("FunPlus Phoenix"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenixFullCIns;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenixFullMCop;
+                        checkBox1.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenixFullMMad;
                     }
                 }
                 else if (rb.Text.Contains("FURIA"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.FuriaFullMSan;
+                    if (Campeonato == "MSan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FuriaFullMSan;
+                    }
                 }
                 else if (rb.Text.Contains("FUT"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FUTFullCLos;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
-                    {
-                        pictureBox10.BackgroundImage = Properties.Resources.FUTFullCSeo;
-                    }
-                    else
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FUTFullMSha;
+                    }
+                    else if (Campeonato == "MLon")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FUTFullMLon;
                     }
                 }
                 else if (rb.Text.Contains("G2"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullCSeo;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    else if (Campeonato == "CPar")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullCPar;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2021.2 - Berlin")
+                    else if (Campeonato == "MBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMBer;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    else if (Campeonato == "MRey2")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMRey2;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMSha;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2025.1 - Bangkok")
+                    else if (Campeonato == "MBan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMBan;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                    else if (Campeonato == "MTor")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMTor;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2026.1 - Santiago")
+                    else if (Campeonato == "MSan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMSan;
+                        checkBox4.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MLon")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.G2FullMLon;
                     }
                 }
                 else if (rb.Text.Contains("Gambit"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    if (Campeonato == "CBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.GambitFullCBer;
+                        checkBox2.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.GambitFullMBer;
+                        checkBox1.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("Gen.G"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.GenGFullMMad;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.GenGFullMSha;
+                        checkBox1.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MTor")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.GenGFullMTor;
                     }
                 }
                 else if (rb.Text.Contains("Gentle Mates"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.GentleMatesFullMSan;
+                    if (Campeonato == "MSan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GentleMatesFullMSan;
+                    }
                 }
                 else if (rb.Text.Contains("GIANTX"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.GiantXFullCPar;
+                    if (Campeonato == "CPar")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GiantXFullCPar;
+                    }
                 }
                 else if (rb.Text.Contains("Guild"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.GuildFullMCop;
+                    if (Campeonato == "MCop")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GuildFullMCop;
+                    }
                 }
                 else if (rb.Text.Contains("Karmine Corp"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.KarmineCorpFullMMad;
+                    if (Campeonato == "MMad")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.KarmineCorpFullMMad;
+                    }
                 }
                 else if (rb.Text.Contains("KRÜ"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    if (Campeonato == "CBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.KruFullCBer;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    else if (Campeonato == "MRey1")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.KruFullMRey1;
                     }
-                    else
+                    else if (Campeonato == "MBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.KruFullMBer;
                     }
                 }
                 else if (rb.Text.Contains("Leviatán"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullCIns;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    else if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullCSeo;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullMCop;
                     }
-                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    else if (Campeonato == "MSao")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullMSao;
                     }
-                    else
+                    else if (Campeonato == "MLon")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullMLon;
+                        checkBox1.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("LOUD"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullCIns;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    else if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullCLos;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    else if (Campeonato == "MRey2")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullMRey2;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    else if (Campeonato == "MSao")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullMSao;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullMTok;
                     }
-                    else
+                    else if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.LoudFullMMad;
+                        checkBox4.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("MIBR"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.MIBRFullCPar;
+                    if (Campeonato == "CPar")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.MIBRFullCPar;
+                    }
                 }
                 else if (rb.Text.Contains("Natus Vincere"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NatusVincereFullMSao;
+                    if (Campeonato == "MSao")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NatusVincereFullMSao;
+                        checkBox4.Checked = true;
+                    }
                 }
                 else if (rb.Text.Contains("Nongshim RedForce"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NongshimRedForceFullMSan;
+                    if (Campeonato == "MSan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NongshimRedForceFullMSan;
+                        checkBox1.Checked = true;
+                    }
                 }
                 else if (rb.Text.Contains("NRG"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    if (Campeonato == "CPar")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.NRGFullCPar;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    else if (Campeonato == "MSao")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.NRGFullMSao;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.NRGFullMTok;
+                        checkBox4.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MSan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.NRGFullMSan;
+                        checkBox3.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("NUTURN"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NuturnFullMRey1;
+                    if (Campeonato == "MRey1")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NuturnFullMRey1;
+                        checkBox3.Checked = true;
+                    }
                 }
                 else if (rb.Text.Contains("OpTic Gaming"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingFullCIns;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    else if (Campeonato == "MRey2")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingFullMRey2;
+                        checkBox1.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.OpTicGamingFullMCop;
+                        checkBox3.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("Paper Rex"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    if (Campeonato == "CLos")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullCLos;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    else if (Campeonato == "CPar")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullCPar;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    else if (Campeonato == "MRey2")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMRey2;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMCop;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMTok;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    else if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMMad;
+                        checkBox3.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMSha;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                    else if (Campeonato == "MTor")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMTor;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2026.1 - Santiago")
+                    else if (Campeonato == "MSan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMSan;
+                        checkBox2.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MLon")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMLon;
+                        checkBox2.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("Rex Regum Qeon"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.RexRegumQeonFullMTor;
+                    if (Campeonato == "MTor")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.RexRegumQeonFullMTor;
+                    }
                 }
                 else if (rb.Text.Contains("Sentinels"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullCSeo;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    else if (Campeonato == "MRey1")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMRey1;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2021.2 - Berlin")
+                    else if (Campeonato == "MBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMBer;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    else if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMMad;
+                        checkBox1.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2025.1 - Bangkok")
+                    else if (Campeonato == "MBan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMBan;
                     }
-                    else
+                    else if (Campeonato == "MTor")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMTor;
                     }
                 }
                 else if (rb.Text.Contains("T1"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.T1FullMBan;
+                    if (Campeonato == "MBan")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.T1FullMBan;
+                        checkBox1.Checked = true;
+                    }
                 }
                 else if (rb.Text.Contains("TALON"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TalonFullMSao;
+                    if (Campeonato == "MSao")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TalonFullMSao;
+                    }
                 }
                 else if (rb.Text.Contains("Team Envy"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamEnvyFullMBer;
+                    if (Campeonato == "MBer")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamEnvyFullMBer;
+                        checkBox2.Checked = true;
+                    }
                 }
                 else if (rb.Text.Contains("Team Heretics"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullCSeo;
+                        checkBox2.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    else if (Campeonato == "CPar")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullCPar;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    else if (Campeonato == "MMad")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullMMad;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    else if (Campeonato == "MSha")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullMSha;
+                        checkBox2.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MLon")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullMLon;
                     }
                 }
                 else if (rb.Text.Contains("Team Liquid"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    if (Campeonato == "CBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullCBer;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    else if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullCIns;
                     }
-                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    else if (Campeonato == "MRey1")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMRey1;
+                        checkBox4.Checked = true;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    else if (Campeonato == "MRey2")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMRey2;
                     }
-                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    else if (Campeonato == "MTok")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMTok;
                     }
-                    else
+                    else if (Campeonato == "MBan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamLiquidFullMBan;
                     }
                 }
                 else if (rb.Text.Contains("Team Secret"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamSecretFullCBer;
+                    if (Campeonato == "CBer")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamSecretFullCBer;
+                    }
                 }
                 else if (rb.Text.Contains("Team Vikings"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamVikingsFullMRey1;
+                    if (Campeonato == "MRey1")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamVikingsFullMRey1;
+                    }
                 }
                 else if (rb.Text.Contains("Team Vitality"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Masters 2025.1 - Bangkok")
+                    if (Campeonato == "MBan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamVitalityFullMBan;
+                        checkBox4.Checked = true;
                     }
-                    else
+                    else if (Campeonato == "MLon")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TeamVitalityFullMLon;
+                        checkBox4.Checked = true;
                     }
                 }
                 else if (rb.Text.Contains("The Guard"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TheGuardFullMRey2;
+                    if (Campeonato == "MRey2")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TheGuardFullMRey2;
+                    }
                 }
                 else if (rb.Text.Contains("Trace"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    if (Campeonato == "CSeo")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TraceFullCSeo;
                     }
-                    else
+                    else if (Campeonato == "MBan")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.TraceFullMBan;
                     }
                 }
                 else if (rb.Text.Contains("Version1"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Version1FullMRey1;
+                    if (Campeonato == "MRey1")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.Version1FullMRey1;
+                    }
                 }
                 else if (rb.Text.Contains("Vision Strikers"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.VisionStrikersFullMBer;
+                    if (Campeonato == "MBer")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.VisionStrikersFullMBer;
+                    }
                 }
                 else if (rb.Text.Contains("Wolves"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.WolvesFullMTor;
+                    if (Campeonato == "MTor")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.WolvesFullMTor;
+                        checkBox3.Checked = true;
+                    }
                 }
                 else if (rb.Text.Contains("X10 CRIT"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    if (Campeonato == "CBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.X10CritFullCBer;
                     }
-                    else
+                    else if (Campeonato == "MRey1")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.X10CritFullMRey1;
                     }
                 }
                 else if (rb.Text.Contains("Xi Lai Gaming"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                    if (Campeonato == "MTor")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.XiLaiGamingFullMTor;
                     }
-                    else
+                    else if (Campeonato == "MLon")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.XiLaiGamingFullMLon;
                     }
                 }
                 else if (rb.Text.Contains("XSET"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    if (Campeonato == "CIns")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.XSetFullCIns;
                     }
-                    else
+                    else if (Campeonato == "MCop")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.XSetFullMCop;
                     }
                 }
                 else if (rb.Text.Contains("ZETA DIVISION"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.ZetaDivisionFullMRey2;
+                    if (Campeonato == "MRey2")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.ZetaDivisionFullMRey2;
+                        checkBox3.Checked = true;
+                    }
                 }
             }
         }
@@ -1496,7 +1663,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.DRXHYUNMINCPar;
                         break;
                     case "EDG ZmjjKK":
-                        if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                        if (Campeonato == "CSeo")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.EDGZmjjKKCSeo;
                         }
@@ -1509,7 +1676,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.EGBoostioMTok;
                         break;
                     case "EG Demon1":
-                        if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                        if (Campeonato == "CLos")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.EGDemon1CLos;
                         }
@@ -1528,7 +1695,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.FNCDomaMRey1;
                         break;
                     case "FNC kaajak":
-                        if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                        if (Campeonato == "CPar")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.FNCkaajakCPar;
                         }
@@ -1553,7 +1720,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.G2keloqzMBer;
                         break;
                     case "GMB Chronicle":
-                        if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                        if (Campeonato == "CBer")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.GMBChronicleCBer;
                         }
@@ -1581,7 +1748,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.LEVspikeMLon;
                         break;
                     case "LOUD aspas":
-                        if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                        if (Campeonato == "CLos")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.LOUDaspasCLos;
                         }
@@ -1594,7 +1761,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.LOUDcauanzinMSao;
                         break;
                     case "LOUD Less":
-                        if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                        if (Campeonato == "CLos")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.LOUDLessCLos;
                         }
@@ -1613,7 +1780,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.OPTCVictorCIns;
                         break;
                     case "OPTC yay":
-                        if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                        if (Campeonato == "CIns")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.OPTCyayCIns;
                         }
@@ -1629,7 +1796,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.PRXf0rsakeNMSan;
                         break;
                     case "PRX Jinggg":
-                        if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                        if (Campeonato == "MTor")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.PRXJingggMTor;
                         }
@@ -1648,7 +1815,7 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.SENzekkenMMad;
                         break;
                     case "TH benjyfishy":
-                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                        if (Campeonato == "MSha")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THbenjyfishyMSha;
                         }
@@ -1661,11 +1828,11 @@ namespace VCT_A
                         pictureBox11.BackgroundImage = Properties.Resources.THMiniBooCSeo;
                         break;
                     case "TH RieNs":
-                        if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                        if (Campeonato == "CSeo")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THRieNsCSeo;
                         }
-                        else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                        else if (Campeonato == "MSha")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THRieNsMSha;
                         }
@@ -1675,7 +1842,7 @@ namespace VCT_A
                         }
                         break;
                     case "TH Wo0t":
-                        if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                        if (Campeonato == "MSha")
                         {
                             pictureBox11.BackgroundImage = Properties.Resources.THWo0tMSha;
                         }
@@ -1743,6 +1910,7 @@ namespace VCT_A
         {
             if (checkBox1.Checked)
             {
+                label10.Visible = true;
 
                 string Podio = checkBox1.Text;
 
@@ -1798,6 +1966,7 @@ namespace VCT_A
             else
             {
                 pictureBox2.BackgroundImage = null;
+                label10.Visible = false;
             }
 
         }
@@ -1806,6 +1975,8 @@ namespace VCT_A
         {
             if (checkBox2.Checked)
             {
+                label11.Visible = true;
+
                 string Podio = checkBox2.Text;
 
                 switch (Podio)
@@ -1845,6 +2016,7 @@ namespace VCT_A
             else
             {
                 pictureBox3.BackgroundImage = null;
+                label11.Visible = false;
             }
         }
 
@@ -1852,6 +2024,8 @@ namespace VCT_A
         {
             if (checkBox3.Checked)
             {
+                label12.Visible = true;
+
                 string Podio = checkBox3.Text;
                 switch (Podio)
                 {
@@ -1896,6 +2070,7 @@ namespace VCT_A
             else
             {
                 pictureBox4.BackgroundImage = null;
+                label12.Visible = false;
             }
         }
 
@@ -1903,7 +2078,10 @@ namespace VCT_A
         {
             if (checkBox4.Checked)
             {
+                label13.Visible = true;
+
                 string Podio = checkBox4.Text;
+
                 switch (Podio)
                 {
                     case "4º Team Liquid":
@@ -1944,6 +2122,7 @@ namespace VCT_A
             else
             {
                 pictureBox5.BackgroundImage = null;
+                label13.Visible = false;
             }
         }
 

@@ -623,6 +623,26 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullMBan {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullMBan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullMLon {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullMLon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EDwardGamingFullMMad {
             get {
                 object obj = ResourceManager.GetObject("EDwardGamingFullMMad", resourceCulture);
@@ -636,6 +656,26 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap EDwardGamingFullMSha {
             get {
                 object obj = ResourceManager.GetObject("EDwardGamingFullMSha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullMSha1 {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullMSha1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullMTok {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullMTok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1016,6 +1056,16 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap FUTFullCSeo {
             get {
                 object obj = ResourceManager.GetObject("FUTFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FUTFullMLon {
+            get {
+                object obj = ResourceManager.GetObject("FUTFullMLon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

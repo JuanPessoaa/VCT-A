@@ -259,6 +259,9 @@
   <data name="FPXShaoMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FPXShaoMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FUTFullMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUTFullMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="WallpaperChampionsD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WallpaperChampionsD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -784,6 +787,9 @@
   <data name="NRGFullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NRGFullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NongshimRedForceFullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NongshimRedForceFullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TrophyMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1066,7 +1072,16 @@
   <data name="Haven" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Haven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NongshimRedForceFullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NongshimRedForceFullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EDwardGamingFullMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EDwardGamingFullMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EDwardGamingFullMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EDwardGamingFullMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EDwardGamingFullMSha1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EDwardGamingFullMSha1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EDwardGamingFullMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EDwardGamingFullMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
