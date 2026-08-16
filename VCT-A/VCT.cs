@@ -873,7 +873,18 @@ namespace VCT_A
             {
                 if (rb.Text.Contains("100 Thieves"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources._100Thieves;
+                    if (this.Text == "Valorant Champions Tour | Masters 2021.2 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources._100ThievesFullMBer;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources._100ThievesFullMSao;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources._100ThievesFullMSha;
+                    }
                 }
                 else if (rb.Text.Contains("Acend"))
                 {
@@ -1104,7 +1115,18 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Gen.G"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.GenG;
+                    if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GenGFullMMad;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GenGFullMSha;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.GenGFullMTor;
+                    }
                 }
                 else if (rb.Text.Contains("Gentle Mates"))
                 {
@@ -1116,7 +1138,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Guild"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Guild;
+                    pictureBox10.BackgroundImage = Properties.Resources.GuildFullMCop;
                 }
                 else if (rb.Text.Contains("Karmine Corp"))
                 {
@@ -1193,7 +1215,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Natus Vincere"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NatusVicere;
+                    pictureBox10.BackgroundImage = Properties.Resources.NatusVincereFullMSao;
                 }
                 else if (rb.Text.Contains("Nongshim RedForce"))
                 {
@@ -1220,7 +1242,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("NUTURN"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NUTURN;
+                    pictureBox10.BackgroundImage = Properties.Resources.NuturnFullMRey1;
                 }
                 else if (rb.Text.Contains("OpTic Gaming"))
                 {
@@ -1317,11 +1339,11 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("TALON"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TALON;
+                    pictureBox10.BackgroundImage = Properties.Resources.TalonFullMSao;
                 }
                 else if (rb.Text.Contains("Team Envy"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamEnvy;
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamEnvyFullMBer;
                 }
                 else if (rb.Text.Contains("Team Heretics"))
                 {
@@ -1379,7 +1401,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Team Vikings"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamVikings;
+                    pictureBox10.BackgroundImage = Properties.Resources.TeamVikingsFullMRey1;
                 }
                 else if (rb.Text.Contains("Team Vitality"))
                 {
@@ -1387,7 +1409,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("The Guard"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TheGuard;
+                    pictureBox10.BackgroundImage = Properties.Resources.TheGuardFullMRey2;
                 }
                 else if (rb.Text.Contains("Trace"))
                 {
@@ -1402,11 +1424,11 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Version1"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Version1;
+                    pictureBox10.BackgroundImage = Properties.Resources.Version1FullMRey1;
                 }
                 else if (rb.Text.Contains("Vision Strikers"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.VisionStrikers;
+                    pictureBox10.BackgroundImage = Properties.Resources.VisionStrikersFullMBer;
                 }
                 else if (rb.Text.Contains("Wolves"))
                 {
@@ -1440,7 +1462,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("ZETA DIVISION"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.ZETADIVISION;
+                    pictureBox10.BackgroundImage = Properties.Resources.ZetaDivisionFullMRey2;
                 }
             }
         }

@@ -121,9 +121,6 @@
   <data name="LogoMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DRXFullMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DRXFullMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Cloud9FullCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cloud9FullCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,14 +130,14 @@
   <data name="Icebox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icebox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="X10CritFullCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\X10CritFullCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TALON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TALON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KruFullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KruFullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CapaMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CapaMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MIBR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MIBR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +148,8 @@
   <data name="LogoCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GambitFullCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GambitFullCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NRGFullMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NRGFullMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TrophyMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -177,6 +174,9 @@
   </data>
   <data name="THWo0tMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\THWo0tMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DRXFlashbackCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DRXFlashbackCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,14 +232,14 @@
   <data name="CapaCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CapaCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CapaMMad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CapaMMad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vcticonbranca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vcticonbranca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TeamLiquidFullMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamLiquidFullMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="G2FullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\G2FullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NatusVincereFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NatusVincereFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="X10CRIT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X10CRIT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,6 +283,9 @@
   <data name="LogoMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="100ThievesFullMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\100ThievesFullMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="XSetFullCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\XSetFullCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -316,8 +319,8 @@
   <data name="SentinelsFullMBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SentinelsFullMBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FUTFullCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FUTFullCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VisionStrikers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VisionStrikers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Trace" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,20 +343,23 @@
   <data name="TrophyMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LoudFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoudFull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FnaticFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FnaticFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CapaCLos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CapaCLos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TeamEnvy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TeamEnvy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sunset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FnaticFullMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FnaticFullMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LoudFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoudFull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TrophyChampions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrophyChampions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gambit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gambit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -376,6 +382,9 @@
   <data name="FnaticFullMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FnaticFullMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TalonFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TalonFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gen.G" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gen.G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -388,8 +397,8 @@
   <data name="Sentinels1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sentinels1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WallpaperChampionsD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WallpaperChampionsD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PaperRexFullMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperRexFullMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TeamHereticsFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamHereticsFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,11 +421,14 @@
   <data name="EGDemon1CLos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EGDemon1CLos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DRXFullMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DRXFullMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DRXFullCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DRXFullCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guild" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TeamVitality" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamVitality.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,8 +445,11 @@
   <data name="TeamSecretFullCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamSecretFullCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PaperRex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperRex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuildFullMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuildFullMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrophyMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrophyMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FnaticFullCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FnaticFullCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -448,26 +463,17 @@
   <data name="WallpaperChampionsC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WallpaperChampionsC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PaperRexFullMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperRexFullMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="OPTCyayCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OPTCyayCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FNATIC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FNATIC1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LeviatanFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LeviatanFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WallpaperMastersD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WallpaperMastersD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DRXFullMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DRXFullMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="T1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\T1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vcticonbranca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vcticonbranca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NatusVicere" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NatusVicere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -490,11 +496,14 @@
   <data name="TeamHeretics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamHeretics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TheGuardFullMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TheGuardFullMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MIBRFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MIBRFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EDGZmjjKKCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EDGZmjjKKCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VisionStrikersFullMBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VisionStrikersFullMBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TraceFullMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TraceFullMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -541,14 +550,23 @@
   <data name="TrophyMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrophyMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LeviatanFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeviatanFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CapaMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CapaMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Leviatan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Leviatan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DRXFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DRXFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EGBoostioMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EGBoostioMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NRGFullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NRGFullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KruFullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KruFullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FUTFullCLos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FUTFullCLos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -570,9 +588,6 @@
   </data>
   <data name="wallpaperbase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpaperbase.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogoMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CapaCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CapaCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -601,8 +616,14 @@
   <data name="wallpapertexto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpapertexto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WallpaperChampionsD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WallpaperChampionsD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DRXFullMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DRXFullMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOUDcauanzinMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOUDcauanzinMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoudFullMMad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoudFullMMad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -619,6 +640,9 @@
   <data name="EGDemon1MTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EGDemon1MTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="X10CritFullCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\X10CritFullCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GMBChronicleCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GMBChronicleCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -628,8 +652,8 @@
   <data name="TeamSecret" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamSecret.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CapaMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CapaMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Version1FullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Version1FullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SentinelsFullMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SentinelsFullMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -637,14 +661,17 @@
   <data name="FunPlusPhoenixFullMMad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FunPlusPhoenixFullMMad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LEVNeonMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LEVNeonMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DRX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DRX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GenG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GenG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EGBoostioMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EGBoostioMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="100ThievesFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\100ThievesFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EDwardGaming" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EDwardGaming.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -694,8 +721,8 @@
   <data name="THMiniBooCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\THMiniBooCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TrophyChampions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrophyChampions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PaperRex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperRex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EDwardGamingFullMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EDwardGamingFullMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -730,8 +757,14 @@
   <data name="LoudFullCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoudFullCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="100ThievesFullMBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\100ThievesFullMBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Acend" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Acend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EDGZmjjKKCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EDGZmjjKKCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ascent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ascent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -739,8 +772,8 @@
   <data name="AllGamers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AllGamers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WallpaperMastersD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WallpaperMastersD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="G2FullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G2FullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SENTenZMMad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SENTenZMMad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -763,11 +796,11 @@
   <data name="LogoMRey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoMRey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TrophyMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrophyMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NRGFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NRGFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sunset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FUTFullCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUTFullCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="wallpaperdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpaperdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -793,14 +826,17 @@
   <data name="PaperRexFullMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaperRexFullMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TrophyMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TrophyMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FNATIC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FNATIC1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CapaMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CapaMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SentinelsFullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SentinelsFullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NuturnFullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NuturnFullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SentinelsFullCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SentinelsFullCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -820,8 +856,8 @@
   <data name="KarmineCorp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KarmineCorp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LEVNeonMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LEVNeonMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EvilGeniusesFullMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EvilGeniusesFullMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="THbenjyfishyMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\THbenjyfishyMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -838,11 +874,14 @@
   <data name="THRieNsMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\THRieNsMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TeamVikingsFullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TeamVikingsFullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TraceFullCSeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TraceFullCSeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VisionStrikers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VisionStrikers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DRXFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DRXFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PaperRexFullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaperRexFullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -883,8 +922,8 @@
   <data name="FPXZyppanMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FPXZyppanMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PaperRexFullMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaperRexFullMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TeamEnvy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TeamEnvy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="THWo0tMBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\THWo0tMBan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -910,23 +949,35 @@
   <data name="DRXFullCIns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DRXFullCIns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LOUDcauanzinMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOUDcauanzinMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NRGFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NRGFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TeamEnvyFullMBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TeamEnvyFullMBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrophyMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrophyMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperRexFullMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperRexFullMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOUD250" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOUD250.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vctlogopreta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vctlogopreta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LEVSatoMLon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LEVSatoMLon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DRXFlashbackCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DRXFlashbackCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CapaMMad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CapaMMad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Version1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Version1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GambitFullCBer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GambitFullCBer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EvilGeniusesFullCLos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EvilGeniusesFullCLos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -943,11 +994,14 @@
   <data name="FnaticFullMRey1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FnaticFullMRey1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Guild" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ZetaDivisionFullMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZetaDivisionFullMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OpTicGamingFullMCop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OpTicGamingFullMCop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vctlogopreta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vctlogopreta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TeamHereticsFullMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TeamHereticsFullMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -964,22 +1018,16 @@
   <data name="G2FullMRey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\G2FullMRey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EvilGeniusesFullMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EvilGeniusesFullMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sentinels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sentinels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NRGFullCPar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NRGFullCPar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GenGFullMMad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenGFullMMad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NRGFullMSan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NRGFullMSan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GenGFullMSha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenGFullMSha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NRGFullMSao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NRGFullMSao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NRGFullMTok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NRGFullMTok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GenGFullMTor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenGFullMTor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

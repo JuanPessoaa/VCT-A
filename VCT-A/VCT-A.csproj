@@ -140,6 +140,10 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ZetaDivisionFullMRey2.png" />
+    <None Include="Resources\TheGuardFullMRey2.png" />
+    <None Include="Resources\Version1FullMRey1.png" />
+    <None Include="Resources\VisionStrikersFullMBer.png" />
     <None Include="Resources\TraceFullMBan.png" />
     <None Include="Resources\TraceFullCSeo.png" />
     <None Include="Resources\XSetFullMCop.png" />
@@ -244,6 +248,9 @@
     <Content Include="Audio\MusicMTor.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\100ThievesFullMBer.png" />
+    <None Include="Resources\100ThievesFullMSao.png" />
+    <None Include="Resources\100ThievesFullMSha.png" />
     <Content Include="Resources\97e329a0-8f4ddde4.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -486,6 +493,12 @@
     <None Include="Resources\NRGFullMSan.png" />
     <None Include="Resources\NRGFullMSao.png" />
     <None Include="Resources\NRGFullMTok.png" />
+    <None Include="Resources\NuturnFullMRey1.png" />
+    <None Include="Resources\GuildFullMCop.png" />
+    <None Include="Resources\NatusVincereFullMSao.png" />
+    <None Include="Resources\GenGFullMMad.png" />
+    <None Include="Resources\GenGFullMSha.png" />
+    <None Include="Resources\GenGFullMTor.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -510,6 +523,9 @@
     <None Include="Resources\TeamHereticsFullMLon.png" />
     <None Include="Resources\TeamHereticsFullMMad.png" />
     <None Include="Resources\TeamHereticsFullMSha.png" />
+    <None Include="Resources\TeamVikingsFullMRey1.png" />
+    <None Include="Resources\TeamEnvyFullMBer.png" />
+    <None Include="Resources\TalonFullMSao.png" />
     <Content Include="Resources\teste.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
