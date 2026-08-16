@@ -899,11 +899,11 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("All Gamers"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.AllGamers;
+                    pictureBox10.BackgroundImage = Properties.Resources.AllGamersFullMSan;
                 }
                 else if (rb.Text.Contains("BBL"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.BBL;
+                    pictureBox10.BackgroundImage = Properties.Resources.BBLFullMSan;
                 }
                 else if (rb.Text.Contains("Bilibili Gaming"))
                 {
@@ -1046,7 +1046,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("FURIA"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.FURIA;
+                    pictureBox10.BackgroundImage = Properties.Resources.FuriaFullMSan;
                 }
                 else if (rb.Text.Contains("FUT"))
                 {
@@ -1130,7 +1130,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Gentle Mates"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.GentleMates;
+                    pictureBox10.BackgroundImage = Properties.Resources.GentleMatesFullMSan;
                 }
                 else if (rb.Text.Contains("GIANTX"))
                 {
@@ -1142,7 +1142,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Karmine Corp"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.KarmineCorp;
+                    pictureBox10.BackgroundImage = Properties.Resources.KarmineCorpFullMMad;
                 }
                 else if (rb.Text.Contains("KRÜ"))
                 {
@@ -1219,7 +1219,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Nongshim RedForce"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NongshimRedForce;
+                    pictureBox10.BackgroundImage = Properties.Resources.NongshimRedForceFullMSan;
                 }
                 else if (rb.Text.Contains("NRG"))
                 {
@@ -1304,7 +1304,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Rex Regum Qeon"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.RexRegumQeon;
+                    pictureBox10.BackgroundImage = Properties.Resources.RexRegumQeonFullMTor;
                 }
                 else if (rb.Text.Contains("Sentinels"))
                 {
@@ -1335,7 +1335,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("T1"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.T1;
+                    pictureBox10.BackgroundImage = Properties.Resources.T1FullMBan;
                 }
                 else if (rb.Text.Contains("TALON"))
                 {
@@ -1405,7 +1405,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Team Vitality"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamVitality;
+                    if (this.Text == "Valorant Champions Tour | Masters 2025.1 - Bangkok")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamVitalityFullMBan;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamVitalityFullMLon;
+                    }
                 }
                 else if (rb.Text.Contains("The Guard"))
                 {
@@ -1432,7 +1439,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Wolves"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Wolves;
+                    pictureBox10.BackgroundImage = Properties.Resources.WolvesFullMTor;
                 }
                 else if (rb.Text.Contains("X10 CRIT"))
                 {
@@ -1447,7 +1454,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Xi Lai Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.XiLaiGaming;
+                    if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.XiLaiGamingFullMTor;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.XiLaiGamingFullMLon;
+                    }
                 }
                 else if (rb.Text.Contains("XSET"))
                 {

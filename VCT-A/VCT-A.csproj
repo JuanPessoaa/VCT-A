@@ -140,6 +140,9 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\XiLaiGamingFullMTor.png" />
+    <None Include="Resources\XiLaiGamingFullMLon.png" />
+    <None Include="Resources\WolvesFullMTor.png" />
     <None Include="Resources\ZetaDivisionFullMRey2.png" />
     <None Include="Resources\TheGuardFullMRey2.png" />
     <None Include="Resources\Version1FullMRey1.png" />
@@ -263,6 +266,7 @@
     <None Include="Resources\Abyss.png" />
     <None Include="Resources\AcendFullCBer.png" />
     <None Include="Resources\AcendFullMBer.png" />
+    <None Include="Resources\AllGamersFullMSan.png" />
     <Content Include="Resources\Ascent.png" />
     <None Include="Resources\EvilGeniuses.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -404,6 +408,8 @@
     <None Include="Resources\G2FullMTor.png" />
     <None Include="Resources\G2FullCPar.png" />
     <None Include="Resources\G2FullCSeo.png" />
+    <None Include="Resources\BBLFullMSan.png" />
+    <None Include="Resources\FuriaFullMSan.png" />
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />
@@ -499,6 +505,10 @@
     <None Include="Resources\GenGFullMMad.png" />
     <None Include="Resources\GenGFullMSha.png" />
     <None Include="Resources\GenGFullMTor.png" />
+    <None Include="Resources\KarmineCorpFullMMad.png" />
+    <None Include="Resources\RexRegumQeonFullMTor.png" />
+    <None Include="Resources\GentleMatesFullMSan.png" />
+    <None Include="Resources\NongshimRedForceFullMSan.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -526,6 +536,9 @@
     <None Include="Resources\TeamVikingsFullMRey1.png" />
     <None Include="Resources\TeamEnvyFullMBer.png" />
     <None Include="Resources\TalonFullMSao.png" />
+    <None Include="Resources\T1FullMBan.png" />
+    <None Include="Resources\TeamVitalityFullMBan.png" />
+    <None Include="Resources\TeamVitalityFullMLon.png" />
     <Content Include="Resources\teste.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
