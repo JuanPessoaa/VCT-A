@@ -370,7 +370,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.BackgroundImage = global::VCT_A.Properties.Resources.X10CritFullMRey1;
+            this.pictureBox10.BackgroundImage = global::VCT_A.Properties.Resources.NRGFullMTok;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox10.Location = new System.Drawing.Point(447, 220);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);

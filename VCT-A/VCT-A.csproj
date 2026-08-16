@@ -140,6 +140,10 @@
     <None Include="Resources\wallpapersplashscreen.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\TraceFullMBan.png" />
+    <None Include="Resources\TraceFullCSeo.png" />
+    <None Include="Resources\XSetFullMCop.png" />
+    <None Include="Resources\XSetFullCIns.png" />
     <None Include="Resources\X10CritFullMRey1.png" />
     <None Include="Resources\X10CritFullCBer.png" />
     <None Include="Resources\wallpaperbase.jpg" />
@@ -362,6 +366,37 @@
     <None Include="Resources\FnaticFullMTor.png" />
     <None Include="Resources\GambitFullCBer.png" />
     <None Include="Resources\GambitFullMBer.png" />
+    <None Include="Resources\DRXFullCIns.png" />
+    <None Include="Resources\DRXFullCLos.png" />
+    <None Include="Resources\DRXFullCPar.png" />
+    <None Include="Resources\DRXFullCSeo.png" />
+    <None Include="Resources\DRXFullMBan.png" />
+    <None Include="Resources\DRXFullMCop.png" />
+    <None Include="Resources\DRXFullMRey2.png" />
+    <None Include="Resources\DRXFullMSao.png" />
+    <None Include="Resources\DRXFullMTok.png" />
+    <None Include="Resources\FunPlusPhoenixFullCIns.png" />
+    <None Include="Resources\FunPlusPhoenixFullMCop.png" />
+    <None Include="Resources\FunPlusPhoenixFullMMad.png" />
+    <None Include="Resources\BilibiliGamingFullCLos.png" />
+    <None Include="Resources\EDwardGamingFullCLos.png" />
+    <None Include="Resources\EDwardGamingFullCSeo.png" />
+    <None Include="Resources\EDwardGamingFullMMad.png" />
+    <None Include="Resources\EDwardGamingFullMSha.png" />
+    <None Include="Resources\EvilGeniusesFullCLos.png" />
+    <None Include="Resources\EvilGeniusesFullMTok.png" />
+    <None Include="Resources\FUTFullCLos.png" />
+    <None Include="Resources\FUTFullCSeo.png" />
+    <None Include="Resources\FUTFullMSha.png" />
+    <None Include="Resources\G2FullMBan.png" />
+    <None Include="Resources\G2FullMBer.png" />
+    <None Include="Resources\G2FullMLon.png" />
+    <None Include="Resources\G2FullMRey2.png" />
+    <None Include="Resources\G2FullMSan.png" />
+    <None Include="Resources\G2FullMSha.png" />
+    <None Include="Resources\G2FullMTor.png" />
+    <None Include="Resources\G2FullCPar.png" />
+    <None Include="Resources\G2FullCSeo.png" />
     <Content Include="Resources\Gen.G.png" />
     <None Include="Resources\Sentinels1.png" />
     <None Include="Resources\Haven.png" />
@@ -424,6 +459,33 @@
     <None Include="Resources\KruFullCBer.png" />
     <None Include="Resources\KruFullMBer.png" />
     <None Include="Resources\KruFullMRey1.png" />
+    <None Include="Resources\LeviatanFullCIns.png" />
+    <None Include="Resources\LeviatanFullCSeo.png" />
+    <None Include="Resources\LeviatanFullMCop.png" />
+    <None Include="Resources\LeviatanFullMLon.png" />
+    <None Include="Resources\LeviatanFullMSao.png" />
+    <None Include="Resources\PaperRexFullCLos.png" />
+    <None Include="Resources\PaperRexFullCPar.png" />
+    <None Include="Resources\PaperRexFullMCop.png" />
+    <None Include="Resources\PaperRexFullMLon.png" />
+    <None Include="Resources\PaperRexFullMMad.png" />
+    <None Include="Resources\PaperRexFullMRey2.png" />
+    <None Include="Resources\PaperRexFullMSan.png" />
+    <None Include="Resources\PaperRexFullMSha.png" />
+    <None Include="Resources\PaperRexFullMTok.png" />
+    <None Include="Resources\PaperRexFullMTor.png" />
+    <None Include="Resources\SentinelsFullCSeo.png" />
+    <None Include="Resources\SentinelsFullMBan.png" />
+    <None Include="Resources\SentinelsFullMBer.png" />
+    <None Include="Resources\SentinelsFullMMad.png" />
+    <None Include="Resources\SentinelsFullMRey1.png" />
+    <None Include="Resources\SentinelsFullMTor.png" />
+    <None Include="Resources\GiantXFullCPar.png" />
+    <None Include="Resources\MIBRFullCPar.png" />
+    <None Include="Resources\NRGFullCPar.png" />
+    <None Include="Resources\NRGFullMSan.png" />
+    <None Include="Resources\NRGFullMSao.png" />
+    <None Include="Resources\NRGFullMTok.png" />
     <Content Include="Resources\SS.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -443,6 +505,11 @@
     <None Include="Resources\TeamLiquidFullMRey2.png" />
     <None Include="Resources\TeamLiquidFullMTok.png" />
     <None Include="Resources\TeamSecretFullCBer.png" />
+    <None Include="Resources\TeamHereticsFullCPar.png" />
+    <None Include="Resources\TeamHereticsFullCSeo.png" />
+    <None Include="Resources\TeamHereticsFullMLon.png" />
+    <None Include="Resources\TeamHereticsFullMMad.png" />
+    <None Include="Resources\TeamHereticsFullMSha.png" />
     <Content Include="Resources\teste.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

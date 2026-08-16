@@ -153,6 +153,16 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BilibiliGamingFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("BilibiliGamingFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bind1 {
             get {
                 object obj = ResourceManager.GetObject("Bind1", resourceCulture);
@@ -413,6 +423,96 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DRXFullCIns {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullCIns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullCPar {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullCPar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullMBan {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullMBan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullMCop {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullMCop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullMRey2 {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullMRey2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullMSao {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullMSao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DRXFullMTok {
+            get {
+                object obj = ResourceManager.GetObject("DRXFullMTok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DRXHYUNMINCPar {
             get {
                 object obj = ResourceManager.GetObject("DRXHYUNMINCPar", resourceCulture);
@@ -453,6 +553,46 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullMMad {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullMMad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDwardGamingFullMSha {
+            get {
+                object obj = ResourceManager.GetObject("EDwardGamingFullMSha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EGBoostioMTok {
             get {
                 object obj = ResourceManager.GetObject("EGBoostioMTok", resourceCulture);
@@ -486,6 +626,26 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap EvilGeniuses {
             get {
                 object obj = ResourceManager.GetObject("EvilGeniuses", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EvilGeniusesFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("EvilGeniusesFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EvilGeniusesFullMTok {
+            get {
+                object obj = ResourceManager.GetObject("EvilGeniusesFullMTok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -733,6 +893,36 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FunPlusPhoenixFullCIns {
+            get {
+                object obj = ResourceManager.GetObject("FunPlusPhoenixFullCIns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FunPlusPhoenixFullMCop {
+            get {
+                object obj = ResourceManager.GetObject("FunPlusPhoenixFullMCop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FunPlusPhoenixFullMMad {
+            get {
+                object obj = ResourceManager.GetObject("FunPlusPhoenixFullMMad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FURIA {
             get {
                 object obj = ResourceManager.GetObject("FURIA", resourceCulture);
@@ -753,9 +943,129 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FUTFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("FUTFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FUTFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("FUTFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FUTFullMSha {
+            get {
+                object obj = ResourceManager.GetObject("FUTFullMSha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap G2 {
             get {
                 object obj = ResourceManager.GetObject("G2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullCPar {
+            get {
+                object obj = ResourceManager.GetObject("G2FullCPar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("G2FullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMBan {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMBan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMBer {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMBer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMLon {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMLon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMRey2 {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMRey2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMSan {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMSan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMSha {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMSha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G2FullMTor {
+            get {
+                object obj = ResourceManager.GetObject("G2FullMTor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -836,6 +1146,16 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap GIANTX {
             get {
                 object obj = ResourceManager.GetObject("GIANTX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GiantXFullCPar {
+            get {
+                object obj = ResourceManager.GetObject("GiantXFullCPar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -976,6 +1296,56 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap Leviatan {
             get {
                 object obj = ResourceManager.GetObject("Leviatan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeviatanFullCIns {
+            get {
+                object obj = ResourceManager.GetObject("LeviatanFullCIns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeviatanFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("LeviatanFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeviatanFullMCop {
+            get {
+                object obj = ResourceManager.GetObject("LeviatanFullMCop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeviatanFullMLon {
+            get {
+                object obj = ResourceManager.GetObject("LeviatanFullMLon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeviatanFullMSao {
+            get {
+                object obj = ResourceManager.GetObject("LeviatanFullMSao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1353,6 +1723,16 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MIBRFullCPar {
+            get {
+                object obj = ResourceManager.GetObject("MIBRFullCPar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NatusVicere {
             get {
                 object obj = ResourceManager.GetObject("NatusVicere", resourceCulture);
@@ -1376,6 +1756,46 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap NRG {
             get {
                 object obj = ResourceManager.GetObject("NRG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NRGFullCPar {
+            get {
+                object obj = ResourceManager.GetObject("NRGFullCPar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NRGFullMSan {
+            get {
+                object obj = ResourceManager.GetObject("NRGFullMSan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NRGFullMSao {
+            get {
+                object obj = ResourceManager.GetObject("NRGFullMSao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NRGFullMTok {
+            get {
+                object obj = ResourceManager.GetObject("NRGFullMTok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1523,6 +1943,106 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullCLos {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullCLos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullCPar {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullCPar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMCop {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMCop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMLon {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMLon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMMad {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMMad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMRey2 {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMRey2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMSan {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMSan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMSha {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMSha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMTok {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMTok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PaperRexFullMTor {
+            get {
+                object obj = ResourceManager.GetObject("PaperRexFullMTor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pearl {
             get {
                 object obj = ResourceManager.GetObject("Pearl", resourceCulture);
@@ -1623,6 +2143,66 @@ namespace VCT_A.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SentinelsFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("SentinelsFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SentinelsFullMBan {
+            get {
+                object obj = ResourceManager.GetObject("SentinelsFullMBan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SentinelsFullMBer {
+            get {
+                object obj = ResourceManager.GetObject("SentinelsFullMBer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SentinelsFullMMad {
+            get {
+                object obj = ResourceManager.GetObject("SentinelsFullMMad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SentinelsFullMRey1 {
+            get {
+                object obj = ResourceManager.GetObject("SentinelsFullMRey1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SentinelsFullMTor {
+            get {
+                object obj = ResourceManager.GetObject("SentinelsFullMTor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SENzekkenMMad {
             get {
                 object obj = ResourceManager.GetObject("SENzekkenMMad", resourceCulture);
@@ -1686,6 +2266,56 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap TeamHeretics {
             get {
                 object obj = ResourceManager.GetObject("TeamHeretics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamHereticsFullCPar {
+            get {
+                object obj = ResourceManager.GetObject("TeamHereticsFullCPar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamHereticsFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("TeamHereticsFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamHereticsFullMLon {
+            get {
+                object obj = ResourceManager.GetObject("TeamHereticsFullMLon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamHereticsFullMMad {
+            get {
+                object obj = ResourceManager.GetObject("TeamHereticsFullMMad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamHereticsFullMSha {
+            get {
+                object obj = ResourceManager.GetObject("TeamHereticsFullMSha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1896,6 +2526,26 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap Trace {
             get {
                 object obj = ResourceManager.GetObject("Trace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TraceFullCSeo {
+            get {
+                object obj = ResourceManager.GetObject("TraceFullCSeo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TraceFullMBan {
+            get {
+                object obj = ResourceManager.GetObject("TraceFullMBan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2246,6 +2896,26 @@ namespace VCT_A.Properties {
         internal static System.Drawing.Bitmap XSET {
             get {
                 object obj = ResourceManager.GetObject("XSET", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap XSetFullCIns {
+            get {
+                object obj = ResourceManager.GetObject("XSetFullCIns", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap XSetFullMCop {
+            get {
+                object obj = ResourceManager.GetObject("XSetFullMCop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

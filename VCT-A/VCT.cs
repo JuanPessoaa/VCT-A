@@ -32,6 +32,7 @@ namespace VCT_A
     {
         private WindowsMediaPlayer player = new WindowsMediaPlayer();
         SoundPlayer playerwav = new SoundPlayer();
+        string Campeonato = "";
         public VCT()
         {
             InitializeComponent();
@@ -236,6 +237,7 @@ namespace VCT_A
         private void ConfigurarParaCBer()
         {
             Limpar();
+            Campeonato = "CBer";
             Tocar("MusicCBer.mp3");
             this.Text = "Valorant Champions Tour | Champions 2021 - Berlin";
             pictureBox8.BackgroundImage = Properties.Resources.TrophyChampions;
@@ -894,7 +896,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Bilibili Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.BilibiliGaming;
+                    pictureBox10.BackgroundImage = Properties.Resources.BilibiliGamingFullCLos;
                 }
                 else if (rb.Text.Contains("Cloud9"))
                 {
@@ -902,19 +904,76 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("DRX"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.DRX;
+                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullCLos;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullCPar;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullMRey2;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullMCop;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullMSao;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullMTok;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.DRXFullMBan;
+                    }
                 }
                 else if (rb.Text.Contains("EDward Gaming"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.EDwardGaming;
+                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullCLos;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMMad;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EDwardGamingFullMSha;
+                    }
                 }
                 else if (rb.Text.Contains("Evil Geniuses"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.EvilGeniuses;
+                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EvilGeniusesFullCLos;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.EvilGeniusesFullMTok;
+                    }
                 }
                 else if (rb.Text.Contains("FNATIC"))
                 {
-                    if (this.Text == "Valorant Champions Tour | Champions 2021 - Berlin")
+                    if (Campeonato == "CBer")
                     {
                         pictureBox10.BackgroundImage = Properties.Resources.FnaticFullCBer;
                     }
@@ -961,7 +1020,18 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("FunPlus Phoenix"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenix;
+                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenixFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenixFullMCop;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FunPlusPhoenixFullMMad;
+                    }
                 }
                 else if (rb.Text.Contains("FURIA"))
                 {
@@ -969,11 +1039,57 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("FUT"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.FUT;
+                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FUTFullCLos;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FUTFullCSeo;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.FUTFullMSha;
+                    }
                 }
                 else if (rb.Text.Contains("G2"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.G2;
+                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullCPar;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2021.2 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMBer;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMRey2;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMSha;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2025.1 - Bangkok")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMBan;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMTor;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2026.1 - Santiago")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMSan;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.G2FullMLon;
+                    }
                 }
                 else if (rb.Text.Contains("Gambit"))
                 {
@@ -996,7 +1112,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("GIANTX"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.GIANTX;
+                    pictureBox10.BackgroundImage = Properties.Resources.GiantXFullCPar;
                 }
                 else if (rb.Text.Contains("Guild"))
                 {
@@ -1023,7 +1139,26 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Leviatán"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Leviatan;
+                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullCIns;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullMCop;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullMSao;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.LeviatanFullMLon;
+                    }
                 }
                 else if (rb.Text.Contains("LOUD"))
                 {
@@ -1054,7 +1189,7 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("MIBR"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.MIBR;
+                    pictureBox10.BackgroundImage = Properties.Resources.MIBRFullCPar;
                 }
                 else if (rb.Text.Contains("Natus Vincere"))
                 {
@@ -1066,7 +1201,22 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("NRG"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.NRG;
+                    if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NRGFullCPar;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | LOCK//IN (Masters) 2023.0 - São Paulo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NRGFullMSao;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NRGFullMTok;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.NRGFullMSan;
+                    }
                 }
                 else if (rb.Text.Contains("NUTURN"))
                 {
@@ -1089,7 +1239,46 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Paper Rex"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.PaperRex;
+                    if (this.Text == "Valorant Champions Tour | Champions 2023 - Los Angeles")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullCLos;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullCPar;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.1 - Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMRey2;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2022.2 - Copenhagen")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMCop;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2023.1 - Tokyo")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMTok;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMMad;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMSha;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2025.2 - Toronto")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMTor;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2026.1 - Santiago")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMSan;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.PaperRexFullMLon;
+                    }
                 }
                 else if (rb.Text.Contains("Rex Regum Qeon"))
                 {
@@ -1097,7 +1286,30 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Sentinels"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Sentinels1;
+                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | 2021.1 - Masters Reykjavík")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMRey1;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2021.2 - Berlin")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMBer;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMMad;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2025.1 - Bangkok")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMBan;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.SentinelsFullMTor;
+                    }
                 }
                 else if (rb.Text.Contains("T1"))
                 {
@@ -1113,7 +1325,26 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Team Heretics"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.TeamHeretics;
+                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullCSeo;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Champions 2025 - Paris")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullCPar;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.1 - Madrid")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullMMad;
+                    }
+                    else if (this.Text == "Valorant Champions Tour | Masters 2024.2 - Shanghai")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullMSha;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TeamHereticsFullMLon;
+                    }
                 }
                 else if (rb.Text.Contains("Team Liquid"))
                 {
@@ -1160,7 +1391,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("Trace"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.Trace;
+                    if (this.Text == "Valorant Champions Tour | Champions 2024 - Seoul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TraceFullCSeo;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.TraceFullMBan;
+                    }
                 }
                 else if (rb.Text.Contains("Version1"))
                 {
@@ -1191,7 +1429,14 @@ namespace VCT_A
                 }
                 else if (rb.Text.Contains("XSET"))
                 {
-                    pictureBox10.BackgroundImage = Properties.Resources.XSET;
+                    if (this.Text == "Valorant Champions Tour | Champions 2022 - Instanbul")
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.XSetFullCIns;
+                    }
+                    else
+                    {
+                        pictureBox10.BackgroundImage = Properties.Resources.XSetFullMCop;
+                    }
                 }
                 else if (rb.Text.Contains("ZETA DIVISION"))
                 {
