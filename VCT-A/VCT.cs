@@ -101,6 +101,10 @@ namespace VCT_A
                 comboBox2.ForeColor = Color.White;
                 comboBox3.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox3.ForeColor = Color.White;
+                button1.BackColor = Color.FromArgb(197, 177, 116);
+                button1.ForeColor = Color.White;
+                button2.BackColor = Color.FromArgb(197, 177, 116);
+                button2.ForeColor = Color.White;
                 pictureBox11.BackColor = Color.FromArgb(197, 177, 116);
                 pictureBox12.BackColor = Color.FromArgb(197, 177, 116);
                 listBox1.BackColor = Color.FromArgb(197, 177, 116);
@@ -152,6 +156,10 @@ namespace VCT_A
                 comboBox2.ForeColor = Color.Black;
                 comboBox3.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox3.ForeColor = Color.Black;
+                button1.BackColor = Color.FromArgb(111, 74, 204);
+                button1.ForeColor = Color.Black;
+                button2.BackColor = Color.FromArgb(111, 74, 204);
+                button2.ForeColor = Color.Black;
                 pictureBox11.BackColor = Color.FromArgb(111, 74, 204);
                 pictureBox12.BackColor = Color.FromArgb(111, 74, 204);
                 listBox1.BackColor = Color.FromArgb(111, 74, 204);
@@ -2129,6 +2137,26 @@ namespace VCT_A
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (PlayerMp3.playState == WMPPlayState.wmppsPlaying)
+            {
+                PlayerMp3.controls.pause();
+                button1.Text = "▶ Tocar";
+            }
+            else
+            {
+                PlayerMp3.controls.play();
+                button1.Text = "⏸ Pausar";
+            }
+
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -2219,14 +2247,9 @@ namespace VCT_A
 
         }
 
-        
-
         private void VCT_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
-            {
-                this.Close();
-            }
+
         }
     }
 }
