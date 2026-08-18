@@ -2065,6 +2065,9 @@ namespace VCT_A
                     case "3º NRG":
                         pictureBox4.BackgroundImage = Properties.Resources.NRG;
                         break;
+                    case "3º EDward Gaming":
+                        pictureBox4.BackgroundImage = Properties.Resources.EDwardGaming;
+                        break;
                 }
             }
             else

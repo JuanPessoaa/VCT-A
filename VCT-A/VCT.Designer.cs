@@ -561,7 +561,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(500, 50);
             this.label7.TabIndex = 32;
-            this.label7.Text = "200000";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label7.Visible = false;
             // 
@@ -573,9 +572,8 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(1027, 110);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(306, 45);
+            this.label8.Size = new System.Drawing.Size(0, 45);
             this.label8.TabIndex = 33;
-            this.label8.Text = "Total de premiação\r\n";
             this.label8.Visible = false;
             // 
             // label9
@@ -585,61 +583,56 @@
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(249, 103);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(279, 40);
+            this.label9.Size = new System.Drawing.Size(0, 40);
             this.label9.TabIndex = 34;
-            this.label9.Text = "Total de premiação\r\n";
             this.label9.Visible = false;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(278, 607);
+            this.label10.Location = new System.Drawing.Point(101, 965);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(306, 45);
+            this.label10.Size = new System.Drawing.Size(155, 30);
             this.label10.TabIndex = 35;
-            this.label10.Text = "Total de premiação\r\n";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label10.Visible = false;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(316, 652);
+            this.label11.Location = new System.Drawing.Point(354, 965);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(306, 45);
+            this.label11.Size = new System.Drawing.Size(155, 30);
             this.label11.TabIndex = 36;
-            this.label11.Text = "Total de premiação\r\n";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label11.Visible = false;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(391, 697);
+            this.label12.Location = new System.Drawing.Point(614, 965);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(306, 45);
+            this.label12.Size = new System.Drawing.Size(155, 30);
             this.label12.TabIndex = 37;
-            this.label12.Text = "Total de premiação\r\n";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label12.Visible = false;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(628, 607);
+            this.label13.Location = new System.Drawing.Point(872, 965);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(306, 45);
+            this.label13.Size = new System.Drawing.Size(155, 30);
             this.label13.TabIndex = 38;
-            this.label13.Text = "Total de premiação\r\n";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label13.Visible = false;
             // 
             // VCT
@@ -648,7 +641,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VCT_A.Properties.Resources.wallpaperbase;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1364, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -688,6 +681,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "VCT";
             this.Text = "Valorant Champions Tour";
             this.Load += new System.EventHandler(this.VCT_Load);
