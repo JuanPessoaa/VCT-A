@@ -102,9 +102,9 @@ namespace VCT_A
                 comboBox3.BackColor = Color.FromArgb(197, 177, 116);
                 comboBox3.ForeColor = Color.White;
                 button1.BackColor = Color.FromArgb(197, 177, 116);
-                button1.ForeColor = Color.White;
+                button1.ForeColor = Color.Black;
                 button2.BackColor = Color.FromArgb(197, 177, 116);
-                button2.ForeColor = Color.White;
+                button2.ForeColor = Color.Black;
                 pictureBox11.BackColor = Color.FromArgb(197, 177, 116);
                 pictureBox12.BackColor = Color.FromArgb(197, 177, 116);
                 listBox1.BackColor = Color.FromArgb(197, 177, 116);
@@ -157,9 +157,9 @@ namespace VCT_A
                 comboBox3.BackColor = Color.FromArgb(111, 74, 204);
                 comboBox3.ForeColor = Color.Black;
                 button1.BackColor = Color.FromArgb(111, 74, 204);
-                button1.ForeColor = Color.Black;
+                button1.ForeColor = Color.White;
                 button2.BackColor = Color.FromArgb(111, 74, 204);
-                button2.ForeColor = Color.Black;
+                button2.ForeColor = Color.White;
                 pictureBox11.BackColor = Color.FromArgb(111, 74, 204);
                 pictureBox12.BackColor = Color.FromArgb(111, 74, 204);
                 listBox1.BackColor = Color.FromArgb(111, 74, 204);
