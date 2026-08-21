@@ -862,6 +862,7 @@ namespace VCT_A
         }
         private void Limpar()
         {
+            button1.Text = "⏸ Pausar";
             checkBox1.Checked = false;
             checkBox2.Checked = false;
             checkBox3.Checked = false;
